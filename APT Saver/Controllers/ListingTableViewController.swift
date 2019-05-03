@@ -8,14 +8,46 @@
 
 import UIKit
 import SwiftSoup
+import GoogleSignIn
+import FacebookCore
+import FacebookLogin
 
-class ListingTableViewController: UITableViewController {
-    
+class ListingTableViewController: UITableViewController, GIDSignInUIDelegate {
     //MARK: -Data model
     var test: String? = "hi"
     var listingTypes: [ListingType] = ListingType.getListingTypes()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //FOR FACEBOO SIGN-IN
+        //let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+        //loginButton.center = view.center
+        //loginButton.center = view.center.y - 100
+        //view.addSubview(loginButton)
+        
+        //FOR GOOGLE SIGN-IN
+        GIDSignIn.sharedInstance().uiDelegate = self
+        // Uncomment to automatically sign in the user.
+        GIDSignIn.sharedInstance().signInSilently()
+        // TODO(developer) Configure the sign-in button look/feel
+        let gSignIn = GIDSignInButton (frame: CGRect(x: 0, y: 0, width: 230, height: 48))
+        //make it go to center of screen
+        gSignIn.center = view.center
+        view.addSubview(gSignIn)
+        
+        //Add sign out button
+        let signOut = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 30)) //create UI Button
+        signOut.backgroundColor = UIColor.red //set button color to red
+        signOut.setTitle("Sign Out", for: .normal) //set title as signout
+        signOut.center = view.center  //set to center of screen
+        signOut.center.y = view.center.y + 100 //below googlesign button
+        signOut.addTarget(self, action: #selector(self.signOut(_:)), for: .touchUpInside) //what happens when we use the signout button, touchUpInsde is when we release tap of the button
+        self.view.addSubview(signOut)
+        // Do any additional setup after loading the view.
+        
+        
+        //JENNIFER's CODE
         //var htmlContent: String?
         //Get HTML
         let url = URL(string: "https://streeteasy.com/building/mantena-431-west-37-street-new_york/2a?similar=1")
@@ -27,21 +59,21 @@ class ListingTableViewController: UITableViewController {
             else {
                 //let htmlContent = NSString(data: data!,encoding: String.Encoding.utf8.rawValue)
                 let htmlContent = String(data: data!,encoding: String.Encoding.utf8)!
-
+                
                 print("end")
                 do {
                     let doc: Document = try SwiftSoup.parseBodyFragment(htmlContent)
-               
+                    
                     let address: String? = try doc.getElementsByClass("building-title").text()
                     let price = try doc.getElementsByClass("price").text()
-//                    let size = try doc.getElementsByClass("detail_cell first_detail_cell").text()
-//                    let rooms = try doc.getElementsByClass("details_info").text()
-//                    let description = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
+                    //                    let size = try doc.getElementsByClass("detail_cell first_detail_cell").text()
+                    //                    let rooms = try doc.getElementsByClass("details_info").text()
+                    //                    let description = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
                     //get listing details (1=sq ft, price/sq ft, rooms, beds, 5=bath)
-//                    let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
-//                    let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0).getAllElements().array()
-//                    let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
-//                    let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
+                    //                    let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
+                    //                    let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0).getAllElements().array()
+                    //                    let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
+                    //                    let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
                     //print(try details[4].text())
                     //print (try buildingAmenities[7].text())
                     //print(doc)
@@ -55,9 +87,9 @@ class ListingTableViewController: UITableViewController {
                 }
             }
         }
-
+        
         task.resume()
-            
+        
         self.title = "Apartments"
         
         self.tableView.estimatedRowHeight = tableView.rowHeight
@@ -67,6 +99,13 @@ class ListingTableViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = editButtonItem
         print (test)
     }
+    
+    //signout function
+    @objc func signOut(_ sender: UIButton) {
+        print("Signing Out")
+        GIDSignIn.sharedInstance().signOut() //will sign us out of google
+    }
+    
     
     @IBAction func addListingButton(_ sender: Any) {
         performSegue(withIdentifier: "AddListing", sender: nil)
