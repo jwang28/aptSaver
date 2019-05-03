@@ -20,22 +20,30 @@ enum ListingRating{
 
 class Listing
 {
-    var image: UIImage
-    var title: String
-    var description: String
-    var rating: ListingRating
     
-    init(titled: String, description: String, imageName: String)
+    var address: String
+    var price: String
+    var description: String
+    var bed: String
+    var bath: String
+    var size: String
+    var ppsqft: String
+    var image: UIImage
+    
+    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, imageName: String)
     {
-        self.title = titled
+        self.address = address
+        self.price = price
         self.description = description
+        self.bed = bed
+        self.bath = bath
+        self.size = size
+        self.ppsqft = ppsqft
         if let image = UIImage(named: imageName){
             self.image = image
         } else{
             self.image = UIImage(named: "default")!
         }
-        
-        rating = .unrated
     }
 }
 

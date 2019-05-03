@@ -30,8 +30,8 @@ class ListingType
     {
         var listings = [Listing]()
         
-        listings.append(Listing(titled: "First Apartment",description: "This is the 1st one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "first"))
-        listings.append(Listing(titled: "Second Apartment",description: "This is the 2nd one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "default"))
+        listings.append(Listing(address: "Address Here", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", imageName: "default"))
+//        listings.append(Listing(titled: "Second Apartment",description: "This is the 2nd one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "default"))
         
         return ListingType(named: "No Fee", includeListings: listings)
     }
@@ -39,7 +39,7 @@ class ListingType
     {
         var listings = [Listing]()
         
-        listings.append(Listing(titled: "Second Apartment",description: "This is the 2nd one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "default"))
+//        listings.append(Listing(titled: "Second Apartment",description: "This is the 2nd one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "default"))
         
         return ListingType(named: "Fee", includeListings: listings)
     }

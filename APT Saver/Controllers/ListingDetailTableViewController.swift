@@ -21,7 +21,7 @@ class ListingDetailTableViewController: UITableViewController {
         title = "Edit Listing"
         
         listingImageView.image = listing?.image
-        listingTitleTextField.text  = listing?.title
+        listingTitleTextField.text  = listing?.address
         listingDescriptionTextView.text = listing?.description
     }
     

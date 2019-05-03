@@ -23,7 +23,9 @@ class ListingTableViewCell: UITableViewCell {
     func updateUI()
     {
         listingImageView?.image = listing?.image
-        listingTitleLabel?.text = listing?.title
+        listingTitleLabel?.text = listing?.address
         listingDescriptionLabel?.text = listing?.description
     }
 }
+
+

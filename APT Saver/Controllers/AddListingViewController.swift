@@ -50,7 +50,7 @@ class AddListingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let mainTable = segue.destination as! ListingTableViewController
         mainTable.test = url.text
-        listings?.append(Listing(titled: "Third Apartment",description: "This is the 1st one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "first"))
+        listings?.append(Listing(address: "Address Here", price: "price",description: "lorem ipsum dolerfadsfkasjdfk;dsafjdkls;fjadks;fjsad;lkfjasd;kfjsdkFJA;DFKJASDKF", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", imageName: "first"))
         mainTable.listingTypes[0].listings = self.listings!
     }
     override func viewDidLoad() {
