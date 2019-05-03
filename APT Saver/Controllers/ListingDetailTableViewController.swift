@@ -13,7 +13,8 @@ class ListingDetailTableViewController: UITableViewController {
     
     @IBOutlet weak var listingDescriptionTextView: UITextView!
     @IBOutlet weak var listingImageView: UIImageView!
-    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
+//    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
+    var listing: Listing?
     
     override func viewDidLoad() {
         super.viewDidLoad()

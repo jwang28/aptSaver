@@ -1,0 +1,6 @@
+framework module Pods_APT_SaverUITests {
+  umbrella header "Pods-APT SaverUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
