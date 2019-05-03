@@ -21,6 +21,7 @@
 		199E4829227CB1A300897649 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E4828227CB1A300897649 /* AddListingViewController.swift */; };
 		19E0525A227A18D2005B02F0 /* ListingDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E05259227A18D2005B02F0 /* ListingDetailTableViewController.swift */; };
 		9D89B3BDF33787F28386FBF8 /* Pods_APT_Saver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2586EE58FF45C6C702FA65 /* Pods_APT_Saver.framework */; };
+		A25908CC227CF57900B37F02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25908CB227CF57900B37F02 /* LoginViewController.swift */; };
 		D82DDE924236C6385FA18883 /* Pods_APT_SaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F640C1CF3558FA5C489862 /* Pods_APT_SaverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		822B2756F8D2B904225A5AC4 /* Pods-APT Saver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APT Saver.release.xcconfig"; path = "Target Support Files/Pods-APT Saver/Pods-APT Saver.release.xcconfig"; sourceTree = "<group>"; };
 		8F8AEE83F0CD5355E0FA4606 /* Pods-APT SaverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APT SaverUITests.release.xcconfig"; path = "Target Support Files/Pods-APT SaverUITests/Pods-APT SaverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9281E028590AE5462926F3D2 /* Pods_APT_SaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APT_SaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25908CB227CF57900B37F02 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC2586EE58FF45C6C702FA65 /* Pods_APT_Saver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APT_Saver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F640C1CF3558FA5C489862 /* Pods_APT_SaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APT_SaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D612B8EB9A8E077982382579 /* Pods-APT Saver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APT Saver.debug.xcconfig"; path = "Target Support Files/Pods-APT Saver/Pods-APT Saver.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				196E5CDE2277E7CB00F43DB5 /* ListingTableViewController.swift */,
 				19E05259227A18D2005B02F0 /* ListingDetailTableViewController.swift */,
 				199E4828227CB1A300897649 /* AddListingViewController.swift */,
+				A25908CB227CF57900B37F02 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				195E03402279E6940017F2B6 /* ListingTableViewCell.swift in Sources */,
 				196E5CDB2277C05B00F43DB5 /* Listing.swift in Sources */,
 				19E0525A227A18D2005B02F0 /* ListingDetailTableViewController.swift in Sources */,
+				A25908CC227CF57900B37F02 /* LoginViewController.swift in Sources */,
 				196E5CDF2277E7CB00F43DB5 /* ListingTableViewController.swift in Sources */,
 				199E4829227CB1A300897649 /* AddListingViewController.swift in Sources */,
 				196E5CAA2277BB4400F43DB5 /* AppDelegate.swift in Sources */,
