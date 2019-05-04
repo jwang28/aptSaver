@@ -27,12 +27,21 @@ class AddListingViewController: UIViewController {
                         let doc: Document = try SwiftSoup.parseBodyFragment(htmlContent)
                         
                         self.addressTest = try doc.getElementsByClass("building-title").text()
-                
                         self.price = try doc.getElementsByClass("price").text()
                         self.descriptionText = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
+                        //get listing details (1=sq ft, price/sq ft, rooms, beds, 5=bath)
+                        //problem here because it is inconsistent
+                        let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
+                        self.size = try details[1].text()
+                        print("size", self.size)
+                        //let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0).getAllElements().array()
+                        let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
+                        let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
+                        let amenitiesHi: Element = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0)
+                        //self.amenities = amenitiesHi.text()
+//                        print("price ", self.price)
+//                        print("addressTest",self.addressTest)
                         
-                        print("price ", self.price)
-                        print("addressTest",self.addressTest)
                         
                         
                     } catch Exception.Error (let type, let message){
@@ -72,7 +81,7 @@ class AddListingViewController: UIViewController {
         let mainTable = segue.destination as! ListingTableViewController
 
         
-        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "first"))
+        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: "first"))
         mainTable.listingTypes[0].listings = self.listings!
         print(mainTable.listingTypes[0].listings)
     }

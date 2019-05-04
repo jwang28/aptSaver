@@ -10,7 +10,6 @@ import UIKit
 import SwiftSoup
 
 class ListingTableViewController: UITableViewController {
-    
     //MARK: -Data model
     //var test: String? = "hi"
     var listingTypes: [ListingType] = ListingType.getListingTypes()

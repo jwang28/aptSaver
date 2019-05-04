@@ -19,5 +19,53 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APT Saver/Model/Listing.swift"
+            timestampString = "578687514.9929039"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init(address:price:description:bed:bath:size:ppsqft:amenities:transportation:imageName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APT_Saver.Listing.__allocating_init(address: Swift.String, price: Swift.String, description: Swift.String, bed: Swift.String, bath: Swift.String, size: Swift.String, ppsqft: Swift.String, amenities: Swift.String, transportation: Swift.String, imageName: Swift.String) -&gt; APT_Saver.Listing"
+                  moduleName = "APT Saver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferwang/Documents/iOS/Final%20Project/APT%20Saver/APT%20Saver/Model/Listing.swift"
+                  timestampString = "578687774.8155529"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APT_Saver.Listing.init(address: Swift.String, price: Swift.String, description: Swift.String, bed: Swift.String, bath: Swift.String, size: Swift.String, ppsqft: Swift.String, amenities: Swift.String, transportation: Swift.String, imageName: Swift.String) -&gt; APT_Saver.Listing"
+                  moduleName = "APT Saver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferwang/Documents/iOS/Final%20Project/APT%20Saver/APT%20Saver/Model/Listing.swift"
+                  timestampString = "578687774.818499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "317">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
