@@ -11,27 +11,31 @@ import SwiftSoup
 
 class AddListingViewController: UIViewController {
 
-    @IBOutlet weak var url: UITextField!
-    var address: String?
-    @IBAction func submit(_ sender: Any) {
+
+    @IBAction func SubmitButton(_ sender: Any) {
         if url.text != ""{
-            //let url_new = URL(string: self.url.text!)
-            let url_new = URL(string: "https://streeteasy.com/building/mantena-431-west-37-street-new_york/2a?similar=1")
-            
+            let url_new = URL(string: self.url.text!)
+            //let url_new = URL(string: "https://streeteasy.com/building/mantena-431-west-37-street-new_york/2a?similar=1")
             let task = URLSession.shared.dataTask(with: url_new!) { (data, response, error) in
+                
                 if error != nil {
                     print (error)
                 }
                 else {
+                    
                     //let htmlContent = NSString(data: data!,encoding: String.Encoding.utf8.rawValue)
                     let htmlContent = String(data: data!,encoding: String.Encoding.utf8)!
                     do {
                         let doc: Document = try SwiftSoup.parseBodyFragment(htmlContent)
                         
-                        self.address = try doc.getElementsByClass("building-title").text()
+                        self.addressTest = try doc.getElementsByClass("building-title").text()
+                
+                        //print(self.addressTest)
                         let price = try doc.getElementsByClass("price").text()
                         
-                        print(price)
+                        print("price ", price)
+                        print("addressTest",self.addressTest)
+                        
                         
                     } catch Exception.Error (let type, let message){
                         print(type,message)
@@ -41,22 +45,31 @@ class AddListingViewController: UIViewController {
                     }
                 }
             }
+            print("before res")
             task.resume()
             
-            performSegue(withIdentifier: "submit", sender: self)
         }
+        let delaySeconds = 2.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + delaySeconds) {
+            self.performSegue(withIdentifier: "submit", sender: self)
+        }
+        
     }
-    
+    @IBOutlet weak var url: UITextField!
+    var addressTest = "testing123"
     var listings: [Listing]?
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let mainTable = segue.destination as! ListingTableViewController
-        //mainTable.test = url.text
-        listings?.append(Listing(address: "address", price: "4500",description: "lorem ipsum doler other irrelevant information here to fill  up space", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "first"))
-        mainTable.listingTypes[0].listings = self.listings!
-    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let mainTable = segue.destination as! ListingTableViewController
+
+        
+        self.listings?.append(Listing(address: self.addressTest, price: "4500",description: "lorem ipsum doler other irrelevant information here to fill  up space", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "first"))
+        mainTable.listingTypes[0].listings = self.listings!
+        print(mainTable.listingTypes[0].listings)
     }
 }
 

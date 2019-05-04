@@ -15,24 +15,24 @@
             <objects>
                 <viewController id="qTb-jO-V5F" customClass="AddListingViewController" customModule="APT_Saver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPK-gD-QPe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hg-oc-cUH">
-                                <rect key="frame" x="12" y="99" width="351" height="30"/>
+                                <rect key="frame" x="12" y="119" width="351" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-kS-izW">
-                                <rect key="frame" x="163" y="148" width="49" height="30"/>
+                                <rect key="frame" x="163" y="168" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="Qi5-mL-aPW" kind="show" identifier="submit" id="RIr-Ii-WSk"/>
+                                    <action selector="SubmitButton:" destination="qTb-jO-V5F" eventType="touchUpInside" id="KK3-YY-rrb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvk-5H-oyy">
-                                <rect key="frame" x="147" y="70" width="81" height="21"/>
+                                <rect key="frame" x="147" y="90" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,18 +54,19 @@
                     </view>
                     <connections>
                         <outlet property="url" destination="3hg-oc-cUH" id="wWf-q3-24U"/>
+                        <segue destination="Qi5-mL-aPW" kind="show" identifier="submit" id="BZA-2f-63p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Js-c3-Akd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989.5999999999999" y="-283.80809595202402"/>
+            <point key="canvasLocation" x="2990" y="-272"/>
         </scene>
         <!--Listing Table View Controller-->
         <scene sceneID="UOK-67-re9">
             <objects>
                 <tableViewController id="Qi5-mL-aPW" customClass="ListingTableViewController" customModule="APT_Saver" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yG1-M8-IFi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -148,7 +149,7 @@
             <objects>
                 <tableViewController id="EZB-a8-1u2" customClass="ListingDetailTableViewController" customModule="APT_Saver" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="5AD-D5-79h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -379,6 +380,6 @@
         <image name="default" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N3I-L0-pJC"/>
+        <segue reference="BZA-2f-63p"/>
     </inferredMetricsTieBreakers>
 </document>
