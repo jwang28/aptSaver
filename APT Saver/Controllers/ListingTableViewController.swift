@@ -16,7 +16,7 @@ class ListingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //var htmlContent: String?
-        //Get HTML
+        //Get HTML 
       
             
         self.title = "Apartments"
