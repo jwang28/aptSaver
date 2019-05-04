@@ -47,8 +47,48 @@ class ListingTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListingCell", for: indexPath) as! ListingTableViewCell
         
         cell.listing = listingTypes[indexPath.section].listings[indexPath.row]
+        
+        
+        //setting favorites button
+        let starButton = UIButton(type: .system)
+        starButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        starButton.setImage(UIImage(named:"favHeart.png"), for: .normal)
+        cell.accessoryView = starButton
+        starButton.tintColor = .gray
+        //handles as favorite when tapped
+        starButton.tag = indexPath.row + 100000*(indexPath.section)
+
+        starButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
+        
         return cell
     }
+    
+    class subclassedUIButton: UIButton {
+        var indexPath: Int?
+        var urlString: String?
+    }
+    
+    //TODO
+    @objc private func handleAsFavorite(sender: UIButton){
+        print("Marking as Favorite")
+        //let aptFavorited = sender.tag
+        let indexSec = (sender.tag)/100000
+        let indexRow = (sender.tag)%100000
+//        let indexPath = IndexPath(row: indexRow, section: indexSec)
+//        let aptFavorited = tableView.cellForRow(at: indexPath)
+        let listingType = listingTypes[indexSec]
+        
+        if (listingType.listings[indexRow].favorited == true){
+            listingType.listings[indexRow].setFavorited(yesorno: false)
+            print(listingType.listings[indexRow].favorited)
+        }
+        else if(listingType.listings[indexRow].favorited == false){
+            listingType.listings[indexRow].setFavorited(yesorno: true)
+            print(listingType.listings[indexRow].favorited)
+        }
+    }
+    
+    
     //Multiple Sections
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

@@ -31,6 +31,7 @@ class Listing
     var amenities: String
     var transportation: String
     var image: UIImage
+    var favorited: Bool
     
     init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, amenities: String, transportation: String, imageName: String)
     {
@@ -43,11 +44,15 @@ class Listing
         self.ppsqft = ppsqft
         self.amenities = amenities
         self.transportation = transportation
+        self.favorited = false
         if let image = UIImage(named: imageName){
             self.image = image
         } else{
             self.image = UIImage(named: "default")!
         }
+    }
+    func setFavorited(yesorno: Bool) {
+        self.favorited = yesorno
     }
 }
 
