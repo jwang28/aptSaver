@@ -22,18 +22,16 @@ class AddListingViewController: UIViewController {
                     print (error)
                 }
                 else {
-                    
-                    //let htmlContent = NSString(data: data!,encoding: String.Encoding.utf8.rawValue)
                     let htmlContent = String(data: data!,encoding: String.Encoding.utf8)!
                     do {
                         let doc: Document = try SwiftSoup.parseBodyFragment(htmlContent)
                         
                         self.addressTest = try doc.getElementsByClass("building-title").text()
                 
-                        //print(self.addressTest)
-                        let price = try doc.getElementsByClass("price").text()
+                        self.price = try doc.getElementsByClass("price").text()
+                        self.descriptionText = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
                         
-                        print("price ", price)
+                        print("price ", self.price)
                         print("addressTest",self.addressTest)
                         
                         
@@ -45,7 +43,6 @@ class AddListingViewController: UIViewController {
                     }
                 }
             }
-            print("before res")
             task.resume()
             
         }
@@ -56,7 +53,15 @@ class AddListingViewController: UIViewController {
         
     }
     @IBOutlet weak var url: UITextField!
-    var addressTest = "testing123"
+    var addressTest = " "
+    var price = " "
+    var descriptionText = " "
+    var bed = " "
+    var bath = " "
+    var size = " "
+    var ppsqft = " "
+    var amenities = " "
+    var transportation = " "
     var listings: [Listing]?
    
     override func viewDidLoad() {
@@ -67,7 +72,7 @@ class AddListingViewController: UIViewController {
         let mainTable = segue.destination as! ListingTableViewController
 
         
-        self.listings?.append(Listing(address: self.addressTest, price: "4500",description: "lorem ipsum doler other irrelevant information here to fill  up space", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "first"))
+        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "first"))
         mainTable.listingTypes[0].listings = self.listings!
         print(mainTable.listingTypes[0].listings)
     }
