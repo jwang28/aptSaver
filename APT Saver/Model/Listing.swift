@@ -28,9 +28,11 @@ class Listing
     var bath: String
     var size: String
     var ppsqft: String
+    var amenities: String
+    var transportation: String
     var image: UIImage
     
-    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, imageName: String)
+    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, amenities: String, transportation: String, imageName: String)
     {
         self.address = address
         self.price = price
@@ -39,6 +41,8 @@ class Listing
         self.bath = bath
         self.size = size
         self.ppsqft = ppsqft
+        self.amenities = amenities
+        self.transportation = transportation
         if let image = UIImage(named: imageName){
             self.image = image
         } else{

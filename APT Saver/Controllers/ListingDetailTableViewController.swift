@@ -12,8 +12,15 @@ class ListingDetailTableViewController: UITableViewController {
     @IBOutlet weak var listingTitleTextField: UITextField!
     
     @IBOutlet weak var listingDescriptionTextView: UITextView!
+    @IBOutlet weak var listingPriceLabel: UILabel!
     @IBOutlet weak var listingImageView: UIImageView!
-//    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
+    @IBOutlet weak var listingBedLabel: UILabel!
+    @IBOutlet weak var listingBathLabel: UILabel!
+    @IBOutlet weak var listingSizeLabel: UILabel!
+    @IBOutlet weak var listingPpsqftLabel: UILabel!
+    @IBOutlet weak var listingAmenitiesLabel: UILabel!
+    @IBOutlet weak var listingTransportationLabel: UILabel!
+    //    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
     var listing: Listing?
     
     override func viewDidLoad() {
@@ -23,6 +30,13 @@ class ListingDetailTableViewController: UITableViewController {
         listingImageView.image = listing?.image
         listingTitleTextField.text  = listing?.address
         listingDescriptionTextView.text = listing?.description
+        listingPriceLabel.text = listing?.price
+        listingBedLabel.text = listing?.bed
+        listingBathLabel.text = listing?.bath
+        listingSizeLabel.text = listing?.size
+        listingPpsqftLabel.text = listing?.ppsqft
+        listingAmenitiesLabel.text = listing?.amenities
+        listingTransportationLabel.text = listing?.transportation
     }
     
 

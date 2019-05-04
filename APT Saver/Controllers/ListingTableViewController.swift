@@ -12,51 +12,13 @@ import SwiftSoup
 class ListingTableViewController: UITableViewController {
     
     //MARK: -Data model
-    var test: String? = "hi"
+    //var test: String? = "hi"
     var listingTypes: [ListingType] = ListingType.getListingTypes()
     override func viewDidLoad() {
         super.viewDidLoad()
         //var htmlContent: String?
         //Get HTML
-        let url = URL(string: "https://streeteasy.com/building/mantena-431-west-37-street-new_york/2a?similar=1")
-        
-        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error != nil {
-                print (error)
-            }
-            else {
-                //let htmlContent = NSString(data: data!,encoding: String.Encoding.utf8.rawValue)
-                let htmlContent = String(data: data!,encoding: String.Encoding.utf8)!
-
-                print("end")
-                do {
-                    let doc: Document = try SwiftSoup.parseBodyFragment(htmlContent)
-               
-                    let address: String? = try doc.getElementsByClass("building-title").text()
-                    let price = try doc.getElementsByClass("price").text()
-//                    let size = try doc.getElementsByClass("detail_cell first_detail_cell").text()
-//                    let rooms = try doc.getElementsByClass("details_info").text()
-//                    let description = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
-                    //get listing details (1=sq ft, price/sq ft, rooms, beds, 5=bath)
-//                    let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
-//                    let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0).getAllElements().array()
-//                    let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
-//                    let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
-                    //print(try details[4].text())
-                    //print (try buildingAmenities[7].text())
-                    //print(doc)
-                    print(price)
-                    
-                } catch Exception.Error (let type, let message){
-                    print(type,message)
-                    print(message)
-                } catch {
-                    print("")
-                }
-            }
-        }
-
-        task.resume()
+      
             
         self.title = "Apartments"
         
@@ -65,7 +27,7 @@ class ListingTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
         
         self.navigationItem.leftBarButtonItem = editButtonItem
-        print (test)
+        //print (test)
     }
     
     @IBAction func addListingButton(_ sender: Any) {

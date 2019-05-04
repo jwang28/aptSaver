@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "APT Saver/Controllers/ListingTableViewController.swift"
-            timestampString = "578618660.246477"
+            timestampString = "578627405.903206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "ListingTableViewController"
             landmarkType = "3">
          </BreakpointContent>
