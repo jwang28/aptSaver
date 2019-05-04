@@ -63,11 +63,6 @@ class ListingTableViewController: UITableViewController {
         return cell
     }
     
-    class subclassedUIButton: UIButton {
-        var indexPath: Int?
-        var urlString: String?
-    }
-    
     //TODO
     @objc private func handleAsFavorite(sender: UIButton){
         print("Marking as Favorite")
