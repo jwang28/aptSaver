@@ -84,11 +84,10 @@ class ListingTableViewController: UITableViewController {
         // cell.accessoryView = starButton
         //colors the favorites icon according to whether or not the item is favorited
         cell.heartButton.tintColor = cell.listing!.favorited ? UIColor.red : UIColor.lightGray
-        cell.heartButton.tag = indexPath.row + 100000*(indexPath.section)
-
+        //cell.heartButton.tag = indexPath.row + 100000*(indexPath.section)
         cell.heartButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
         
-        tableView.reloadRows(at: [indexPath], with: .fade)
+        //tableView.reloadRows(at: [indexPath], with: .fade)
     
 
         return cell
@@ -96,26 +95,34 @@ class ListingTableViewController: UITableViewController {
     
 
     @objc private func handleAsFavorite(sender: UIButton){
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
         print("Marking as Favorite")
         //let aptFavorited = sender.tag
-        let indexSec = (sender.tag)/100000
-        let indexRow = (sender.tag)%100000
-        let indexPath = IndexPath(row: indexRow, section: indexSec)
-        let aptFavorited = tableView.cellForRow(at: indexPath) as! ListingTableViewCell
-        let listingType = listingTypes[indexSec]
         
-        if (listingType.listings[indexRow].favorited == true){
-            listingType.listings[indexRow].setFavorited(yesorno: false)
-            print(listingType.listings[indexRow].favorited)
-            aptFavorited.heartButton.tintColor = UIColor.red
+        let aptFavorited = tableView.cellForRow(at: indexPath!)
+        let listingType = listingTypes[indexPath!.section]
+        let listing = listingType.listings[indexPath!.row]
+        if (listing.favorited == true){
+            listing.setFavorited(yesorno: false)
+            //print(listing.favorited)
+            aptFavorited?.accessoryView?.tintColor = UIColor.lightGray
+            let row = listingTypes[1].listings.count
+            listingTypes[1].listings.insert(listing, at: listingTypes[1].listings.count)
+            tableView.insertRows(at: [IndexPath(row: row, section: 1)], with: .automatic)
+            listingTypes[0].listings.remove(at: indexPath!.row)
+            tableView.deleteRows(at: [indexPath!], with: .automatic)
+        } else if(listing.favorited == false){
+            listing.setFavorited(yesorno: true)
+            //print(listing.favorited)
+            aptFavorited?.accessoryView?.tintColor = UIColor.red
+            let row = listingTypes[0].listings.count == 0 ? 0 : listingTypes[0].listings.count
+            listingTypes[0].listings.insert(listing, at: listingTypes[0].listings.count)
+            tableView.insertRows(at: [IndexPath(row: row, section: 0)], with: .automatic)
+            listingTypes[1].listings.remove(at: indexPath!.row)
+            tableView.deleteRows(at: [indexPath!], with: .automatic)
+            
         }
-        else if(listingType.listings[indexRow].favorited == false){
-            listingType.listings[indexRow].setFavorited(yesorno: true)
-            print(listingType.listings[indexRow].favorited)
-            aptFavorited.heartButton.tintColor = UIColor.red
-        }
-        
-        tableView.reloadRows(at: [indexPath], with: .fade)
     }
     
     

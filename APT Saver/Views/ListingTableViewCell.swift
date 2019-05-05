@@ -12,7 +12,7 @@ class ListingTableViewCell: UITableViewCell {
 
     @IBOutlet weak var listingImageView: UIImageView!
     @IBOutlet weak var listingTitleLabel: UILabel!
-    @IBOutlet weak var listingDescriptionLabel: UILabel!
+    @IBOutlet weak var listingPriceLabel: UILabel!
     @IBOutlet weak var heartButton: UIButton!
     
     
@@ -26,7 +26,7 @@ class ListingTableViewCell: UITableViewCell {
     {
         listingImageView?.image = listing?.image
         listingTitleLabel?.text = listing?.address
-        listingDescriptionLabel?.text = listing?.description
+        listingPriceLabel?.text = listing?.price
     }
 }
 
