@@ -13,6 +13,8 @@ class ListingTableViewCell: UITableViewCell {
     @IBOutlet weak var listingImageView: UIImageView!
     @IBOutlet weak var listingTitleLabel: UILabel!
     @IBOutlet weak var listingDescriptionLabel: UILabel!
+    @IBOutlet weak var heartButton: UIButton!
+    
     
     var listing: Listing? {
         didSet {
