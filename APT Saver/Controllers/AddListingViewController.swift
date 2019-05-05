@@ -11,6 +11,9 @@ import SwiftSoup
 
 class AddListingViewController: UIViewController {
 
+    
+    
+    
 
     @IBAction func SubmitButton(_ sender: Any) {
         if url.text != ""{

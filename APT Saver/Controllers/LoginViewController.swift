@@ -11,7 +11,7 @@ import GoogleSignIn
 import FacebookCore
 import FacebookLogin
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var signInButton: GIDSignInButton!
@@ -24,10 +24,17 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         refreshInterface()
     }
     
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        print("Signed in?? ", error, user)
+        refreshInterface()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshInterface()
         (UIApplication.shared.delegate as! AppDelegate).signInCallback = refreshInterface
+        GIDSignIn.sharedInstance()?.delegate = self
         
         //FOR FACEBOO SIGN-IN
         //let loginButton = LoginButton(readPermissions: [ .publicProfile ])
@@ -67,8 +74,9 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             signInButton.isHidden = true
             signOutButton.isHidden = true
             clickNextButton.isHidden = false
-            welcomeLabel.text = "Welcome,\(currentUser.profile.name)!"
+            welcomeLabel.text = "Welcome,\(currentUser.profile.name ?? "")!"
         } else {
+            print("Not signed in...")
             signInButton.isHidden = false
             signOutButton.isHidden = false
             clickNextButton.isHidden = false

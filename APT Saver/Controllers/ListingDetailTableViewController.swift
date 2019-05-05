@@ -9,7 +9,7 @@
 import UIKit
 
 class ListingDetailTableViewController: UITableViewController {
-    @IBOutlet weak var listingTitleTextField: UITextField!
+    @IBOutlet weak var listingTitleTextField: UILabel!
     
     @IBOutlet weak var listingDescriptionTextView: UITextView!
     @IBOutlet weak var listingPriceLabel: UILabel!
@@ -20,6 +20,7 @@ class ListingDetailTableViewController: UITableViewController {
     @IBOutlet weak var listingPpsqftLabel: UILabel!
     @IBOutlet weak var listingAmenitiesLabel: UILabel!
     @IBOutlet weak var listingTransportationLabel: UILabel!
+    
     //    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
     var listing: Listing?
     
@@ -37,7 +38,9 @@ class ListingDetailTableViewController: UITableViewController {
         listingPpsqftLabel.text = listing?.ppsqft
         listingAmenitiesLabel.text = listing?.amenities
         listingTransportationLabel.text = listing?.transportation
+        
     }
     
-
 }
+
+
