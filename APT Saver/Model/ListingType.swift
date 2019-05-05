@@ -21,28 +21,28 @@ class ListingType
     
     class func getListingTypes() -> [ListingType]
     {
-        return [noFee(), Fee()]
+        return [favorites(), other()]
     }
     
     //Mark: -private helper methods
     
-    private class func noFee() -> ListingType
+    private class func favorites() -> ListingType
     {
         var listings = [Listing]()
         
-        listings.append(Listing(address: "Address Here", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default"))
-        listings.append(Listing(address: "Address Here 2", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default"))
-        listings.append(Listing(address: "Address Here 3", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default"))
-//        listings.append(Listing(titled: "Second Apartment",description: "This is the 2nd one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "default"))
+//        listings.append(Listing(address: "Address Here", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default"))
+//        listings.append(Listing(address: "Address Here 2", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default"))
+      
         
-        return ListingType(named: "No Fee", includeListings: listings)
+        return ListingType(named: "Favorites", includeListings: listings)
     }
-    private class func Fee() -> ListingType
+    private class func other() -> ListingType
     {
         var listings = [Listing]()
         
-//        listings.append(Listing(titled: "Second Apartment",description: "This is the 2nd one you'll be seeing. Hope you like it and sign the lease soon.", imageName: "default"))
-        
-        return ListingType(named: "Fee", includeListings: listings)
+        listings.append(Listing(address: "Address Here 3", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default", favorited: false))
+        listings.append(Listing(address: "Address Here", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default", favorited: false))
+        listings.append(Listing(address: "Address Here 2", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default", favorited: false))
+        return ListingType(named: "All", includeListings: listings)
     }
 }

@@ -85,7 +85,7 @@ class AddListingViewController: UIViewController {
         let mainTable = segue.destination as! ListingTableViewController
 
         
-        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: "first"))
+        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: "first", favorited: false))
         mainTable.listingTypes[0].listings = self.listings!
         print(mainTable.listingTypes[0].listings)
     }

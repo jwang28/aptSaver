@@ -10,6 +10,8 @@ import UIKit
 import SwiftSoup
 
 class ListingTableViewController: UITableViewController {
+    // MARK: - UITableView
+    
     //MARK: -Data model
     //var test: String? = "hi"
     var listingTypes: [ListingType] = ListingType.getListingTypes()
@@ -56,35 +58,56 @@ class ListingTableViewController: UITableViewController {
         cell.accessoryView = starButton
         //colors the favorites icon according to whether or not the item is favorited
         starButton.tintColor = cell.listing!.favorited ? UIColor.red : UIColor.lightGray
-        tableView.reloadRows(at: [indexPath], with: .fade)
+        //tableView.reloadRows(at: [indexPath], with: .fade)
         //handles as favorite when tapped
-        starButton.tag = indexPath.row + 100000*(indexPath.section)
+        //starButton.tag = indexPath.row + 100000*(indexPath.section)
+        
 
         starButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
         
         return cell
     }
     
+
     @objc private func handleAsFavorite(sender: UIButton){
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        let indexPath = self.tableView.indexPathForRow(at:buttonPosition)
+
         print("Marking as Favorite")
-        //let aptFavorited = sender.tag
-        let indexSec = (sender.tag)/100000
-        let indexRow = (sender.tag)%100000
-        let indexPath = IndexPath(row: indexRow, section: indexSec)
-        let aptFavorited = tableView.cellForRow(at: indexPath)
-        let listingType = listingTypes[indexSec]
         
-        if (listingType.listings[indexRow].favorited == true){
-            listingType.listings[indexRow].setFavorited(yesorno: false)
-            print(listingType.listings[indexRow].favorited)
+        let indexSec = indexPath!.section
+        let indexRow = indexPath!.row
+        tableView.index
+        print("sec, row", indexSec, " ", indexRow)
+        //let indexPath = IndexPath(row: indexRow, section: indexSec)
+        let aptFavorited = tableView.cellForRow(at: indexPath!)
+        let listingType = listingTypes[indexSec]
+        let listing = listingType.listings[indexRow]
+        
+        if (listing.favorited == true){
+            listing.setFavorited(yesorno: false)
+            //print(listing.favorited)
             aptFavorited?.accessoryView?.tintColor = UIColor.lightGray
+            
+            let row = listingTypes[1].listings.count
+            
+            listingTypes[1].listings.insert(listing, at: listingTypes[1].listings.count)
+            tableView.insertRows(at: [IndexPath(row: row, section: 1)], with: .automatic)
+            listingTypes[0].listings.remove(at: indexPath!.row)
+            tableView.deleteRows(at: [indexPath!], with: .automatic)
         }
-        else if(listingType.listings[indexRow].favorited == false){
-            listingType.listings[indexRow].setFavorited(yesorno: true)
-            print(listingType.listings[indexRow].favorited)
+        else if(listing.favorited == false){
+            listing.setFavorited(yesorno: true)
+            //print(listing.favorited)
             aptFavorited?.accessoryView?.tintColor = UIColor.red
+            let row = listingTypes[0].listings.count == 0 ? 0 : listingTypes[0].listings.count
+
+            listingTypes[0].listings.insert(listing, at: listingTypes[0].listings.count)
+            tableView.insertRows(at: [IndexPath(row: row, section: 0)], with: .automatic)
+            listingTypes[1].listings.remove(at: indexPath!.row)
+            tableView.deleteRows(at: [indexPath!], with: .automatic)
         }
-        tableView.reloadRows(at: [indexPath], with: .fade)
+        
     }
     
     
@@ -102,6 +125,9 @@ class ListingTableViewController: UITableViewController {
             listingType.listings.remove(at: indexPath.row)
 
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            
+            
         }
     }
     
@@ -117,6 +143,8 @@ class ListingTableViewController: UITableViewController {
         listingTypes[destinationIndexPath.section].listings.insert(listingToMove, at: destinationIndexPath.row)
         listingTypes[sourceIndexPath.section].listings.remove(at: sourceIndexPath.row)
     }
+    
+    
     
     //MARK: -UITABLEVIEWDELEGATE
     var selectedListing: Listing?
