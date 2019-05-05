@@ -10,6 +10,8 @@ import UIKit
 import SwiftSoup
 
 class ListingTableViewController: UITableViewController {
+    // MARK: - UITableView
+    
     //MARK: -Data model
     //var test: String? = "hi"
     var listingTypes: [ListingType] = ListingType.getListingTypes()
@@ -71,6 +73,7 @@ class ListingTableViewController: UITableViewController {
         return cell
     }
     
+
     @objc private func handleAsFavorite(sender: UIButton){
         print("Marking as Favorite")
         //let aptFavorited = sender.tag
@@ -109,6 +112,9 @@ class ListingTableViewController: UITableViewController {
             listingType.listings.remove(at: indexPath.row)
 
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            
+            
         }
     }
     
@@ -124,6 +130,8 @@ class ListingTableViewController: UITableViewController {
         listingTypes[destinationIndexPath.section].listings.insert(listingToMove, at: destinationIndexPath.row)
         listingTypes[sourceIndexPath.section].listings.remove(at: sourceIndexPath.row)
     }
+    
+    
     
     //MARK: -UITABLEVIEWDELEGATE
     var selectedListing: Listing?
@@ -146,7 +154,7 @@ class ListingTableViewController: UITableViewController {
         if segue.identifier == "AddListing" {
             let listingArray = segue.destination as! AddListingViewController
             //check which type it is
-            listingArray.listings = listingTypes[0].listings
+            listingArray.listings = listingTypes[1].listings
             
         }
     }

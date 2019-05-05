@@ -34,19 +34,31 @@ class AddListingViewController: UIViewController {
                         self.descriptionText = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
                         //get listing details (1=sq ft, price/sq ft, rooms, beds, 5=bath)
                         //problem here because it is inconsistent
-                        let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
-                        self.size = try details[1].text()
-                        print("size", self.size)
+                        //let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
+                        let details: Element = try doc.getElementsByClass("details_info").get(0)
+                        self.bed = try details.text()
+                        
+                        
+                        //self.size = try details[1].text()
+                        //print("size", self.size)
                         //let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0).getAllElements().array()
                         //let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
                         //let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
-                        //let amenitiesHi: Element = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0)
-                        let jpgs: Elements = try doc.select("img[src$=.jpg]")
-                        print("jpgs", try jpgs.array())
-                        //self.amenities = amenitiesHi.text()
-//                        print("price ", self.price)
-//                        print("addressTest",self.addressTest)
+                        let amenitiesHi: Element = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0)
                         
+                        let jpgs: Elements? = try doc.getElementById("carousel")?.select("img[src$=.jpg]")
+                        
+                        print("jpgs", try jpgs?.array())
+                        print("get images", try jpgs?.get(1).attr("src"), "end")
+                        try self.downloadImage(with: URL(string: (jpgs?.get(0).attr("src"))!)!)
+                        
+                       // for index in 0...amenitiesHi.count {
+                            self.amenities = try amenitiesHi.text()
+                            //print(try amenitiesHi.text())
+                            
+                        //}
+                        let transportation: Element = try doc.getElementsByClass("Nearby-transportationList").get(0)
+                        self.transportation = try transportation.text()
                         
                         
                     } catch Exception.Error (let type, let message){
@@ -58,7 +70,6 @@ class AddListingViewController: UIViewController {
                 }
             }
             task.resume()
-            
         }
         let delaySeconds = 2.0
         DispatchQueue.main.asyncAfter(deadline: .now() + delaySeconds) {
@@ -67,6 +78,7 @@ class AddListingViewController: UIViewController {
         
     }
     @IBOutlet weak var url: UITextField!
+    var images = UIImage(named: "default")
     var addressTest = " "
     var price = " "
     var descriptionText = " "
@@ -82,16 +94,30 @@ class AddListingViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    func downloadImage(with url: URL){
+        URLSession.shared.dataTask(with: url) { (data,response,error) in
+            if error != nil {
+                print(error)
+                return
+            }
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data!){
+                    self.images = image
+                    print("there is an image")
+                }
+            }
+        }.resume()
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let mainTable = segue.destination as! ListingTableViewController
-
         
-        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: "first"))
-        mainTable.listingTypes[0].listings = self.listings!
+        
+        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: self.bed, bath: "", size: "", ppsqft: "", amenities: self.amenities, transportation: self.transportation, imageName: self.images!, favorited: false))
+        mainTable.listingTypes[1].listings = self.listings!
         print(mainTable.listingTypes[0].listings)
     }
 }
-
 
 //let url = URL(string: "https://streeteasy.com/building/mantena-431-west-37-street-new_york/2a?similar=1")
 //
