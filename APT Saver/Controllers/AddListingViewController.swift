@@ -38,8 +38,10 @@ class AddListingViewController: UIViewController {
                         //let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
                         //let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
                         //let amenitiesHi: Element = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0)
-                        let jpgs: Elements = try doc.select("img[src$=.jpg]")
-                        print("jpgs", try jpgs.array())
+                        
+                        let jpgs: Elements? = try doc.getElementById("carousel")?.select("img[src$=.jpg]")
+                        //let jpgs: Elements = try doc.select("img[src$=.jpg]")
+                        print("jpgs", try jpgs!.array())
                         //self.amenities = amenitiesHi.text()
 //                        print("price ", self.price)
 //                        print("addressTest",self.addressTest)
