@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftSoup
+import GoogleSignIn
 
 class ListingTableViewController: UITableViewController {
     // MARK: - UITableView
@@ -32,6 +33,24 @@ class ListingTableViewController: UITableViewController {
         tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 50).isActive = true
         
         tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 50).isActive = true
+        
+        
+        tableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 50).isActive = true
+        
+        var signoutButton = UIButton()
+        signoutButton.setTitle("Log out", for: .normal)
+        view.addSubview(signoutButton)
+        signoutButton.translatesAutoresizingMaskIntoConstraints = false
+        signoutButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 2).isActive = true
+        signoutButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+        signoutButton.setTitleColor(.black, for: .normal)
+        
+        signoutButton.addTarget(self, action: #selector(logOut), for: .touchUpInside)
+    }
+    
+    
+    @objc func logOut() {
+        GIDSignIn.sharedInstance().signOut()
     }
     
     @IBAction func addListingButton(_ sender: Any) {
@@ -70,6 +89,8 @@ class ListingTableViewController: UITableViewController {
         cell.heartButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
         
         tableView.reloadRows(at: [indexPath], with: .fade)
+    
+
         return cell
     }
     
