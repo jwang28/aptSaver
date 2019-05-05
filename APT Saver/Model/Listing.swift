@@ -33,7 +33,7 @@ class Listing
     var image: UIImage
     var favorited: Bool
     
-    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, amenities: String, transportation: String, imageName: String, favorited: Bool)
+    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, amenities: String, transportation: String, imageName: UIImage, favorited: Bool)
     {
         self.address = address
         self.price = price
@@ -45,11 +45,12 @@ class Listing
         self.amenities = amenities
         self.transportation = transportation
         self.favorited = favorited
-        if let image = UIImage(named: imageName){
-            self.image = image
-        } else{
-            self.image = UIImage(named: "default")!
-        }
+        self.image = imageName
+//        if let image = UIImage(named: imageName){
+//            self.image = image
+//        } else{
+//            self.image = UIImage(named: "default")!
+//        }
     }
     func setFavorited(yesorno: Bool) {
         self.favorited = yesorno

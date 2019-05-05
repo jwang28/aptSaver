@@ -41,7 +41,11 @@ class AddListingViewController: UIViewController {
                         
                         let jpgs: Elements? = try doc.getElementById("carousel")?.select("img[src$=.jpg]")
                         //let jpgs: Elements = try doc.select("img[src$=.jpg]")
-                        //print("jpgs", try jpgs!.array())
+                        
+                        print("jpgs", try jpgs?.array())
+                        print("get images", try jpgs?.get(1).attr("src"), "end")
+                        try self.downloadImage(with: URL(string: (jpgs?.get(0).attr("src"))!)!)
+                        
                         //self.amenities = amenitiesHi.text()
 //                        print("price ", self.price)
 //                        print("addressTest",self.addressTest)
@@ -66,6 +70,7 @@ class AddListingViewController: UIViewController {
         
     }
     @IBOutlet weak var url: UITextField!
+    var images = UIImage(named: "default")
     var addressTest = " "
     var price = " "
     var descriptionText = " "
@@ -81,16 +86,30 @@ class AddListingViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    func downloadImage(with url: URL){
+        URLSession.shared.dataTask(with: url) { (data,response,error) in
+            if error != nil {
+                print(error)
+                return
+            }
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data!){
+                    self.images = image
+                    print("there is an image")
+                }
+            }
+        }.resume()
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let mainTable = segue.destination as! ListingTableViewController
         
         
-        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: "first", favorited: false))
+        self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: self.images!, favorited: false))
         mainTable.listingTypes[1].listings = self.listings!
         print(mainTable.listingTypes[0].listings)
     }
 }
-
 
 //let url = URL(string: "https://streeteasy.com/building/mantena-431-west-37-street-new_york/2a?similar=1")
 //
