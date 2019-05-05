@@ -52,12 +52,13 @@ class ListingTableViewController: UITableViewController {
         //setting favorites button
         let starButton = UIButton(type: .system)
         starButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        starButton.setImage(UIImage(named:"favHeart.png"), for: .normal)
+        starButton.setImage(UIImage(named:"favHeartFilled.png"), for: .normal)
         cell.accessoryView = starButton
-        starButton.tintColor = .gray
+        //colors the favorites icon according to whether or not the item is favorited
+        starButton.tintColor = cell.listing!.favorited ? UIColor.red : UIColor.lightGray
+        tableView.reloadRows(at: [indexPath], with: .fade)
         //handles as favorite when tapped
         starButton.tag = indexPath.row + 100000*(indexPath.section)
-
         starButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
         
         return cell
@@ -69,18 +70,22 @@ class ListingTableViewController: UITableViewController {
         //let aptFavorited = sender.tag
         let indexSec = (sender.tag)/100000
         let indexRow = (sender.tag)%100000
-//        let indexPath = IndexPath(row: indexRow, section: indexSec)
-//        let aptFavorited = tableView.cellForRow(at: indexPath)
+        let indexPath = IndexPath(row: indexRow, section: indexSec)
+        let aptFavorited = tableView.cellForRow(at: indexPath)
         let listingType = listingTypes[indexSec]
         
         if (listingType.listings[indexRow].favorited == true){
             listingType.listings[indexRow].setFavorited(yesorno: false)
             print(listingType.listings[indexRow].favorited)
+            aptFavorited?.accessoryView?.tintColor = UIColor.lightGray
         }
         else if(listingType.listings[indexRow].favorited == false){
             listingType.listings[indexRow].setFavorited(yesorno: true)
+            aptFavorited?.accessoryView?.tintColor = UIColor.red
             print(listingType.listings[indexRow].favorited)
         }
+        //refreshes the coloring of the favorites icon according to whether or not the item is favorited
+        tableView.reloadRows(at: [indexPath], with: .fade)
     }
     
     
