@@ -43,6 +43,6 @@ class ListingType
         listings.append(Listing(address: "Address Here 3", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default", favorited: false))
         listings.append(Listing(address: "Address Here", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default", favorited: false))
         listings.append(Listing(address: "Address Here 2", price: "price",description: "lorem ipsum doler", bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: "elevator", transportation: "ACE subway", imageName: "default", favorited: false))
-        return ListingType(named: "All", includeListings: listings)
+        return ListingType(named: "Other", includeListings: listings)
     }
 }

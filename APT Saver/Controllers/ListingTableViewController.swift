@@ -73,16 +73,11 @@ class ListingTableViewController: UITableViewController {
         let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
         let indexPath = self.tableView.indexPathForRow(at:buttonPosition)
 
-        print("Marking as Favorite")
-        
-        let indexSec = indexPath!.section
-        let indexRow = indexPath!.row
-        tableView.index
-        print("sec, row", indexSec, " ", indexRow)
-        //let indexPath = IndexPath(row: indexRow, section: indexSec)
+        print("sec, row", indexPath!.section, " ", indexPath!.row)
+
         let aptFavorited = tableView.cellForRow(at: indexPath!)
-        let listingType = listingTypes[indexSec]
-        let listing = listingType.listings[indexRow]
+        let listingType = listingTypes[indexPath!.section]
+        let listing = listingType.listings[indexPath!.row]
         
         if (listing.favorited == true){
             listing.setFavorited(yesorno: false)
