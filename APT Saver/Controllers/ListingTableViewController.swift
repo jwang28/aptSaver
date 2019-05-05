@@ -3,7 +3,7 @@
 //  APT Saver
 //
 //  Created by Jennifer Wang on 4/29/19.
-//  Copyright © 2019 nyu.edu. All rights reserved. 
+//  Copyright © 2019 nyu.edu. All rights reserved.
 //
 
 import UIKit
@@ -52,9 +52,11 @@ class ListingTableViewController: UITableViewController {
         //setting favorites button
         let starButton = UIButton(type: .system)
         starButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        starButton.setImage(UIImage(named:"favHeart.png"), for: .normal)
+        starButton.setImage(UIImage(named:"favHeartFilled.png"), for: .normal)
         cell.accessoryView = starButton
-        starButton.tintColor = .gray
+        //colors the favorites icon according to whether or not the item is favorited
+        starButton.tintColor = cell.listing!.favorited ? UIColor.red : UIColor.lightGray
+        tableView.reloadRows(at: [indexPath], with: .fade)
         //handles as favorite when tapped
         starButton.tag = indexPath.row + 100000*(indexPath.section)
 
@@ -63,24 +65,26 @@ class ListingTableViewController: UITableViewController {
         return cell
     }
     
-    //TODO
     @objc private func handleAsFavorite(sender: UIButton){
         print("Marking as Favorite")
         //let aptFavorited = sender.tag
         let indexSec = (sender.tag)/100000
         let indexRow = (sender.tag)%100000
-//        let indexPath = IndexPath(row: indexRow, section: indexSec)
-//        let aptFavorited = tableView.cellForRow(at: indexPath)
+        let indexPath = IndexPath(row: indexRow, section: indexSec)
+        let aptFavorited = tableView.cellForRow(at: indexPath)
         let listingType = listingTypes[indexSec]
         
         if (listingType.listings[indexRow].favorited == true){
             listingType.listings[indexRow].setFavorited(yesorno: false)
             print(listingType.listings[indexRow].favorited)
+            aptFavorited?.accessoryView?.tintColor = UIColor.lightGray
         }
         else if(listingType.listings[indexRow].favorited == false){
             listingType.listings[indexRow].setFavorited(yesorno: true)
             print(listingType.listings[indexRow].favorited)
+            aptFavorited?.accessoryView?.tintColor = UIColor.red
         }
+        tableView.reloadRows(at: [indexPath], with: .fade)
     }
     
     
@@ -97,7 +101,6 @@ class ListingTableViewController: UITableViewController {
             let listingType = listingTypes[indexPath.section]
             listingType.listings.remove(at: indexPath.row)
 
-            //tableView.reloadData()
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
