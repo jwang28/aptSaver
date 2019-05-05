@@ -162,7 +162,7 @@ class ListingTableViewController: UITableViewController {
         if segue.identifier == "AddListing" {
             let listingArray = segue.destination as! AddListingViewController
             //check which type it is
-            listingArray.listings = listingTypes[0].listings
+            listingArray.listings = listingTypes[1].listings
             
         }
     }

@@ -41,7 +41,7 @@ class AddListingViewController: UIViewController {
                         
                         let jpgs: Elements? = try doc.getElementById("carousel")?.select("img[src$=.jpg]")
                         //let jpgs: Elements = try doc.select("img[src$=.jpg]")
-                        print("jpgs", try jpgs!.array())
+                        //print("jpgs", try jpgs!.array())
                         //self.amenities = amenitiesHi.text()
 //                        print("price ", self.price)
 //                        print("addressTest",self.addressTest)
@@ -83,10 +83,10 @@ class AddListingViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let mainTable = segue.destination as! ListingTableViewController
-
+        
         
         self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: "3", bath: "2", size: "1000 sq ft", ppsqft: "$66.01/ft sq", amenities: self.amenities, transportation: "ACE subway", imageName: "first", favorited: false))
-        mainTable.listingTypes[0].listings = self.listings!
+        mainTable.listingTypes[1].listings = self.listings!
         print(mainTable.listingTypes[0].listings)
     }
 }
