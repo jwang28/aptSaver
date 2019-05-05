@@ -61,7 +61,6 @@ class AddListingViewController: UIViewController {
                 }
             }
             task.resume()
-            
         }
         let delaySeconds = 2.0
         DispatchQueue.main.asyncAfter(deadline: .now() + delaySeconds) {
