@@ -15,9 +15,13 @@ target 'APT Saver' do
   pod 'FacebookCore'
   pod 'FacebookShare'
   pod 'RxAtomic', '~> 4.0', :modular_headers => true
+  
+  pod 'VACalendar'
 
   # Pods for APT Saver
   pod 'SwiftSoup'
+  
+  pod 'IQKeyboardManager'
 
   target 'APT SaverTests' do
     inherit! :search_paths

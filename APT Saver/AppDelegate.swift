@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleSignIn
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -20,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = "335302947950-18upd06tegkavuip62tca9q9v8faqp95.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
+        
+        IQKeyboardManager.shared().isEnabled = true
+        
         return true
     }
     

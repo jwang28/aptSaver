@@ -21,6 +21,9 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
     @IBOutlet weak var listingTransportationLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var mapButton: UIButton!
+    @IBOutlet weak var notesTextView: UITextView!
+    
+    private let characterLimitOnTheNote = 150
     
     var listing: Listing?
     
@@ -37,8 +40,6 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         //Giving the page a title called "Edit Listing"
         self.addTitleListing(title: "Edit Listing")
         
-        //self.addTitle(title: "Apartments")
-        
         //Parsing in data on the edit page
         listingImageView.image = listing?.image
         listingTitleTextField.text  = listing?.address
@@ -47,6 +48,8 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         listingBedLabel.text = listing?.bed
         listingAmenitiesLabel.text = listing?.amenities
         listingTransportationLabel.text = listing?.transportation
+        
+        notesTextView.contentInset = UIEdgeInsets(top: -4, left: 0, bottom: 0, right: -4)
         
         //Get the data partse of the location and displaying it on the map
         coordinates(forAddress: (listing?.address)!) {
@@ -145,7 +148,30 @@ extension ListingDetailTableViewController {
         case 7:
             return 250.0
         default:
-            return 0.0
+            return UITableView.automaticDimension
         }
     }
+    
+}
+
+extension ListingDetailTableViewController : UITextViewDelegate {
+    
+    // MARK: - UITextViewDelegate
+    //when user is typing, this method is called
+    //controlling the input of the user
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let finalText = (textView.text as NSString).replacingCharacters(in: range, with: text)
+        // Check the character limit
+        if finalText.count > characterLimitOnTheNote {
+            // Deny the change of the text if the result would be over the character limit
+            return false
+        }
+        
+        // Recalculate the height of the cell
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
+        return true
+    }
+    
 }
