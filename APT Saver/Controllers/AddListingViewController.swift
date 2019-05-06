@@ -35,8 +35,22 @@ class AddListingViewController: UIViewController {
                         //get listing details (1=sq ft, price/sq ft, rooms, beds, 5=bath)
                         //problem here because it is inconsistent
                         //let details: [Element] = try doc.getElementsByClass("details_info").get(0).getAllElements().array()
-                        let details: Element = try doc.getElementsByClass("details_info").get(0)
-                        self.bed = try details.text()
+                        //let details: Element = try doc.getElementsByClass("details_info").get(0)
+                        //self.bed = try details.text()
+                        
+                        let details: [Element] = try (doc.getElementsByClass("details_info").first()?.children().array())!
+                        for index in 0...details.count - 1 {
+                            //print(try details[index].text())
+                        
+                            let temp = try details[index].text()
+                            if self.bed != " "{
+                                self.bed = self.bed + " | " + temp
+                            } else{
+                                self.bed = temp
+                            }
+                        }
+                        //print(self.amenities)
+                        
                         
                         
                         //self.size = try details[1].text()
@@ -44,7 +58,18 @@ class AddListingViewController: UIViewController {
                         //let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0).getAllElements().array()
                         //let buildingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(0).getAllElements().array()
                         //let listingAmenities: [Element] = try doc.getElementsByClass("AmenitiesBlock-list ").get(1).getAllElements().array()
-                        let amenitiesHi: Element = try doc.getElementsByClass("AmenitiesBlock-highlights").get(0)
+                        let amenitiesHi: [Element] = try doc.getElementsByClass("AmenitiesBlock-highlightsItem").array()
+                        for index in 0...amenitiesHi.count - 1  {
+                            let temp = try amenitiesHi[index].text()
+                            if self.amenities != " "{
+                                self.amenities = self.amenities + " | " + temp
+                            }
+                            else{
+                                self.amenities = temp
+                            }
+                            
+                            print(self.amenities)
+                        }
                         
                         let jpgs: Elements? = try doc.getElementById("carousel")?.select("img[src$=.jpg]")
                         
@@ -52,11 +77,7 @@ class AddListingViewController: UIViewController {
                         print("get images", try jpgs?.get(1).attr("src"), "end")
                         try self.downloadImage(with: URL(string: (jpgs?.get(0).attr("src"))!)!)
                         
-                       // for index in 0...amenitiesHi.count {
-                            self.amenities = try amenitiesHi.text()
-                            //print(try amenitiesHi.text())
-                            
-                        //}
+                        
                         let transportation: Element = try doc.getElementsByClass("Nearby-transportationList").get(0)
                         self.transportation = try transportation.text()
                         
