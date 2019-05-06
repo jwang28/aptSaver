@@ -8,10 +8,11 @@
 
 import UIKit
 import GoogleSignIn
+import MapKit
 
 class ListingDetailTableViewController: UITableViewController, UICollectionViewDelegateFlowLayout {
-    @IBOutlet weak var listingTitleTextField: UILabel!
     
+    @IBOutlet weak var listingTitleTextField: UILabel!
     @IBOutlet weak var listingDescriptionTextView: UITextView!
     @IBOutlet weak var listingPriceLabel: UILabel!
     @IBOutlet weak var listingImageView: UIImageView!
@@ -22,8 +23,18 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
     @IBOutlet weak var listingAmenitiesLabel: UILabel!
    //  @IBOutlet weak var listingTransportationLabel: UILabel!
     
+    //BUTTON FOR MAP
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapButton: UIButton!
+    @IBAction func mapClicked(_ sender: Any) {
+        openMapForPlace(lat: locationLat, long: locationLong, placeName: "Apartment")
+    }
+    
     //    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
     var listing: Listing?
+    var initialLocation = CLLocation(latitude: 40.758896, longitude: -73.985130)
+    var locationLat = 40.758896
+    var locationLong = -73.985130
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +57,70 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         listingAmenitiesLabel.text = listing?.amenities
         // listingTransportationLabel.text = listing?.transportation
         
+        //MAP
+        //TODO: Enter address here
+        coordinates(forAddress: "117 Elizabeth Street, New York, New York") {
+            (location) in
+            guard let location = location else {
+                // Handle error here
+                return
+            }
+            self.initialLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
+            self.locationLat = location.latitude
+            self.locationLong = location.longitude
+            centerMapOnLocation(location: self.initialLocation)
+        }
+        centerMapOnLocation(location: initialLocation)
     }
-
-    
     @IBOutlet weak var transportCollectionView: UICollectionView!
-    
 }
 
+    let regionRadius: CLLocationDistance = 1000
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius, regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+
+    //forward geocoding in order to obtain coordinates from address
+    func coordinates(forAddress address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(address) {
+            (placemarks, error) in
+            guard error == nil else {
+                print("Geocoding error: \(error!)")
+                completion(nil)
+                return
+            }
+            completion(placemarks?.first?.location?.coordinate)
+        }
+    }
+
+    //this is for when the map is clicked on
+    public func openMapForPlace(lat:Double = 0, long:Double = 0, placeName:String = "") {
+        let latitude: CLLocationDegrees = lat
+        let longitude: CLLocationDegrees = long
+        
+        let regionDistance:CLLocationDistance = 1000
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = placeName
+        mapItem.openInMaps(launchOptions: options)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+
+//TRANSPORTATION SECTION ("A", "C", "E")
 struct TransportModel {
     var title: String
     var options: [String]
@@ -95,7 +163,6 @@ extension ListingDetailTableViewController: UICollectionViewDataSource, UICollec
     }
 }
 
-
 class HeaderView: UICollectionReusableView {
     var titleLabel: UILabel = UILabel()
     override init(frame: CGRect) {
@@ -115,3 +182,5 @@ class HeaderView: UICollectionReusableView {
     }
     
 }
+
+

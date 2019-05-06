@@ -355,7 +355,7 @@
                                         <rect key="frame" x="0.0" y="653.5" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zzI-MS-F63" id="RM2-jG-vkj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amenities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQr-C4-u0M">
@@ -384,11 +384,11 @@
                                         <rect key="frame" x="0.0" y="753.5" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n0h-oo-L6G" id="UH5-Yv-I9W">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NN4-Fi-h1W">
-                                                    <rect key="frame" x="0.0" y="35" width="375" height="84.5"/>
+                                                    <rect key="frame" x="0.0" y="35" width="375" height="114.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z5x-AK-eKv">
                                                         <size key="itemSize" width="71" height="58"/>
@@ -454,16 +454,20 @@
                                         <rect key="frame" x="0.0" y="903.5" width="375" height="191"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rJk-Rb-J14" id="wGt-hB-qaz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtO-Ts-4mL">
-                                                    <rect key="frame" x="83" y="85" width="34" height="21"/>
+                                                    <rect key="frame" x="32" y="17" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ozu-Wx-NGQ">
+                                                    <rect key="frame" x="51" y="46" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </mapView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -480,6 +484,9 @@
                         <outlet property="listingPpsqftLabel" destination="maA-Aq-ScK" id="TSg-55-UK8"/>
                         <outlet property="listingPriceLabel" destination="K0X-bh-IbS" id="pgD-g0-yd4"/>
                         <outlet property="listingTitleTextField" destination="EQ3-xl-YRJ" id="owE-Fi-Atv"/>
+                        <outlet property="mapButton" destination="Ozu-Wx-NGQ" id="LsN-2l-vDw"/>
+                        <outlet property="mapClicked" destination="Ozu-Wx-NGQ" id="NVB-Ha-bEZ"/>
+                        <outlet property="mapView" destination="Ozu-Wx-NGQ" id="LAA-IJ-ghY"/>
                         <outlet property="transportCollectionView" destination="NN4-Fi-h1W" id="9Iq-zb-sQX"/>
                     </connections>
                 </tableViewController>
@@ -38131,7 +38138,6 @@ ImpHACJqWQAialwAImphAAAAAAAABAEAAAAAAAAAbQAAAAAAAAAAAAAAAAAiamM
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gb4-1a-LJr"/>
         <segue reference="BZA-2f-63p"/>
     </inferredMetricsTieBreakers>
 </document>
