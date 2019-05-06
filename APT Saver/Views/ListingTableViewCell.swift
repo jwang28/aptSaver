@@ -15,15 +15,13 @@ class ListingTableViewCell: UITableViewCell {
     @IBOutlet weak var listingPriceLabel: UILabel!
     @IBOutlet weak var heartButton: UIButton!
     
-    
     var listing: Listing? {
         didSet {
             self.updateUI()
         }
     }
     
-    func updateUI()
-    {
+    func updateUI() {
         listingImageView?.image = listing?.image
         listingTitleLabel?.text = listing?.address
         listingPriceLabel?.text = listing?.price

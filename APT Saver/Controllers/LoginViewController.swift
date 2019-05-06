@@ -18,80 +18,39 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     @IBOutlet weak var clickNextButton: UIButton!
     
     //Button for SIGN OUT
-    //not delegate method, all done locally
+    //Not delegate method, all done locally
     @IBAction func signOutWasPressed(_ sender: AnyObject) {
         GIDSignIn.sharedInstance().signOut()
-        //refreshInterface()
     }
-    
-    
+
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if error == nil {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.performSegue(withIdentifier: "LoginToList", sender: self)
             }
-            
         } else {
             print(error)
         }
-        //refreshInterface()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //refreshInterface()
-       // (UIApplication.shared.delegate as! AppDelegate).signInCallback = refreshInterface
         GIDSignIn.sharedInstance()?.delegate = self
+        
+        //FOR GOOGLE SIGN-IN
+        //method tries to sign the user in without any confirmation dialogue
+        //start -> signInSilentyl() => Did it work? => if YES, update info, if needed; if NO, show sign in button
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signInSilently()
         
         //FOR FACEBOO SIGN-IN
         //let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         //loginButton.center = view.center
         //loginButton.center = view.center.y - 100
         //view.addSubview(loginButton)
-        
-        //FOR GOOGLE SIGN-IN
-        //just set GIDelegate
-        GIDSignIn.sharedInstance().uiDelegate = self
-        //method tries to sign the user in without any confirmation dialogue
-        //start -> signInSilentyl() => Did it work? => if YES, update info, if needed; if NO, show sign in button
-        GIDSignIn.sharedInstance().signInSilently()
-        
-        
-        // TODO(developer) Configure the sign-in button look/feel
-        //let gSignIn = GIDSignInButton (frame: CGRect(x: 0, y: 0, width: 230, height: 48))
-        //make it go to center of screen
-        //gSignIn.center = view.center
-        //view.addSubview(gSignIn)
-        
-        //Add sign out button
-        /*let signOut = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 30)) //create UI Button
-        signOut.backgroundColor = UIColor.red //set button color to red
-        signOut.setTitle("Sign Out", for: .normal) //set title as signout
-        signOut.center = view.center  //set to center of screen
-        signOut.center.y = view.center.y + 100 //below googlesign button
-        signOut.addTarget(self, action: #selector(self.signOut(_:)), for: .touchUpInside) //what happens when we use the signout button, touchUpInsde is when we release tap of the button
-        self.view.addSubview(signOut)
-        */
-        // Do any additional setup after loading the view.
     }
     
-    func refreshInterface() {
-        if let currentUser = GIDSignIn.sharedInstance().currentUser {
-            print("THIS IS SUPPOSE TO BE WORKING")
-            signInButton.isHidden = true
-            signOutButton.isHidden = true
-            clickNextButton.isHidden = false
-            welcomeLabel.text = "Welcome,\(currentUser.profile.name ?? "")!"
-        } else {
-            print("Not signed in...")
-            signInButton.isHidden = false
-            signOutButton.isHidden = false
-            clickNextButton.isHidden = false
-            welcomeLabel.text = "Sign in, Stranger"
-        }
-    }
-        
-    //signout function
+    //Signout function
     @objc func signOut(_ sender: UIButton) {
         print("Signing Out")
         GIDSignIn.sharedInstance().signOut() //will sign us out of google
