@@ -51,6 +51,11 @@
                                     <action selector="SubmitButton:" destination="qTb-jO-V5F" eventType="touchUpInside" id="KK3-YY-rrb"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cn8-fD-yrm">
+                                <rect key="frame" x="5" y="20" width="0.0" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -68,6 +73,7 @@
                     </view>
                     <connections>
                         <outlet property="url" destination="3hg-oc-cUH" id="wWf-q3-24U"/>
+                        <outlet property="webView" destination="Cn8-fD-yrm" id="TSb-3S-Zdj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Js-c3-Akd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,13 +147,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="xuH-kQ-3PM">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ml-wt-DRP" customClass="VAMonthHeaderView" customModule="VACalendar">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="HdU-oe-XiU"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbv-YN-Ve0" customClass="VAWeekDaysView" customModule="VACalendar">
+                                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Joz-fS-HmR"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Tbv-YN-Ve0" secondAttribute="trailing" id="8k1-O0-Mkj"/>
+                                <constraint firstAttribute="trailing" secondItem="1Ml-wt-DRP" secondAttribute="trailing" id="fWQ-eO-kGn"/>
+                                <constraint firstItem="Tbv-YN-Ve0" firstAttribute="top" secondItem="1Ml-wt-DRP" secondAttribute="bottom" id="hLM-Pr-IX9"/>
+                                <constraint firstItem="1Ml-wt-DRP" firstAttribute="leading" secondItem="xuH-kQ-3PM" secondAttribute="leading" id="mLB-QE-Ex4"/>
+                                <constraint firstItem="1Ml-wt-DRP" firstAttribute="top" secondItem="xuH-kQ-3PM" secondAttribute="top" id="rfJ-CU-tJQ"/>
+                                <constraint firstItem="Tbv-YN-Ve0" firstAttribute="leading" secondItem="xuH-kQ-3PM" secondAttribute="leading" id="vaT-aF-grm"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListingCell" rowHeight="221" id="eM6-ym-fmG" customClass="ListingTableViewCell" customModule="APT_Saver" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="203" width="375" height="221"/>
+                                <rect key="frame" x="0.0" y="381" width="375" height="221"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eM6-ym-fmG" id="QbA-rw-Hvk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="220.5"/>
@@ -221,6 +251,9 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="monthHeaderView" destination="1Ml-wt-DRP" id="SFS-bj-CKl"/>
+                        <outlet property="tableHeaderView" destination="xuH-kQ-3PM" id="we9-5T-Sxc"/>
+                        <outlet property="weekDaysView" destination="Tbv-YN-Ve0" id="Qgi-FP-Ckt"/>
                         <segue destination="EZB-a8-1u2" kind="show" identifier="ShowListingDetail" id="7eU-a2-CHE"/>
                         <segue destination="qTb-jO-V5F" kind="showDetail" identifier="AddListing" id="gRE-fs-A1X"/>
                     </connections>
@@ -446,7 +479,7 @@
                                         <rect key="frame" x="0.0" y="837" width="375" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZAn-Sj-wFq" id="8sm-xd-OVj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUB-dc-PPH">
