@@ -52,6 +52,7 @@ class ListingTableViewController: UITableViewController {
     
     @objc func logOut() {
         GIDSignIn.sharedInstance().signOut()
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func addListingButton(_ sender: Any) {
@@ -84,7 +85,14 @@ class ListingTableViewController: UITableViewController {
         cell.heartButton.setImage(image, for: .normal)
         // cell.accessoryView = starButton
         //colors the favorites icon according to whether or not the item is favorited
-        cell.heartButton.tintColor = cell.listing!.favorited ? UIColor.red : UIColor.lightGray
+        if cell.listing!.favorited {
+            cell.heartButton.tintColor = UIColor.red
+            cell.heartButton.setImage(UIImage(named: "favHeartFilled"), for: .normal)
+        } else {
+            cell.heartButton.tintColor = UIColor.lightGray
+            cell.heartButton.setImage(UIImage(named: "favHeart"), for: .normal)
+            
+        }
         //cell.heartButton.tag = indexPath.row + 100000*(indexPath.section)
         cell.heartButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
         

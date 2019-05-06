@@ -11,10 +11,6 @@ import SwiftSoup
 
 class AddListingViewController: UIViewController {
 
-    
-    
-    
-
     @IBAction func SubmitButton(_ sender: Any) {
         if url.text != ""{
             let url_new = URL(string: self.url.text!)
@@ -76,7 +72,6 @@ class AddListingViewController: UIViewController {
                         print("jpgs", try jpgs?.array())
                         print("get images", try jpgs?.get(1).attr("src"), "end")
                         try self.downloadImage(with: URL(string: (jpgs?.get(0).attr("src"))!)!)
-                        
                         
                         let transportation: Element = try doc.getElementsByClass("Nearby-transportationList").get(0)
                         self.transportation = try transportation.text()

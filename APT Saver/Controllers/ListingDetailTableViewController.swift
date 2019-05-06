@@ -8,110 +8,139 @@
 
 import UIKit
 import GoogleSignIn
+import MapKit
 
 class ListingDetailTableViewController: UITableViewController, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var listingTitleTextField: UILabel!
     
-    @IBOutlet weak var listingDescriptionTextView: UITextView!
+    @IBOutlet weak var listingDescriptionLabel: UILabel!
     @IBOutlet weak var listingPriceLabel: UILabel!
     @IBOutlet weak var listingImageView: UIImageView!
     @IBOutlet weak var listingBedLabel: UILabel!
     @IBOutlet weak var listingBathLabel: UILabel!
-    // @IBOutlet weak var listingSizeLabel: UILabel!
     @IBOutlet weak var listingPpsqftLabel: UILabel!
     @IBOutlet weak var listingAmenitiesLabel: UILabel!
-   //  @IBOutlet weak var listingTransportationLabel: UILabel!
+    @IBOutlet weak var listingTransportationLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapButton: UIButton!
     
-    //    var listing: Listing? = ListingType.getListingTypes()[0].listings[0]
+    
     var listing: Listing?
+    let regionRadius: CLLocationDistance = 1000
+    var initialLocation = CLLocation(latitude: 40.758896, longitude: -73.985130)
+    var locationLat = 40.758896
+    var locationLong = -73.985130
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Edit Listing"
-        transportCollectionView.delegate = self
-        transportCollectionView.dataSource = self
-        transportCollectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerId")
         
-        print("Bed... ", listing?.bed)
-        print("Bath... ", listing?.bath)
-        print("PPSF ", listing?.ppsqft)
         listingImageView.image = listing?.image
         listingTitleTextField.text  = listing?.address
-        listingDescriptionTextView.text = listing?.description
+        listingDescriptionLabel.text = listing?.description
         listingPriceLabel.text = listing?.price
         listingBedLabel.text = listing?.bed
-        // listingBathLabel.text = listing?.bath
-        // listingSizeLabel.text = listing?.size
-        // listingPpsqftLabel.text = listing?.ppsqft
         listingAmenitiesLabel.text = listing?.amenities
-        // listingTransportationLabel.text = listing?.transportation
+        listingTransportationLabel.text = listing?.transportation
         
+        //map initial location
+        coordinates(forAddress: (listing?.address)!) {
+            (location) in
+            guard let location = location else {
+                // Handle error here
+                self.centerMapOnLocation(location: self.initialLocation)
+                return
+            }
+            self.initialLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
+            self.locationLat = location.latitude
+            self.locationLong = location.longitude
+            self.centerMapOnLocation(location: self.initialLocation)
+        }
     }
-
     
-    @IBOutlet weak var transportCollectionView: UICollectionView!
+    func centerMapOnLocation(location: CLLocation) {
+        let location = location.coordinate
+        let annotation = MKPointAnnotation()
+        annotation.title = "Apartment"
+        for currentAnnotaion in (self.mapView.annotations) {
+            if currentAnnotaion.title == annotation.title {
+                return
+            }
+        }
+        //zoom in to map using span
+        let span = MKCoordinateSpan(latitudeDelta: 0.08, longitudeDelta: 0.08)
+
+        let coordinateRegion = MKCoordinateRegion(center: location, span: span)
+        annotation.coordinate = location
+        self.mapView.setRegion(coordinateRegion, animated: true)
+        self.mapView.addAnnotation(annotation)
+    }
+    
+    
+    @IBAction func mapClicked(_ sender: Any) {
+        openMapForPlace(lat: locationLat, long: locationLong, placeName: "Apartment")
+    }
+    
+    //this is for when the map is clicked on
+    public func openMapForPlace(lat:Double = 0, long:Double = 0, placeName:String = "") {
+        let latitude: CLLocationDegrees = lat
+        let longitude: CLLocationDegrees = long
+        
+        let regionDistance:CLLocationDistance = 1000
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = placeName
+        mapItem.openInMaps(launchOptions: options)
+    }
+    
+    //forward geocoding in order to obtain coordinates from address
+    func coordinates(forAddress address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(address) {
+            (placemarks, error) in
+            guard error == nil else {
+                print("Geocoding error: \(error!)")
+                completion(nil)
+                return
+            }
+            completion(placemarks?.first?.location?.coordinate)
+        }
+    }
     
 }
 
-struct TransportModel {
-    var title: String
-    var options: [String]
-}
-
-var dummyTransportOPtions: [String: [String]] = ["At 24th street":["A", "E", "C"],"At 99th avenue": ["N", "Q"], "At 12th street": ["R", "W", "B", "F"]]
-var tm1 = TransportModel(title: "At 24th Street", options: ["A", "E", "C"])
-var tm2 = TransportModel(title: "At 99th avenue", options: ["N", "Q"])
-var tm3 = TransportModel(title: "At 12th street", options: ["R", "W", "B", "F"])
-var transportOptions: [TransportModel] = [tm1, tm2, tm3]
-
-extension ListingDetailTableViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return transportOptions[section].options.count
-    }
+//TableView Delegate and Datasource Methods
+extension ListingDetailTableViewController {
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = transportCollectionView.dequeueReusableCell(withReuseIdentifier: "transportCellId", for: indexPath) as! TransportCollectionViewCell
-        cell.transportLetter.text = transportOptions[indexPath.section].options[indexPath.row]
-        return cell
-        
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
     }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return transportOptions.count
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 200.0
+        case 1:
+            return 65.0
+        case 2:
+            return 50.0
+        case 3:
+            return UITableView.automaticDimension
+        case 4:
+            return 50.0
+        case 5:
+            return UITableView.automaticDimension
+        case 6:
+            return UITableView.automaticDimension
+        case 7:
+            return 250.0
+        default:
+            return 0.0
+        }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        print("Dequeing...")
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerId", for: indexPath) as! HeaderView
-        header.titleLabel.text = transportOptions[indexPath.section].title
-        header.setupView()
-        
-        return header
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 40)
-    }
-}
-
-
-class HeaderView: UICollectionReusableView {
-    var titleLabel: UILabel = UILabel()
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupView() {
-        addSubview(titleLabel)
-        titleLabel.text = "Hello world"
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
-    }
-    
 }

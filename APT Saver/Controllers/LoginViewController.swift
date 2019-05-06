@@ -21,19 +21,26 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     //not delegate method, all done locally
     @IBAction func signOutWasPressed(_ sender: AnyObject) {
         GIDSignIn.sharedInstance().signOut()
-        refreshInterface()
+        //refreshInterface()
     }
     
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        print("Signed in?? ", error, user)
-        refreshInterface()
+        if error == nil {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.performSegue(withIdentifier: "LoginToList", sender: self)
+            }
+            
+        } else {
+            print(error)
+        }
+        //refreshInterface()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshInterface()
-        (UIApplication.shared.delegate as! AppDelegate).signInCallback = refreshInterface
+        //refreshInterface()
+       // (UIApplication.shared.delegate as! AppDelegate).signInCallback = refreshInterface
         GIDSignIn.sharedInstance()?.delegate = self
         
         //FOR FACEBOO SIGN-IN
