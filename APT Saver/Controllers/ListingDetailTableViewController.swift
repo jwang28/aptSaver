@@ -35,7 +35,9 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         super.viewDidLoad()
         
         //Giving the page a title called "Edit Listing"
-        title = "Edit Listing"
+        self.addTitleListing(title: "Edit Listing")
+        
+        //self.addTitle(title: "Apartments")
         
         //Parsing in data on the edit page
         listingImageView.image = listing?.image
@@ -84,8 +86,7 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
     }
     
     //This is for when the map is clicked on
-    //Showing the pin of the location !!!!!!!!!!!!!!!!!!!!!
-    //Label of the location (e.g. Apartment) !!!!!!!!!!!!!!!
+    //Navigate to Apple map app
     public func openMapForPlace(lat:Double = 0, long:Double = 0, placeName:String = "") {
         let latitude: CLLocationDegrees = lat
         let longitude: CLLocationDegrees = long
@@ -124,7 +125,7 @@ extension ListingDetailTableViewController {
         return 0.01
     }
     
-    //Switches cases of constraints !!!!!!!!!!!!!
+    //Switches cases for height of tableView cell
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:

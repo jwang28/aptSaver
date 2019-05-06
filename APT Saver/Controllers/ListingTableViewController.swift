@@ -19,7 +19,8 @@ class ListingTableViewController: UITableViewController {
         super.viewDidLoad()
       
         //Setting title "Apartments" on homepage
-        self.title = "Apartments"
+        self.addTitle(title: "Apartments")
+        //self.addTitleListing(title: "Edit Listing")
         self.navigationItem.leftBarButtonItem = editButtonItem
         
         //TableView constrant
@@ -173,8 +174,16 @@ class ListingTableViewController: UITableViewController {
         if segue.identifier == "AddListing"
         {
             let listingArray = segue.destination as! AddListingViewController
+            listingArray.delegate = self
             //check which type it is
             listingArray.listings = listingTypes[1].listings
         }
+    }
+}
+
+extension ListingTableViewController: AddListingViewControllerDelegate {
+    func didFinishLoadingData(listings: [Listing]) {
+        listingTypes[1].listings = listings
+        self.tableView.reloadData()
     }
 }

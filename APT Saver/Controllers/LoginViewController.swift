@@ -35,6 +35,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addTitle(title: "Login")
         GIDSignIn.sharedInstance()?.delegate = self
         
         //FOR GOOGLE SIGN-IN

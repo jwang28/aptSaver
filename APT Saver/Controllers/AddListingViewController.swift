@@ -9,7 +9,13 @@
 import UIKit
 import SwiftSoup
 
+protocol AddListingViewControllerDelegate {
+    func didFinishLoadingData(listings: [Listing])
+}
+
 class AddListingViewController: UIViewController {
+    
+    var delegate: AddListingViewControllerDelegate?
 
     @IBAction func SubmitButton(_ sender: Any) {
         if url.text != ""{
@@ -57,6 +63,8 @@ class AddListingViewController: UIViewController {
                         
                         let transportation: Element = try doc.getElementsByClass("Nearby-transportationList").get(0)
                         self.transportation = try transportation.text()
+                        
+                        
                     } catch Exception.Error (let type, let message) {
                         print(type,message)
                         print(message)
@@ -69,7 +77,10 @@ class AddListingViewController: UIViewController {
         }
         let delaySeconds = 2.0
         DispatchQueue.main.asyncAfter(deadline: .now() + delaySeconds) {
-            self.performSegue(withIdentifier: "submit", sender: self)
+            self.dismiss(animated: true, completion: {
+                self.listings?.append(Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: self.bed, bath: "", size: "", ppsqft: "", amenities: self.amenities, transportation: self.transportation, imageName: self.images!, favorited: false))
+                self.delegate?.didFinishLoadingData(listings:  self.listings!)
+            })
         }
     }
     

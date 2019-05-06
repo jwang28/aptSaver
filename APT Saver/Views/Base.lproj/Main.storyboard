@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="qTb-jO-V5F" customClass="AddListingViewController" customModule="APT_Saver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPK-gD-QPe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_sign" translatesAutoresizingMaskIntoConstraints="NO" id="T9p-uE-QfD">
-                                <rect key="frame" x="0.0" y="-3.5" width="375" height="550"/>
+                                <rect key="frame" x="0.0" y="28.5" width="375" height="550"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="550" id="emD-4r-Cn3"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Paste the link here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hg-oc-cUH">
-                                <rect key="frame" x="62.5" y="256.5" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="288.5" width="250" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="qdB-xR-49z"/>
@@ -35,13 +35,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD LINK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvk-5H-oyy">
-                                <rect key="frame" x="130" y="206.5" width="115" height="30"/>
+                                <rect key="frame" x="130" y="238.5" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-kS-izW">
-                                <rect key="frame" x="162.5" y="316.5" width="50" height="50"/>
+                                <rect key="frame" x="162.5" y="348.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="bKp-Jt-ou9"/>
                                     <constraint firstAttribute="height" constant="50" id="kyu-rg-1gv"/>
@@ -68,7 +68,6 @@
                     </view>
                     <connections>
                         <outlet property="url" destination="3hg-oc-cUH" id="wWf-q3-24U"/>
-                        <segue destination="Qi5-mL-aPW" kind="show" identifier="submit" id="BZA-2f-63p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Js-c3-Akd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,13 +90,34 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="uYJ-fA-0SB"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aptsaver_circle icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yin-1f-uLR">
+                                <rect key="frame" x="112.5" y="70" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7qi-WT-8y8"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ouf-qe-xne"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You’re just one step away from your dream apartment. Login to get started!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-OZ-0aZ">
+                                <rect key="frame" x="59.5" y="228" width="256" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Qxj-dw-zYS"/>
+                                    <constraint firstAttribute="width" constant="256" id="iCI-1Y-G2x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Nfh-jz-3JX" firstAttribute="centerY" secondItem="FcG-Ep-Gcf" secondAttribute="centerY" id="4iX-iw-1xy"/>
                             <constraint firstItem="Nfh-jz-3JX" firstAttribute="leading" secondItem="fVK-W0-FVN" secondAttribute="leading" constant="20" id="AP8-hz-21w"/>
                             <constraint firstItem="Nfh-jz-3JX" firstAttribute="centerX" secondItem="FcG-Ep-Gcf" secondAttribute="centerX" id="CVC-Hl-FKg"/>
+                            <constraint firstItem="dsp-OZ-0aZ" firstAttribute="centerX" secondItem="Nfh-jz-3JX" secondAttribute="centerX" id="JNM-fn-hkS"/>
+                            <constraint firstItem="Yin-1f-uLR" firstAttribute="centerX" secondItem="FcG-Ep-Gcf" secondAttribute="centerX" id="WIe-HM-Aeg"/>
                             <constraint firstItem="fVK-W0-FVN" firstAttribute="trailing" secondItem="Nfh-jz-3JX" secondAttribute="trailing" constant="20" id="Xci-h2-ruI"/>
+                            <constraint firstItem="Yin-1f-uLR" firstAttribute="top" secondItem="fVK-W0-FVN" secondAttribute="top" constant="70" id="aef-ib-D87"/>
+                            <constraint firstItem="dsp-OZ-0aZ" firstAttribute="top" secondItem="Yin-1f-uLR" secondAttribute="bottom" constant="8" symbolic="YES" id="ntH-dT-bt0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVK-W0-FVN"/>
                     </view>
@@ -187,16 +207,17 @@
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="9qb-73-XHX"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="List" id="l2g-Ft-BxM">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="E7E-Zj-JTM">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Tii-2q-c0E"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="e39-5T-N9o">
                             <connections>
-                                <action selector="addListingButton:" destination="Qi5-mL-aPW" id="kXl-1I-wj4"/>
-                                <segue destination="qTb-jO-V5F" kind="show" identifier="AddListing" id="Gb4-1a-LJr"/>
+                                <action selector="addListingButton:" destination="Qi5-mL-aPW" id="8B5-h4-F6p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="EZB-a8-1u2" kind="show" identifier="ShowListingDetail" id="7eU-a2-CHE"/>
+                        <segue destination="qTb-jO-V5F" kind="showDetail" identifier="AddListing" id="gRE-fs-A1X"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tug-jB-tAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -445,6 +466,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="GlZ-9M-DxX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.37585836649999999" green="0.30710464720000002" blue="0.7361039519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -458,6 +481,7 @@
     </scenes>
     <resources>
         <image name="addlink_button" width="200" height="200"/>
+        <image name="aptsaver_circle icon" width="1024" height="1024"/>
         <image name="background_sign" width="375" height="550"/>
         <image name="favHeart" width="100" height="100"/>
         <image name="imageView:Gdw-9A-s5E:image" width="200" height="200">
@@ -38064,7 +38088,4 @@ ImpHACJqWQAialwAImphAAAAAAAABAEAAAAAAAAAbQAAAAAAAAAAAAAAAAAiamM
 </mutableData>
         </image>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="CAF-UH-e3x"/>
-    </inferredMetricsTieBreakers>
 </document>
