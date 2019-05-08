@@ -9,10 +9,17 @@
 import UIKit
 import GoogleSignIn
 import MapKit
+import EventKit
+
+protocol ListingDetailTableViewControllerDelegate {
+    func didChangeNotes(listing: Listing, indexpath: IndexPath)
+    func didChangeAppointmentDate(listing: Listing, indexpath: IndexPath)
+}
 
 class ListingDetailTableViewController: UITableViewController, UICollectionViewDelegateFlowLayout {
-    @IBOutlet weak var listingTitleTextField: UILabel!
     
+    //interface builder
+    @IBOutlet weak var listingTitleTextField: UILabel!
     @IBOutlet weak var listingDescriptionLabel: UILabel!
     @IBOutlet weak var listingPriceLabel: UILabel!
     @IBOutlet weak var listingImageView: UIImageView!
@@ -22,20 +29,29 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var notesTextView: UITextView!
+    @IBOutlet weak var appointmentTextField: UITextField!
     
+    //constant
     private let characterLimitOnTheNote = 150
     
+    //properties
     var listing: Listing?
-    
-    //If map doesn't work, it will still point to this location
-    //Technically, the maps initial location
-    let regionRadius: CLLocationDistance = 1000
+    var selectedIndexPath: IndexPath?
+    var delegate: ListingDetailTableViewControllerDelegate?
+    var datePicker =  UIDatePicker()
     var initialLocation = CLLocation(latitude: 40.758896, longitude: -73.985130)
     var locationLat = 40.758896
     var locationLong = -73.985130
+    var selectedAppointmentDate: Date?
     
+    //viewcontroller's lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //datepicker
+        self.appointmentTextField.inputView = self.datePicker
+        self.addDoneButtonOnPickerView()
+        self.datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
         
         //Giving the page a title called "Edit Listing"
         self.addTitleListing(title: "Edit Listing")
@@ -48,6 +64,8 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         listingBedLabel.text = listing?.bed
         listingAmenitiesLabel.text = listing?.amenities
         listingTransportationLabel.text = listing?.transportation
+        notesTextView.text = listing?.notes
+        appointmentTextField.text = listing?.appointmentDate
         
         notesTextView.contentInset = UIEdgeInsets(top: -4, left: 0, bottom: 0, right: -4)
         
@@ -66,6 +84,7 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         }
     }
     
+    //custom methods
     func centerMapOnLocation(location: CLLocation) {
         let location = location.coordinate
         let annotation = MKPointAnnotation()
@@ -81,11 +100,6 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         annotation.coordinate = location
         self.mapView.setRegion(coordinateRegion, animated: true)
         self.mapView.addAnnotation(annotation)
-    }
-    
-    //Button that leads to Apple Map when pressed on the map
-    @IBAction func mapClicked(_ sender: Any) {
-        openMapForPlace(lat: locationLat, long: locationLong, placeName: "Apartment")
     }
     
     //This is for when the map is clicked on
@@ -118,6 +132,78 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
             }
             completion(placemarks?.first?.location?.coordinate)
         }
+    }
+    
+    //This is adding button on top of the dataPicker view
+    func addDoneButtonOnPickerView() {
+        let doneToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonPressed))
+        doneToolbar.items = [flexSpace, doneButton]
+        doneToolbar.sizeToFit()
+        self.appointmentTextField.inputAccessoryView = doneToolbar
+    }
+    
+    //Adding event to IOS Calendar
+    func addCalenderEvent(title: String, description: String, startDate: Date, endDate: Date, completion: @escaping (_ success: Bool, _ error: Error?) -> Void) {
+        let eventStore = EKEventStore()
+        eventStore.requestAccess(to: .event) { (granted, error) in
+            if granted == true && error == nil {
+                let event  = EKEvent(eventStore: eventStore)
+                event.title = title
+                event.startDate = startDate
+                event.endDate = endDate
+                event.notes = description
+                event.calendar = eventStore.defaultCalendarForNewEvents
+                do {
+                    try eventStore.save(event, span: .thisEvent)
+                } catch let error {
+                    print(error)
+                    completion(false, error)
+                }
+                completion(true, nil)
+            } else {
+                completion(false, error!)
+            }
+        }
+    }
+    
+    
+    //buttons actions
+    //Button that leads to Apple Map when pressed on the map
+    @IBAction func mapClicked(_ sender: Any) {
+        openMapForPlace(lat: locationLat, long: locationLong, placeName: "Apartment")
+    }
+    
+    //Calling the function of creating event in IOS Calendar
+    @objc func doneButtonPressed() {
+        self.view.endEditing(true)
+        if selectedAppointmentDate != nil {
+            let endDate = Calendar.current.date(byAdding: .hour, value: 1, to: self.selectedAppointmentDate!)
+            self.addCalenderEvent(title: listing!.address, description: "Visit \(listing!.address)", startDate: self.selectedAppointmentDate!, endDate: endDate!) { (isAdded, error) in
+                if isAdded == true {
+                    print("Event Added!")
+                    DispatchQueue.main.async {
+                        self.listing?.appointmentDate = self.appointmentTextField.text!
+                        self.delegate?.didChangeAppointmentDate(listing: self.listing!, indexpath: self.selectedIndexPath!)
+                        self.showAlert(titleString: "Success!", messageString: "Successfully added your event.")
+                    }
+                } else {
+                    print("Error!")
+                    self.showAlert(titleString: "Error!", messageString: "Please try again. Please check that you provided access to your calender.")
+                }
+            }
+        }
+    }
+    
+    //datepicker actions
+    @objc func datePickerValueChanged(sender: UIDatePicker) {
+        self.selectedAppointmentDate = sender.date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        let dateString = dateFormatter.string(from: sender.date)
+        self.appointmentTextField.text = dateString
     }
 }
 
@@ -167,11 +253,20 @@ extension ListingDetailTableViewController : UITextViewDelegate {
             return false
         }
         
+        if text == "\n" {
+            self.view.endEditing(true)
+            self.listing?.notes = textView.text
+            delegate?.didChangeNotes(listing: self.listing!, indexpath: self.selectedIndexPath!)
+            return false
+        }
+        
         // Recalculate the height of the cell
         tableView.beginUpdates()
         tableView.endUpdates()
         
         return true
     }
+    
+    
     
 }

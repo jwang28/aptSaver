@@ -6,6 +6,7 @@ target 'APT Saver' do
   use_frameworks!
   use_modular_headers!
   pod 'Firebase'
+  pod 'FirebaseAuth'
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'

@@ -32,8 +32,10 @@ class Listing
     var transportation: String
     var image: UIImage
     var favorited: Bool
+    var notes: String
+    var appointmentDate: String
     
-    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, amenities: String, transportation: String, imageName: UIImage, favorited: Bool)
+    init(address: String, price: String,description: String, bed: String, bath: String, size: String, ppsqft: String, amenities: String, transportation: String, imageName: UIImage, favorited: Bool, notes: String, appointmentDate: String)
     {
         self.address = address
         self.price = price
@@ -46,6 +48,8 @@ class Listing
         self.transportation = transportation
         self.favorited = favorited
         self.image = imageName
+        self.notes = notes
+        self.appointmentDate = appointmentDate
 //        if let image = UIImage(named: imageName){
 //            self.image = image
 //        } else{

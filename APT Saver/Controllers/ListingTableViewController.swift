@@ -9,33 +9,15 @@
 import UIKit
 import SwiftSoup
 import GoogleSignIn
-import VACalendar
+import FirebaseAuth
+import FBSDKLoginKit
 
 class ListingTableViewController: UITableViewController {
     
+    //Calendar button
     @IBOutlet weak var tableHeaderView: UIView!
-    @IBOutlet weak var monthHeaderView: VAMonthHeaderView! {
-        didSet {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "LLLL"
-            let appereance = VAMonthHeaderViewAppearance(
-                previousButtonImage: UIImage(named: "favHeart")!,
-                nextButtonImage: UIImage(named: "favHeart")!,
-                dateFormatter: formatter
-            )
-            monthHeaderView.delegate = self
-            monthHeaderView.appearance = appereance
-        }
-    }
     
-    @IBOutlet weak var weekDaysView: VAWeekDaysView! {
-        didSet {
-            let appereance = VAWeekDaysViewAppearance(symbolsType: .veryShort, calendar: defaultCalendar)
-            weekDaysView.appearance = appereance
-        }
-    }
-    
-    var calendarView : VACalendarView!
+    var selectedIndexPath: IndexPath?
     
     // MARK: - UITableView
     //MARK: -Data model
@@ -63,91 +45,45 @@ class ListingTableViewController: UITableViewController {
         signoutButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
         signoutButton.setTitleColor(.black, for: .normal)
         signoutButton.addTarget(self, action: #selector(logOut), for: .touchUpInside)
-    
-        let calendar = VACalendar(calendar: defaultCalendar)
-        calendarView = VACalendarView(frame: .zero, calendar: calendar)
-        calendarView.showDaysOut = true
-        calendarView.selectionStyle = .multi
-        calendarView.monthDelegate = monthHeaderView
-        calendarView.dayViewAppearanceDelegate = self
-        calendarView.monthViewAppearanceDelegate = self
-        calendarView.calendarDelegate = self
-        calendarView.scrollDirection = .horizontal
-        tableHeaderView.addSubview(calendarView)
-        
-        reloadEvents()
     }
+
     
-    func reloadEvents() {
-        calendarView.setSupplementaries([
-            (Date().addingTimeInterval(-(60 * 60 * 70)), [VADaySupplementary.bottomDots([.red, .magenta])]),
-            (Date().addingTimeInterval((60 * 60 * 110)), [VADaySupplementary.bottomDots([.red])]),
-            (Date().addingTimeInterval((60 * 60 * 370)), [VADaySupplementary.bottomDots([.blue, .darkGray])]),
-            (Date().addingTimeInterval((60 * 60 * 430)), [VADaySupplementary.bottomDots([.orange, .purple, .cyan])])
-            ])
-    }
-    
-    let defaultCalendar: Calendar = {
-        var calendar = Calendar.current
-        calendar.firstWeekday = 1
-        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-        return calendar
-    }()
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        if calendarView.frame == .zero {
-            calendarView.frame = CGRect(
-                x: 0,
-                y: weekDaysView.frame.maxY,
-                width: tableHeaderView.frame.width,
-                height: tableHeaderView.frame.height - weekDaysView.frame.maxY
-            )
-            calendarView.setup()
-        }
-    }
-    
-    @objc func logOut()
-    {
+    //Logout function back to the login page
+    @objc func logOut() {
         GIDSignIn.sharedInstance().signOut()
+        LoginManager().logOut()
+        try? Auth.auth().signOut()
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func addListingButton(_ sender: Any)
-    {
+    //Add Link page
+    @IBAction func addListingButton(_ sender: Any) {
         performSegue(withIdentifier: "AddListing", sender: nil)
     }
     
     //MARK: - UItableViewDataSource
-    override func numberOfSections(in tableView: UITableView) -> Int
-    {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return listingTypes.count
     }
     
     //Auto Resizing Table View Cells
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listingTypes[section].listings.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListingCell", for: indexPath) as! ListingTableViewCell
         cell.listing = listingTypes[indexPath.section].listings[indexPath.row]
         
         //Setting favorites button
-        let starButton = UIButton(type: .system)
         let image = UIImage(named: "favHeart")?.withRenderingMode(.alwaysTemplate)
         cell.heartButton.setImage(image, for: .normal)
         
         //Colors the favorites icon according to whether or not the item is favorited
-        if cell.listing!.favorited
-        {
+        if cell.listing!.favorited {
             cell.heartButton.tintColor = UIColor.red
             cell.heartButton.setImage(UIImage(named: "favHeartFilled"), for: .normal)
-        } else
-        {
+        } else {
             cell.heartButton.tintColor = UIColor.lightGray
             cell.heartButton.setImage(UIImage(named: "favHeart"), for: .normal)
         }
@@ -158,8 +94,7 @@ class ListingTableViewController: UITableViewController {
     //Handling favorites
     //If selected heart icon, it goes to the favorite section
     //Positing the heart
-    @objc private func handleAsFavorite(sender: UIButton)
-    {
+    @objc private func handleAsFavorite(sender: UIButton) {
         let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
         let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
         print("Marking as Favorite")
@@ -188,17 +123,14 @@ class ListingTableViewController: UITableViewController {
     }
     
     //Multiple Sections
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
-    {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let listingType = listingTypes[section]
         return listingType.name
     }
     
     // Delete Rows
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
-    {
-        if editingStyle == .delete
-        {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
             let listingType = listingTypes[indexPath.section]
             listingType.listings.remove(at: indexPath.row)
 
@@ -206,15 +138,13 @@ class ListingTableViewController: UITableViewController {
         }
     }
     
-    //move cells around
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool
-    {
+    //Move cells around
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
-    //update database
-    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
-    {
+    //Update database
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let listingToMove = listingTypes[sourceIndexPath.section].listings[sourceIndexPath.row]
         listingTypes[destinationIndexPath.section].listings.insert(listingToMove, at: destinationIndexPath.row)
         listingTypes[sourceIndexPath.section].listings.remove(at: sourceIndexPath.row)
@@ -223,24 +153,23 @@ class ListingTableViewController: UITableViewController {
     //MARK: -UITABLEVIEWDELEGATE
     var selectedListing: Listing?
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let listingType = listingTypes[indexPath.section]
         let listing = listingType.listings[indexPath.row]
         selectedListing = listing
+        self.selectedIndexPath = indexPath
         performSegue(withIdentifier: "ShowListingDetail", sender: nil)
     }
     
     //MARK: -NAVIGATION
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.identifier == "ShowListingDetail"
-        {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowListingDetail" {
             let listingDetailTVC = segue.destination as! ListingDetailTableViewController
+            listingDetailTVC.delegate = self
             listingDetailTVC.listing = selectedListing
+            listingDetailTVC.selectedIndexPath = self.selectedIndexPath
         }
-        if segue.identifier == "AddListing"
-        {
+        if segue.identifier == "AddListing" {
             let listingArray = segue.destination as! AddListingViewController
             listingArray.delegate = self
             //check which type it is
@@ -256,88 +185,13 @@ extension ListingTableViewController: AddListingViewControllerDelegate {
     }
 }
 
-
-extension ListingTableViewController: VAMonthHeaderViewDelegate {
-    
-    func didTapNextMonth() {
-        calendarView.nextMonth()
+extension ListingTableViewController: ListingDetailTableViewControllerDelegate {
+    func didChangeAppointmentDate(listing: Listing, indexpath: IndexPath) {
+         self.listingTypes[indexpath.section].listings[indexpath.row] = listing
     }
     
-    func didTapPreviousMonth() {
-        calendarView.previousMonth()
+    func didChangeNotes(listing: Listing, indexpath: IndexPath) {
+        self.listingTypes[indexpath.section].listings[indexpath.row] = listing
     }
-    
-}
-
-extension ListingTableViewController: VAMonthViewAppearanceDelegate {
-    
-    func leftInset() -> CGFloat {
-        return 10.0
-    }
-    
-    func rightInset() -> CGFloat {
-        return 10.0
-    }
-    
-    func verticalMonthTitleFont() -> UIFont {
-        return UIFont.systemFont(ofSize: 16, weight: .semibold)
-    }
-    
-    func verticalMonthTitleColor() -> UIColor {
-        return .black
-    }
-    
-    func verticalCurrentMonthTitleColor() -> UIColor {
-        return .red
-    }
-    
-}
-
-extension ListingTableViewController: VADayViewAppearanceDelegate {
-    
-    func textColor(for state: VADayState) -> UIColor {
-        switch state {
-        case .out:
-            return UIColor(red: 214 / 255, green: 214 / 255, blue: 219 / 255, alpha: 1.0)
-        case .selected:
-            return .white
-        case .unavailable:
-            return .lightGray
-        default:
-            return .black
-        }
-    }
-    
-    func textBackgroundColor(for state: VADayState) -> UIColor {
-        switch state {
-        case .selected:
-            return .red
-        default:
-            return .clear
-        }
-    }
-    
-    func shape() -> VADayShape {
-        return .circle
-    }
-    
-    func dotBottomVerticalOffset(for state: VADayState) -> CGFloat {
-        switch state {
-        case .selected:
-            return 2
-        default:
-            return -7
-        }
-    }
-    
-}
-
-extension ListingTableViewController: VACalendarViewDelegate {
-    
-    func selectedDates(_ dates: [Date]) {
-        calendarView.startDate = dates.last ?? Date()
-        print(dates)
-    }
-    
 }
 

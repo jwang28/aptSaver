@@ -10,27 +10,61 @@ import UIKit
 import GoogleSignIn
 import FacebookCore
 import FacebookLogin
+import FBSDKCoreKit
+import FBSDKLoginKit
+import FirebaseAuth
 
-class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
-    @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var signOutButton: UIButton!
+class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, LoginButtonDelegate {
+//    @IBOutlet weak var welcomeLabel: UILabel!
+//    @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var signInButton: GIDSignInButton!
-    @IBOutlet weak var clickNextButton: UIButton!
+    @IBOutlet weak var facebooksignInButton: FBLoginButton!
+    //    @IBOutlet weak var clickNextButton: UIButton!
     
     //Button for SIGN OUT
     //Not delegate method, all done locally
-    @IBAction func signOutWasPressed(_ sender: AnyObject) {
-        GIDSignIn.sharedInstance().signOut()
-    }
+//    @IBAction func signOutWasPressed(_ sender: AnyObject) {
+//        GIDSignIn.sharedInstance().signOut()
+//    }
 
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if error == nil {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.performSegue(withIdentifier: "LoginToList", sender: self)
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: user.authentication.idToken, accessToken: user.authentication.accessToken)
+            Auth.auth().signInAndRetrieveData(with: credential) { [weak self] (authResult, error) in
+                if let error = error {
+                    print("Error signInAndRetrieveData: \(error.localizedDescription)")
+                    return
+                }
+                // User is signed in
+                // ...
+                DispatchQueue.main.async {
+                    self?.performSegue(withIdentifier: "LoginToList", sender: self)
+                }
             }
         } else {
             print(error)
         }
+    }
+    
+    
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        if let tokenString = result?.token?.tokenString {
+            let credential = FacebookAuthProvider.credential(withAccessToken: tokenString)
+            Auth.auth().signInAndRetrieveData(with: credential) { [weak self] (authResult, error) in
+                if let error = error {
+                    // ...
+                    print("Error signInAndRetrieveData: \(error.localizedDescription)")
+                    return
+                }
+                // User is signed in
+                // ...
+                DispatchQueue.main.async {
+                    self?.performSegue(withIdentifier: "LoginToList", sender: self)
+                }
+            }
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -45,10 +79,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().signInSilently()
         
         //FOR FACEBOO SIGN-IN
-        //let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        //loginButton.center = view.center
-        //loginButton.center = view.center.y - 100
-        //view.addSubview(loginButton)
+//        let loginButton = FBLoginButton(frame: CGRect(x: 0, y: 0, width: 360, height: 45), permissions: [ .publicProfile ])
+//        var center = view.center
+//        center.y -= 100
+//        loginButton.center = center
+//        loginButton.delegate = self
+//        view.addSubview(loginButton)
     }
     
     //Signout function
@@ -56,4 +92,34 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         print("Signing Out")
         GIDSignIn.sharedInstance().signOut() //will sign us out of google
     }
+    
+    // MARK: - LoginButtonDelegate
+    
+//    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+//        if let tokenString = result?.token?.tokenString {
+//            let credential = FacebookAuthProvider.credential(withAccessToken: tokenString)
+//            Auth.auth().signInAndRetrieveData(with: credential) { [weak self] (authResult, error) in
+//                if let error = error {
+//                    // ...
+//                    print("Error signInAndRetrieveData: \(error.localizedDescription)")
+//                    return
+//                }
+//                // User is signed in
+//                // ...
+//                DispatchQueue.main.async {
+//                    self?.performSegue(withIdentifier: "LoginToList", sender: self)
+//                }
+//            }
+//        }
+//
+//    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        
+    }
+    
+    func loginButtonWillLogin(_ loginButton: FBLoginButton) -> Bool {
+        return true
+    }
+    
 }

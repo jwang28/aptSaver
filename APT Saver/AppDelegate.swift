@@ -9,6 +9,8 @@
 import UIKit
 import GoogleSignIn
 import IQKeyboardManager
+import FBSDKLoginKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -19,18 +21,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Initialize sign-in
+        
+        FirebaseApp.configure()
+        
         GIDSignIn.sharedInstance().clientID = "335302947950-18upd06tegkavuip62tca9q9v8faqp95.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
-        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().isEnabled = false
         
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url as URL?,
+        let facebookHandled = ApplicationDelegate.shared.application(app, open: url, options: options)
+        
+        let googleHandled = GIDSignIn.sharedInstance().handle(url as URL?,
                                                  sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                                                  annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        
+        return facebookHandled || googleHandled
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
