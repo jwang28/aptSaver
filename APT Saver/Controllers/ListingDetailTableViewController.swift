@@ -36,8 +36,6 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
     
     //properties
     var listing: Listing?
-    var selectedIndexPath: IndexPath?
-    var delegate: ListingDetailTableViewControllerDelegate?
     var datePicker =  UIDatePicker()
     var initialLocation = CLLocation(latitude: 40.758896, longitude: -73.985130)
     var locationLat = 40.758896
@@ -48,6 +46,12 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Note stylize
+        notesTextView.layer.borderWidth = 1
+        notesTextView.layer.borderColor = UIColor.lightGray.cgColor
+        notesTextView.layer.cornerRadius = 5
+        
+        
         //datepicker
         self.appointmentTextField.inputView = self.datePicker
         self.addDoneButtonOnPickerView()
@@ -57,7 +61,9 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         self.addTitleListing(title: "Edit Listing")
         
         //Parsing in data on the edit page
-        listingImageView.image = listing?.image
+        if let url = URL(string: listing!.imageUrl) {
+            self.downloadImage(with: url)
+        }
         listingTitleTextField.text  = listing?.address
         listingDescriptionLabel.text = listing?.description
         listingPriceLabel.text = listing?.price
@@ -169,8 +175,26 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
         }
     }
     
+    func downloadImage(with url: URL) {
+        URLSession.shared.dataTask(with: url) { (data,response,error) in
+            if error != nil {
+                return
+            }
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data!) {
+                    self.listingImageView.image = image
+                    print("there is an image")
+                }
+            }
+            } .resume()
+    }
+    
     
     //buttons actions
+    @IBAction func backButtonPressed(sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     //Button that leads to Apple Map when pressed on the map
     @IBAction func mapClicked(_ sender: Any) {
         openMapForPlace(lat: locationLat, long: locationLong, placeName: "Apartment")
@@ -186,8 +210,16 @@ class ListingDetailTableViewController: UITableViewController, UICollectionViewD
                     print("Event Added!")
                     DispatchQueue.main.async {
                         self.listing?.appointmentDate = self.appointmentTextField.text!
-                        self.delegate?.didChangeAppointmentDate(listing: self.listing!, indexpath: self.selectedIndexPath!)
-                        self.showAlert(titleString: "Success!", messageString: "Successfully added your event.")
+                        self.showAlert(title: "Success!", message: "Successfully added to  your phone caledar event.", button1Title: "OK", button1Handler: {
+                            //update info on firebase
+                            NetworkServices.updateApartmentInfo(data: self.listing!.dictionary()) { (updated, error) in
+                                if updated == true {
+                                    self.showAlert(messageString: "Apartment information updated.")
+                                } else {
+                                    self.showAlert(titleString: "Oops!", messageString: "Apartment information  does not updated. Try again later.")
+                                }
+                            }
+                        })
                     }
                 } else {
                     print("Error!")
@@ -256,7 +288,15 @@ extension ListingDetailTableViewController : UITextViewDelegate {
         if text == "\n" {
             self.view.endEditing(true)
             self.listing?.notes = textView.text
-            delegate?.didChangeNotes(listing: self.listing!, indexpath: self.selectedIndexPath!)
+            
+            //update info on firebase
+            NetworkServices.updateApartmentInfo(data: self.listing!.dictionary()) { (updated, error) in
+                if updated == true {
+                    self.showAlert(messageString: "Apartment information updated.")
+                } else {
+                    self.showAlert(titleString: "Oops!", messageString: "Apartment information  does not updated. Try again later.")
+                }
+            }
             return false
         }
         
@@ -266,7 +306,4 @@ extension ListingDetailTableViewController : UITextViewDelegate {
         
         return true
     }
-    
-    
-    
 }

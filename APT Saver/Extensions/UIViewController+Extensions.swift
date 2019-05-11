@@ -20,6 +20,14 @@ extension UIViewController {
         self.present(alertController, animated:true, completion:nil)
     }
     
+    func showAlert(title:String, message:String, button1Title: String?, button1Handler: @escaping () -> Void) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: button1Title, style: .cancel, handler: { (action) in
+            button1Handler()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func addTitle(title: String) {
         let titleLable = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         titleLable.textColor = .black

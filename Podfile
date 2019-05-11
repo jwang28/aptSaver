@@ -6,6 +6,8 @@ target 'APT Saver' do
   use_frameworks!
   use_modular_headers!
   pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
   pod 'FirebaseAuth'
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit'
@@ -21,8 +23,6 @@ target 'APT Saver' do
 
   # Pods for APT Saver
   pod 'SwiftSoup'
-  
-  pod 'IQKeyboardManager'
 
   target 'APT SaverTests' do
     inherit! :search_paths

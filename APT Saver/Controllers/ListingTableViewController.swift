@@ -12,48 +12,27 @@ import GoogleSignIn
 import FirebaseAuth
 import FBSDKLoginKit
 
-class ListingTableViewController: UITableViewController {
+class ListingTableViewController: UIViewController {
     
-    //Calendar button
-    @IBOutlet weak var tableHeaderView: UIView!
+    //interface builder
+    @IBOutlet weak var tableView: UITableView!
     
-    var selectedIndexPath: IndexPath?
+    //properties
+    var listings = [Listing]()
+    var selectedListing: Listing?
     
-    // MARK: - UITableView
-    //MARK: -Data model
-    var listingTypes: [ListingType] = ListingType.getListingTypes()
+    
+    //viewcontroller's lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        //Setting title "Apartments" on homepage
-        self.addTitle(title: "Apartments")
-        //self.addTitleListing(title: "Edit Listing")
-        self.navigationItem.leftBarButtonItem = editButtonItem
-        
-        //TableView constrant
-        tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 50).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 50).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 50).isActive = true
-        
-        //Sign out button on the Apartments page
-        //Redirects back to the login page
-        var signoutButton = UIButton()
-        signoutButton.setTitle("Log out", for: .normal)
-        view.addSubview(signoutButton)
-        signoutButton.translatesAutoresizingMaskIntoConstraints = false
-        signoutButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 2).isActive = true
-        signoutButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
-        signoutButton.setTitleColor(.black, for: .normal)
-        signoutButton.addTarget(self, action: #selector(logOut), for: .touchUpInside)
     }
-
     
-    //Logout function back to the login page
-    @objc func logOut() {
-        GIDSignIn.sharedInstance().signOut()
-        LoginManager().logOut()
-        try? Auth.auth().signOut()
-        self.navigationController?.popViewController(animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.listings.removeAll()
+        self.tableView.reloadData()
+        //fetch apartments from firebase
+        self.fetchApartmetsFromFirebase()
     }
     
     //Add Link page
@@ -61,34 +40,17 @@ class ListingTableViewController: UITableViewController {
         performSegue(withIdentifier: "AddListing", sender: nil)
     }
     
-    //MARK: - UItableViewDataSource
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return listingTypes.count
-    }
-    
-    //Auto Resizing Table View Cells
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listingTypes[section].listings.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListingCell", for: indexPath) as! ListingTableViewCell
-        cell.listing = listingTypes[indexPath.section].listings[indexPath.row]
-        
-        //Setting favorites button
-        let image = UIImage(named: "favHeart")?.withRenderingMode(.alwaysTemplate)
-        cell.heartButton.setImage(image, for: .normal)
-        
-        //Colors the favorites icon according to whether or not the item is favorited
-        if cell.listing!.favorited {
-            cell.heartButton.tintColor = UIColor.red
-            cell.heartButton.setImage(UIImage(named: "favHeartFilled"), for: .normal)
-        } else {
-            cell.heartButton.tintColor = UIColor.lightGray
-            cell.heartButton.setImage(UIImage(named: "favHeart"), for: .normal)
+    //custom methods
+    func fetchApartmetsFromFirebase() {
+        NetworkServices.fetchApartments { (apartments) in
+            if apartments == nil {
+                self.showAlert(messageString: "Something went wrong. Try again later.")
+                return
+            } else {
+                self.listings = apartments as! [Listing]
+                self.tableView.reloadData()
+            }
         }
-        cell.heartButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
-        return cell
     }
     
     //Handling favorites
@@ -97,101 +59,93 @@ class ListingTableViewController: UITableViewController {
     @objc private func handleAsFavorite(sender: UIButton) {
         let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
         let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
-        print("Marking as Favorite")
-        let aptFavorited = tableView.cellForRow(at: indexPath!)
-        let listingType = listingTypes[indexPath!.section]
-        let listing = listingType.listings[indexPath!.row]
-        if (listing.favorited == true)
-        {
-            listing.setFavorited(yesorno: false)
-            aptFavorited?.accessoryView?.tintColor = UIColor.lightGray
-            let row = listingTypes[1].listings.count
-            listingTypes[1].listings.insert(listing, at: listingTypes[1].listings.count)
-            tableView.insertRows(at: [IndexPath(row: row, section: 1)], with: .automatic)
-            listingTypes[0].listings.remove(at: indexPath!.row)
-            tableView.deleteRows(at: [indexPath!], with: .automatic)
-        } else if(listing.favorited == false)
-        {
-            listing.setFavorited(yesorno: true)
-            aptFavorited?.accessoryView?.tintColor = UIColor.red
-            let row = listingTypes[0].listings.count == 0 ? 0 : listingTypes[0].listings.count
-            listingTypes[0].listings.insert(listing, at: listingTypes[0].listings.count)
-            tableView.insertRows(at: [IndexPath(row: row, section: 0)], with: .automatic)
-            listingTypes[1].listings.remove(at: indexPath!.row)
-            tableView.deleteRows(at: [indexPath!], with: .automatic)
+        let listing = self.listings[indexPath!.row]
+        let cell = tableView.cellForRow(at: indexPath!) as! ListingTableViewCell
+        if (listing.favorited == true) {
+            self.listings[indexPath!.row].favorited = false
+            //mark apartment as unfavourite
+            NetworkServices.markApartmentFavourite(data: self.listings[indexPath!.row].dictionary()) { (success, error) in
+                if success == true {
+                    cell.heartButton.setImage(UIImage(named: "favHeart"), for: .normal)
+                    self.tableView.reloadData()
+                } else {
+                    self.listings[indexPath!.row].favorited = true
+                }
+            }
+        } else if(listing.favorited == false) {
+            self.listings[indexPath!.row].favorited = true
+            //mark apartment as favourite
+            NetworkServices.markApartmentFavourite(data: self.listings[indexPath!.row].dictionary()) { (success, error) in
+                if success == true {
+                    cell.heartButton.setImage(UIImage(named: "favHeartFilled"), for: .normal)
+                    self.tableView.reloadData()
+                } else {
+                    self.listings[indexPath!.row].favorited = false
+                }
+            }
         }
     }
     
-    //Multiple Sections
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let listingType = listingTypes[section]
-        return listingType.name
-    }
     
-    // Delete Rows
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            let listingType = listingTypes[indexPath.section]
-            listingType.listings.remove(at: indexPath.row)
-
-            tableView.deleteRows(at: [indexPath], with: .automatic)
-        }
-    }
-    
-    //Move cells around
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    //Update database
-    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let listingToMove = listingTypes[sourceIndexPath.section].listings[sourceIndexPath.row]
-        listingTypes[destinationIndexPath.section].listings.insert(listingToMove, at: destinationIndexPath.row)
-        listingTypes[sourceIndexPath.section].listings.remove(at: sourceIndexPath.row)
-    }
-    
-    //MARK: -UITABLEVIEWDELEGATE
-    var selectedListing: Listing?
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let listingType = listingTypes[indexPath.section]
-        let listing = listingType.listings[indexPath.row]
-        selectedListing = listing
-        self.selectedIndexPath = indexPath
-        performSegue(withIdentifier: "ShowListingDetail", sender: nil)
-    }
-    
-    //MARK: -NAVIGATION
+    //MARK:- navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowListingDetail" {
             let listingDetailTVC = segue.destination as! ListingDetailTableViewController
-            listingDetailTVC.delegate = self
             listingDetailTVC.listing = selectedListing
-            listingDetailTVC.selectedIndexPath = self.selectedIndexPath
-        }
-        if segue.identifier == "AddListing" {
-            let listingArray = segue.destination as! AddListingViewController
-            listingArray.delegate = self
-            //check which type it is
-            listingArray.listings = listingTypes[1].listings
         }
     }
 }
 
-extension ListingTableViewController: AddListingViewControllerDelegate {
-    func didFinishLoadingData(listings: [Listing]) {
-        listingTypes[1].listings = listings
-        self.tableView.reloadData()
-    }
-}
-
-extension ListingTableViewController: ListingDetailTableViewControllerDelegate {
-    func didChangeAppointmentDate(listing: Listing, indexpath: IndexPath) {
-         self.listingTypes[indexpath.section].listings[indexpath.row] = listing
+//table view datasource and delegate methods
+extension ListingTableViewController: UITableViewDelegate, UITableViewDataSource {
+    //Auto Resizing Table View Cells
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listings.count
     }
     
-    func didChangeNotes(listing: Listing, indexpath: IndexPath) {
-        self.listingTypes[indexpath.section].listings[indexpath.row] = listing
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListingCell", for: indexPath) as! ListingTableViewCell
+        cell.listing = listings[indexPath.row]
+        
+        //Setting favorites button
+        let image = UIImage(named: "favHeart")?.withRenderingMode(.alwaysTemplate)
+        cell.heartButton.setImage(image, for: .normal)
+        cell.heartButton.tag = indexPath.row
+        
+        //Colors the favorites icon according to whether or not the item is favorited
+        if cell.listing!.favorited {
+            cell.heartButton.tintColor = UIColor.white
+            cell.heartButton.setImage(UIImage(named: "favHeartFilled"), for: .normal)
+        } else {
+            cell.heartButton.tintColor = UIColor.white
+            cell.heartButton.setImage(UIImage(named: "favHeart"), for: .normal)
+        }
+        cell.heartButton.addTarget(self, action: #selector(handleAsFavorite), for: .touchUpInside)
+        return cell
+    }
+    
+    // Delete Rows
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            NetworkServices.deleteApartmentInfo(data: self.listings[indexPath.row].dictionary()) { (deleted, error) in
+                if deleted == true {
+                    self.showAlert(title: "Success!", message: "Apartment deleted successfully!", button1Title: "OK", button1Handler: {
+                        self.listings.remove(at: indexPath.row)
+                        tableView.deleteRows(at: [indexPath], with: .automatic)
+                    })
+                } else {
+                    self.showAlert(titleString: "Error!", messageString: "Aparment can not be deleted. Please try again later.")
+                }
+            }
+        }
+    }
+    
+    //MARK:- UITABLEVIEWDELEGATE
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let listing = listings[indexPath.row]
+        selectedListing = listing
+        performSegue(withIdentifier: "ShowListingDetail", sender: nil)
     }
 }
-
