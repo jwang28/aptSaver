@@ -19,10 +19,10 @@ target 'APT Saver' do
   pod 'FacebookShare'
   pod 'RxAtomic', '~> 4.0', :modular_headers => true
   
-  pod 'VACalendar'
-
+  pod 'VACalendar'	
   # Pods for APT Saver
   pod 'SwiftSoup'
+  pod 'TesseractOCRiOS'
 
   target 'APT SaverTests' do
     inherit! :search_paths

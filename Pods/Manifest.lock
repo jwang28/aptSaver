@@ -102,6 +102,7 @@ PODS:
   - nanopb/encode (0.3.901)
   - RxAtomic (4.4.2)
   - SwiftSoup (2.0.0)
+  - TesseractOCRiOS (5.0.1)
   - VACalendar (1.3)
 
 DEPENDENCIES:
@@ -119,6 +120,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - RxAtomic (~> 4.0)
   - SwiftSoup
+  - TesseractOCRiOS
   - VACalendar
 
 SPEC REPOS:
@@ -146,6 +148,7 @@ SPEC REPOS:
     - nanopb
     - RxAtomic
     - SwiftSoup
+    - TesseractOCRiOS
     - VACalendar
 
 SPEC CHECKSUMS:
@@ -172,8 +175,9 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   SwiftSoup: 4fe21f65cdbfa3a40559047016b7962b88d29279
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
   VACalendar: 3e5a001cbf437ebed2bcfc747f3187e555d65175
 
-PODFILE CHECKSUM: 769ef4645633a1079a8b9187fbc8a9fbb7c388ea
+PODFILE CHECKSUM: a976173eb5c5d29e4e633bab9f961d5870cd5da2
 
 COCOAPODS: 1.6.1

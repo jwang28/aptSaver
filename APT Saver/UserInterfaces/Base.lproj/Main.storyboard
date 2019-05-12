@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqi-CZ-V98">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqi-CZ-V98">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -101,6 +101,9 @@
                                                 <state key="normal" title="Scan your link">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="BqO-Pg-okJ" kind="show" id="8cA-mu-bj2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.36947333812713623" green="0.46668905019760132" blue="0.99064606428146362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -153,6 +156,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Js-c3-Akd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4896.8000000000002" y="-140.77961019490255"/>
+        </scene>
+        <!--Scan File View Controller-->
+        <scene sceneID="Vtf-8j-2Rf">
+            <objects>
+                <viewController id="BqO-Pg-okJ" customClass="ScanFileViewController" customModule="APT_Saver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="omK-e2-dCE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDS-6g-jW7">
+                                <rect key="frame" x="16" y="52" width="343" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kcl-d7-FKa"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="BDS-6g-jW7" id="6d7-Az-mao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODu-dl-EGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5728.8000000000002" y="-141.67916041979012"/>
         </scene>
         <!--Login-->
         <scene sceneID="GYt-0R-jnP">
@@ -956,7 +986,7 @@
         <image name="addlink_button_white" width="148.5" height="52.5"/>
         <image name="aptsaver_circle_blue" width="1024" height="1024"/>
         <image name="close_button_black" width="56" height="54"/>
-        <image name="favHeart" width="100" height="100"/>
+        <image name="favHeart" width="75" height="75"/>
         <image name="heart_tabbar" width="20" height="20"/>
         <image name="heart_tabbar_select" width="20" height="20"/>
         <image name="home_tabbar" width="20" height="20"/>
@@ -38566,8 +38596,8 @@ ImpHACJqWQAialwAImphAAAAAAAABAEAAAAAAAAAbQAAAAAAAAAAAAAAAAAiamM
         </image>
         <image name="profile_Select" width="20" height="20"/>
         <image name="profile_tabbar" width="20" height="20"/>
-        <image name="shadow_facebook" width="282" height="58"/>
-        <image name="shadow_google" width="282" height="58"/>
+        <image name="shadow_facebook" width="564" height="116"/>
+        <image name="shadow_google" width="564" height="116"/>
         <image name="white_x_button" width="56" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>

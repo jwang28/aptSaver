@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12976E3FA87254658674CD1E /* Pods_APT_SaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9281E028590AE5462926F3D2 /* Pods_APT_SaverTests.framework */; };
 		195E03402279E6940017F2B6 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E033F2279E6940017F2B6 /* ListingTableViewCell.swift */; };
+		195E46022288DF910076DE97 /* ScanFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E46012288DF910076DE97 /* ScanFileViewController.swift */; };
+		195E46042288E18E0076DE97 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 195E46032288E18D0076DE97 /* tessdata */; };
 		196E5CAA2277BB4400F43DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E5CA92277BB4400F43DB5 /* AppDelegate.swift */; };
 		196E5CAF2277BB4400F43DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196E5CAD2277BB4400F43DB5 /* Main.storyboard */; };
 		196E5CB12277BB4600F43DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196E5CB02277BB4600F43DB5 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		195E033F2279E6940017F2B6 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
+		195E46012288DF910076DE97 /* ScanFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFileViewController.swift; sourceTree = "<group>"; };
+		195E46032288E18D0076DE97 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		196E5CA62277BB4400F43DB5 /* APT Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APT Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		196E5CA92277BB4400F43DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196E5CAE2277BB4400F43DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				A2B53AB9227F5C5C00CA8A78 /* TransportCollectionViewCell.swift */,
 				A2B831AF2283F31A002D6853 /* ProfileViewController.swift */,
 				1B7B6E4C22857BB0003BA937 /* FavouriteListingViewController.swift */,
+				195E46012288DF910076DE97 /* ScanFileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 		A2B831AA2283EC17002D6853 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				195E46032288E18D0076DE97 /* tessdata */,
 				A2B831AB2283EC1F002D6853 /* Images */,
 			);
 			path = Resources;
@@ -437,6 +443,7 @@
 			files = (
 				196E5CB42277BB4600F43DB5 /* LaunchScreen.storyboard in Resources */,
 				196E5CB12277BB4600F43DB5 /* Assets.xcassets in Resources */,
+				195E46042288E18E0076DE97 /* tessdata in Resources */,
 				A2B24951228104FA00FB88D1 /* GoogleService-Info.plist in Resources */,
 				196E5CAF2277BB4400F43DB5 /* Main.storyboard in Resources */,
 			);
@@ -502,6 +509,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/VACalendar/VACalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -522,6 +530,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VACalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -606,6 +615,7 @@
 			files = (
 				196E5CDD2277C96B00F43DB5 /* ListingType.swift in Sources */,
 				A26C062B2284929C0099E47F /* NetworkServices.swift in Sources */,
+				195E46022288DF910076DE97 /* ScanFileViewController.swift in Sources */,
 				1B7B6E4B22854770003BA937 /* Helper.swift in Sources */,
 				1B1EC2432285E6CF0088685C /* TPKeyboardAvoidingTableView.m in Sources */,
 				1B1EC2422285E6CF0088685C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
