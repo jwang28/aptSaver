@@ -1,0 +1,205 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VAWeek"
+provides-nominal:
+- "10VACalendar6VAWeekC"
+provides-member:
+- ["10VACalendar6VAWeekC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- "AssignmentPrecedence"
+- "Bool"
+- "Calendar"
+- "Date"
+- "VADay"
+- "VADayState"
+- "VADaySupplementary"
+- "VAWeek"
+depends-member:
+- !private ["Sa", "filter"]
+- !private ["Sa", "first"]
+- !private ["Sa", "flatMap"]
+- !private ["Sa", "forEach"]
+- !private ["s13ArrayProtocolP", "filter"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["s13ArrayProtocolP", "flatMap"]
+- !private ["s13ArrayProtocolP", "forEach"]
+- !private ["SK", "filter"]
+- !private ["SK", "first"]
+- !private ["SK", "flatMap"]
+- !private ["SK", "forEach"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "flatMap"]
+- !private ["s7CVarArgP", "forEach"]
+- !private ["10Foundation8CalendarV", "isDate"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "first"]
+- !private ["Sl", "flatMap"]
+- !private ["Sl", "forEach"]
+- !private ["SL", "date"]
+- !private ["SL", "dateInDay"]
+- !private ["SL", "isSelectable"]
+- !private ["SL", "set"]
+- !private ["SL", "setSelectionState"]
+- !private ["10Foundation8CalendarV9ComponentO", "weekOfYear"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "isDate"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "isDate"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "flatMap"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "isDate"]
+- !private ["Se", "filter"]
+- !private ["Se", "first"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "forEach"]
+- !private ["Se", "isDate"]
+- !private ["SE", "filter"]
+- !private ["SE", "first"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "forEach"]
+- !private ["SE", "isDate"]
+- !private ["SQ", "available"]
+- !private ["SQ", "date"]
+- !private ["SQ", "dateInDay"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "first"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "isDate"]
+- !private ["SQ", "isSelectable"]
+- !private ["SQ", "set"]
+- !private ["SQ", "setSelectionState"]
+- !private ["SQ", "weekOfYear"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "flatMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- !private ["SH", "available"]
+- !private ["SH", "filter"]
+- !private ["SH", "first"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "forEach"]
+- !private ["SH", "isDate"]
+- !private ["SH", "weekOfYear"]
+- !private ["SM", "filter"]
+- !private ["SM", "first"]
+- !private ["SM", "flatMap"]
+- !private ["SM", "forEach"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "first"]
+- !private ["Sk", "flatMap"]
+- !private ["Sk", "forEach"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "first"]
+- !private ["Sm", "flatMap"]
+- !private ["Sm", "forEach"]
+- !private ["SY", "available"]
+- !private ["10Foundation20ReferenceConvertibleP", "isDate"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- !private ["ST", "flatMap"]
+- !private ["ST", "forEach"]
+- !private ["10VACalendar5VADayC", "date"]
+- !private ["10VACalendar5VADayC", "dateInDay"]
+- !private ["10VACalendar5VADayC", "isSelectable"]
+- !private ["10VACalendar5VADayC", "set"]
+- !private ["10VACalendar5VADayC", "setSelectionState"]
+- !private ["10VACalendar10VADayStateO", "available"]
+- ["10VACalendar6VAWeekC", "Bool"]
+- ["10VACalendar6VAWeekC", "Calendar"]
+- ["10VACalendar6VAWeekC", "Date"]
+- ["10VACalendar6VAWeekC", "VADay"]
+- ["10VACalendar6VAWeekC", "VADayState"]
+- ["10VACalendar6VAWeekC", "VADaySupplementary"]
+- !private ["10VACalendar6VAWeekC", "calendar"]
+- ["10VACalendar6VAWeekC", "date"]
+- ["10VACalendar6VAWeekC", "dateInThisWeek"]
+- ["10VACalendar6VAWeekC", "days"]
+- ["10VACalendar6VAWeekC", "deselectAll"]
+- ["10VACalendar6VAWeekC", "init"]
+- ["10VACalendar6VAWeekC", "set"]
+- ["10VACalendar6VAWeekC", "setDaySelectionState"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "flatMap"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "flatMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["10Foundation14_MutableBoxingP", "isDate"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "isDate"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "10Foundation8CalendarV"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation8CalendarV9ComponentO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "10VACalendar5VADayC"
+- !private "10VACalendar10VADayStateO"
+- "10VACalendar6VAWeekC"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation14_MutableBoxingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/VACalendar/VACalendar-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/VACalendar.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1974d1918acf853cd73d87fca90493b9"

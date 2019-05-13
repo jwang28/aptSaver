@@ -810,13 +810,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SKH288K4XU;
+				DEVELOPMENT_TEAM = 8QZ4SB7R95;
 				INFOPLIST_FILE = "$(SRCROOT)/APT Saver/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.APT-Saver";
+				PRODUCT_BUNDLE_IDENTIFIER = APTSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -829,13 +829,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SKH288K4XU;
+				DEVELOPMENT_TEAM = 8QZ4SB7R95;
 				INFOPLIST_FILE = "$(SRCROOT)/APT Saver/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.APT-Saver";
+				PRODUCT_BUNDLE_IDENTIFIER = APTSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

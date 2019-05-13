@@ -1,0 +1,352 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginResultBlock"
+- "LoginResult"
+provides-nominal:
+- "13FacebookLogin0B6ResultO"
+provides-member:
+- ["13FacebookLogin0B6ResultO", ""]
+- ["So17FBSDKLoginManagerC", ""]
+- ["So17FBSDKLoginManagerC", "init"]
+- ["So17FBSDKLoginManagerC", "logIn"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "=="
+- !private "??"
+- "AccessToken"
+- "AssignmentPrecedence"
+- "DefaultAudience"
+- "Error"
+- "LoginBehavior"
+- !private "LoginError"
+- "LoginManager"
+- "LoginManagerLoginResult"
+- "LoginManagerLoginResultBlock"
+- "LoginResult"
+- "LoginResultBlock"
+- "Permission"
+- "Set"
+- "UIViewController"
+- "Void"
+depends-member:
+- !private ["Sa", "map"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["SK", "map"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "LoginResult"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "declinedPermissions"]
+- !private ["s7CVarArgP", "defaultAudience"]
+- !private ["s7CVarArgP", "grantedPermissions"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isCancelled"]
+- !private ["s7CVarArgP", "logIn"]
+- !private ["s7CVarArgP", "loginBehavior"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "sdkCompletion"]
+- !private ["s7CVarArgP", "token"]
+- !private ["So15FBSDKLoginErrorV", "unknown"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "LoginResult"]
+- !private ["s28CustomDebugStringConvertibleP", "declinedPermissions"]
+- !private ["s28CustomDebugStringConvertibleP", "defaultAudience"]
+- !private ["s28CustomDebugStringConvertibleP", "grantedPermissions"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isCancelled"]
+- !private ["s28CustomDebugStringConvertibleP", "logIn"]
+- !private ["s28CustomDebugStringConvertibleP", "loginBehavior"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "sdkCompletion"]
+- !private ["s28CustomDebugStringConvertibleP", "token"]
+- !private ["10Foundation13CustomNSErrorP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "LoginResult"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "declinedPermissions"]
+- !private ["s23CustomStringConvertibleP", "defaultAudience"]
+- !private ["s23CustomStringConvertibleP", "grantedPermissions"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isCancelled"]
+- !private ["s23CustomStringConvertibleP", "logIn"]
+- !private ["s23CustomStringConvertibleP", "loginBehavior"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "sdkCompletion"]
+- !private ["s23CustomStringConvertibleP", "token"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["So20FBSDKDefaultAudienceV", "friends"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SQ", "LoginResult"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "browser"]
+- !private ["SQ", "declinedPermissions"]
+- !private ["SQ", "defaultAudience"]
+- !private ["SQ", "friends"]
+- !private ["SQ", "grantedPermissions"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isCancelled"]
+- !private ["SQ", "logIn"]
+- !private ["SQ", "loginBehavior"]
+- !private ["SQ", "map"]
+- !private ["SQ", "name"]
+- !private ["SQ", "publicProfile"]
+- !private ["SQ", "sdkCompletion"]
+- !private ["SQ", "token"]
+- !private ["SQ", "unknown"]
+- !private ["s5ErrorP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "name"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "publicProfile"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "name"]
+- !private ["s26ExpressibleByStringLiteralP", "publicProfile"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "name"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "publicProfile"]
+- !private ["SH", "LoginResult"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "browser"]
+- !private ["SH", "declinedPermissions"]
+- !private ["SH", "defaultAudience"]
+- !private ["SH", "friends"]
+- !private ["SH", "grantedPermissions"]
+- !private ["SH", "init"]
+- !private ["SH", "isCancelled"]
+- !private ["SH", "logIn"]
+- !private ["SH", "loginBehavior"]
+- !private ["SH", "map"]
+- !private ["SH", "name"]
+- !private ["SH", "publicProfile"]
+- !private ["SH", "sdkCompletion"]
+- !private ["SH", "token"]
+- !private ["SH", "unknown"]
+- !private ["So18FBSDKLoginBehaviorV", "browser"]
+- !private ["SC15FBSDKLoginErrorLeV", "init"]
+- ["So17FBSDKLoginManagerC", "DefaultAudience"]
+- !private ["So17FBSDKLoginManagerC", "Error"]
+- ["So17FBSDKLoginManagerC", "LoginBehavior"]
+- !private ["So17FBSDKLoginManagerC", "LoginManagerLoginResult"]
+- ["So17FBSDKLoginManagerC", "LoginManagerLoginResultBlock"]
+- !private ["So17FBSDKLoginManagerC", "LoginResult"]
+- ["So17FBSDKLoginManagerC", "LoginResultBlock"]
+- ["So17FBSDKLoginManagerC", "Permission"]
+- ["So17FBSDKLoginManagerC", "UIViewController"]
+- !private ["So17FBSDKLoginManagerC", "defaultAudience"]
+- ["So17FBSDKLoginManagerC", "init"]
+- ["So17FBSDKLoginManagerC", "logIn"]
+- !private ["So17FBSDKLoginManagerC", "loginBehavior"]
+- !private ["So17FBSDKLoginManagerC", "sdkCompletion"]
+- !private ["So28FBSDKLoginManagerLoginResultC", "declinedPermissions"]
+- !private ["So28FBSDKLoginManagerLoginResultC", "grantedPermissions"]
+- !private ["So28FBSDKLoginManagerLoginResultC", "isCancelled"]
+- !private ["So28FBSDKLoginManagerLoginResultC", "token"]
+- ["13FacebookLogin0B6ResultO", "AccessToken"]
+- ["13FacebookLogin0B6ResultO", "Error"]
+- !private ["13FacebookLogin0B6ResultO", "LoginError"]
+- ["13FacebookLogin0B6ResultO", "LoginManagerLoginResult"]
+- ["13FacebookLogin0B6ResultO", "Permission"]
+- ["13FacebookLogin0B6ResultO", "Set"]
+- ["13FacebookLogin0B6ResultO", "cancelled"]
+- ["13FacebookLogin0B6ResultO", "failed"]
+- ["13FacebookLogin0B6ResultO", "init"]
+- ["13FacebookLogin0B6ResultO", "success"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["SM", "map"]
+- ["So8NSObjectC", "DefaultAudience"]
+- !private ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "LoginBehavior"]
+- !private ["So8NSObjectC", "LoginManagerLoginResult"]
+- ["So8NSObjectC", "LoginManagerLoginResultBlock"]
+- !private ["So8NSObjectC", "LoginResult"]
+- ["So8NSObjectC", "LoginResultBlock"]
+- ["So8NSObjectC", "Permission"]
+- ["So8NSObjectC", "UIViewController"]
+- !private ["So8NSObjectC", "declinedPermissions"]
+- !private ["So8NSObjectC", "defaultAudience"]
+- !private ["So8NSObjectC", "grantedPermissions"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isCancelled"]
+- ["So8NSObjectC", "logIn"]
+- !private ["So8NSObjectC", "loginBehavior"]
+- ["So8NSObjectC", "sdkCompletion"]
+- !private ["So8NSObjectC", "token"]
+- !private ["So8NSObjectP", "LoginResult"]
+- !private ["So8NSObjectP", "declinedPermissions"]
+- !private ["So8NSObjectP", "defaultAudience"]
+- !private ["So8NSObjectP", "grantedPermissions"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isCancelled"]
+- !private ["So8NSObjectP", "logIn"]
+- !private ["So8NSObjectP", "loginBehavior"]
+- !private ["So8NSObjectP", "sdkCompletion"]
+- !private ["So8NSObjectP", "token"]
+- !private ["12FacebookCore10PermissionO", "init"]
+- !private ["12FacebookCore10PermissionO", "name"]
+- !private ["12FacebookCore10PermissionO", "publicProfile"]
+- !private ["Sk", "map"]
+- !private ["Sm", "map"]
+- !private ["SY", "browser"]
+- !private ["SY", "friends"]
+- !private ["SY", "unknown"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["Sh", "init"]
+- !private ["Sh", "map"]
+- !private ["s10SetAlgebraP", "init"]
+- !private ["s10SetAlgebraP", "map"]
+- !private ["10Foundation21_BridgedStoredNSErrorP", "init"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["10Foundation18_ErrorCodeProtocolP", "unknown"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginResult"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "declinedPermissions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "defaultAudience"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "grantedPermissions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isCancelled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "logIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loginBehavior"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sdkCompletion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "token"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["10Foundation26_ObjectiveCBridgeableErrorP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "So15FBSDKLoginErrorV"
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "10Foundation13CustomNSErrorP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "So20FBSDKDefaultAudienceV"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "So18FBSDKLoginBehaviorV"
+- !private "SC15FBSDKLoginErrorLeV"
+- "So17FBSDKLoginManagerC"
+- !private "So28FBSDKLoginManagerLoginResultC"
+- "13FacebookLogin0B6ResultO"
+- !private "s25LosslessStringConvertibleP"
+- !private "SM"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "12FacebookCore10PermissionO"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "Sh"
+- !private "s10SetAlgebraP"
+- !private "10Foundation21_BridgedStoredNSErrorP"
+- !private "s24_DestructorSafeContainerP"
+- !private "10Foundation18_ErrorCodeProtocolP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "10Foundation26_ObjectiveCBridgeableErrorP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKURL.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FacebookLogin/FacebookLogin-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKLoginKit/FBSDKLoginKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkResolving.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkNavigation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManagerLoginResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManagerResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKBasicUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FacebookLogin.build/unextended-module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FacebookCore.build/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FBSDKLoginKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "773c0d7aabc2dda52a00214fc65e7fc8"

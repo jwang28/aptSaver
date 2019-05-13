@@ -1,0 +1,299 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TransportCollectionViewCell"
+provides-nominal:
+- "9APT_Saver27TransportCollectionViewCellC"
+provides-member:
+- ["9APT_Saver27TransportCollectionViewCellC", ""]
+provides-dynamic-lookup:
+- "transportLetter"
+depends-top-level:
+- "TransportCollectionViewCell"
+- "UICollectionViewCell"
+- "UILabel"
+depends-member:
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "transportLetter"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["9APT_Saver27TransportCollectionViewCellC", "UILabel"]
+- ["9APT_Saver27TransportCollectionViewCellC", "init"]
+- ["9APT_Saver27TransportCollectionViewCellC", "transportLetter"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "init"]
+- !private ["So24UICollectionReusableViewC", "init"]
+- ["So24UICollectionReusableViewC", "transportLetter"]
+- ["So20UICollectionViewCellC", "UILabel"]
+- ["So20UICollectionViewCellC", ""]
+- ["So20UICollectionViewCellC", "init"]
+- !private ["So20UICollectionViewCellC", "init"]
+- ["So20UICollectionViewCellC", "transportLetter"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "transportLetter"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
+- ["So6UIViewC", "transportLetter"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "9APT_Saver27TransportCollectionViewCellC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So24UICollectionReusableViewC"
+- "So20UICollectionViewCellC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/arm64.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Modules/SwiftSoup.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCR.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCRiOS-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8TesseractDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8RecognizedBlock.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8HierarchicalRecognizedBlock.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8RecognitionOperation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8TesseractParameters.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/UIImage+G8Filters.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8Constants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/G8Tesseract.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKBasicUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4e09d24e87d363904b257df72c4a4279"

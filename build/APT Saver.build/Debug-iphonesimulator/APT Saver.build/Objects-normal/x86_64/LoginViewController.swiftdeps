@@ -1,0 +1,1172 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "9APT_Saver14ViewControllerC"
+provides-member:
+- ["9APT_Saver14ViewControllerC", ""]
+provides-dynamic-lookup:
+- "facebookSignInButton"
+- "facebookSignInButtonPressed"
+- "googleSignInButton"
+- "googleSignInButtonPressed"
+- "sign"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- !private "=="
+- !private "AppDelegate"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "Auth"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "Dictionary"
+- "Error"
+- !private "FacebookAuthProvider"
+- "GIDGoogleUser"
+- "GIDSignIn"
+- "GIDSignInDelegate"
+- "GIDSignInUIDelegate"
+- !private "GoogleAuthProvider"
+- !private "GraphRequest"
+- !private "HTTPMethod"
+- !private "LoginManager"
+- !private "String"
+- !private "StringLiteralType"
+- !private "UIApplication"
+- "UIButton"
+- !private "UIStoryboard"
+- "UIViewController"
+- !private "User"
+- "ViewController"
+- !private "print"
+depends-member:
+- !private ["So16FBSDKAccessTokenC", "tokenString"]
+- !private ["9APT_Saver11AppDelegateC", "replaceRootViewController"]
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So7FIRAuthC", "currentUser"]
+- !private ["So7FIRAuthC", "signInAndRetrieveData"]
+- !private ["So7FIRAuthC", "signOut"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "FacebookAuthProvider"]
+- !private ["s7CVarArgP", "GIDSignIn"]
+- !private ["s7CVarArgP", "GoogleAuthProvider"]
+- !private ["s7CVarArgP", "GraphRequest"]
+- !private ["s7CVarArgP", "HTTPMethod"]
+- !private ["s7CVarArgP", "LoginManager"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "UIApplication"]
+- !private ["s7CVarArgP", "UIStoryboard"]
+- !private ["s7CVarArgP", "User"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "accessToken"]
+- !private ["s7CVarArgP", "addTitle"]
+- !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "authentication"]
+- !private ["s7CVarArgP", "credential"]
+- !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "email"]
+- !private ["s7CVarArgP", "idToken"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "logIn"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "profile"]
+- !private ["s7CVarArgP", "replaceRootViewController"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "showAlert"]
+- !private ["s7CVarArgP", "showHomeScreen"]
+- ["s7CVarArgP", "sign"]
+- ["s7CVarArgP", "signIn"]
+- !private ["s7CVarArgP", "signInAndRetrieveData"]
+- ["s7CVarArgP", "signInWillDispatch"]
+- !private ["s7CVarArgP", "signOut"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "token"]
+- !private ["s7CVarArgP", "tokenString"]
+- !private ["s7CVarArgP", "uiDelegate"]
+- !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["So12FBSDKCopyingP", "tokenString"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "FacebookAuthProvider"]
+- !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
+- !private ["s28CustomDebugStringConvertibleP", "GoogleAuthProvider"]
+- !private ["s28CustomDebugStringConvertibleP", "GraphRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "HTTPMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "LoginManager"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- !private ["s28CustomDebugStringConvertibleP", "User"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "accessToken"]
+- !private ["s28CustomDebugStringConvertibleP", "addTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "authentication"]
+- !private ["s28CustomDebugStringConvertibleP", "credential"]
+- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "email"]
+- !private ["s28CustomDebugStringConvertibleP", "idToken"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "logIn"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "profile"]
+- !private ["s28CustomDebugStringConvertibleP", "replaceRootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "showAlert"]
+- !private ["s28CustomDebugStringConvertibleP", "showHomeScreen"]
+- ["s28CustomDebugStringConvertibleP", "sign"]
+- ["s28CustomDebugStringConvertibleP", "signIn"]
+- !private ["s28CustomDebugStringConvertibleP", "signInAndRetrieveData"]
+- ["s28CustomDebugStringConvertibleP", "signInWillDispatch"]
+- !private ["s28CustomDebugStringConvertibleP", "signOut"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "token"]
+- !private ["s28CustomDebugStringConvertibleP", "tokenString"]
+- !private ["s28CustomDebugStringConvertibleP", "uiDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "accessToken"]
+- !private ["s17CustomReflectableP", "authentication"]
+- !private ["s17CustomReflectableP", "email"]
+- !private ["s17CustomReflectableP", "idToken"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "name"]
+- !private ["s17CustomReflectableP", "profile"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "FacebookAuthProvider"]
+- !private ["s23CustomStringConvertibleP", "GIDSignIn"]
+- !private ["s23CustomStringConvertibleP", "GoogleAuthProvider"]
+- !private ["s23CustomStringConvertibleP", "GraphRequest"]
+- !private ["s23CustomStringConvertibleP", "HTTPMethod"]
+- !private ["s23CustomStringConvertibleP", "LoginManager"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- !private ["s23CustomStringConvertibleP", "User"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "accessToken"]
+- !private ["s23CustomStringConvertibleP", "addTitle"]
+- !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "authentication"]
+- !private ["s23CustomStringConvertibleP", "credential"]
+- !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "email"]
+- !private ["s23CustomStringConvertibleP", "idToken"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "logIn"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "profile"]
+- !private ["s23CustomStringConvertibleP", "replaceRootViewController"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "showAlert"]
+- !private ["s23CustomStringConvertibleP", "showHomeScreen"]
+- ["s23CustomStringConvertibleP", "sign"]
+- ["s23CustomStringConvertibleP", "signIn"]
+- !private ["s23CustomStringConvertibleP", "signInAndRetrieveData"]
+- ["s23CustomStringConvertibleP", "signInWillDispatch"]
+- !private ["s23CustomStringConvertibleP", "signOut"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "token"]
+- !private ["s23CustomStringConvertibleP", "tokenString"]
+- !private ["s23CustomStringConvertibleP", "uiDelegate"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "accessToken"]
+- !private ["Se", "authentication"]
+- !private ["Se", "email"]
+- !private ["Se", "idToken"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "name"]
+- !private ["Se", "profile"]
+- !private ["Se", "subscript"]
+- !private ["SD", "init"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "accessToken"]
+- !private ["SE", "authentication"]
+- !private ["SE", "email"]
+- !private ["SE", "idToken"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "name"]
+- !private ["SE", "profile"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Auth"]
+- !private ["SQ", "FacebookAuthProvider"]
+- !private ["SQ", "GIDSignIn"]
+- !private ["SQ", "GoogleAuthProvider"]
+- !private ["SQ", "GraphRequest"]
+- !private ["SQ", "HTTPMethod"]
+- !private ["SQ", "LoginManager"]
+- !private ["SQ", "String"]
+- !private ["SQ", "UIApplication"]
+- !private ["SQ", "UIStoryboard"]
+- !private ["SQ", "User"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "accessToken"]
+- !private ["SQ", "addTitle"]
+- !private ["SQ", "auth"]
+- !private ["SQ", "authentication"]
+- !private ["SQ", "credential"]
+- !private ["SQ", "currentUser"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "email"]
+- !private ["SQ", "idToken"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "logIn"]
+- !private ["SQ", "name"]
+- !private ["SQ", "print"]
+- !private ["SQ", "profile"]
+- !private ["SQ", "replaceRootViewController"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "sharedInstance"]
+- !private ["SQ", "showAlert"]
+- !private ["SQ", "showHomeScreen"]
+- ["SQ", "sign"]
+- ["SQ", "signIn"]
+- !private ["SQ", "signInAndRetrieveData"]
+- ["SQ", "signInWillDispatch"]
+- !private ["SQ", "signOut"]
+- !private ["SQ", "start"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "token"]
+- !private ["SQ", "tokenString"]
+- !private ["SQ", "uiDelegate"]
+- !private ["SQ", "uid"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "accessToken"]
+- !private ["s23ExpressibleByNilLiteralP", "authentication"]
+- !private ["s23ExpressibleByNilLiteralP", "email"]
+- !private ["s23ExpressibleByNilLiteralP", "idToken"]
+- !private ["s23ExpressibleByNilLiteralP", "name"]
+- !private ["s23ExpressibleByNilLiteralP", "profile"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So23FIRFacebookAuthProviderC", "credential"]
+- !private ["So17GIDAuthenticationC", "accessToken"]
+- !private ["So17GIDAuthenticationC", "idToken"]
+- !private ["So13GIDGoogleUserC", "authentication"]
+- !private ["So13GIDGoogleUserC", "profile"]
+- !private ["So14GIDProfileDataC", "email"]
+- !private ["So14GIDProfileDataC", "name"]
+- !private ["So9GIDSignInC", "delegate"]
+- !private ["So9GIDSignInC", "sharedInstance"]
+- !private ["So9GIDSignInC", "signIn"]
+- !private ["So9GIDSignInC", "uiDelegate"]
+- !private ["So17GIDSignInDelegateP", "Auth"]
+- !private ["So17GIDSignInDelegateP", "FacebookAuthProvider"]
+- !private ["So17GIDSignInDelegateP", "GIDSignIn"]
+- !private ["So17GIDSignInDelegateP", "GoogleAuthProvider"]
+- !private ["So17GIDSignInDelegateP", "GraphRequest"]
+- !private ["So17GIDSignInDelegateP", "HTTPMethod"]
+- !private ["So17GIDSignInDelegateP", "LoginManager"]
+- !private ["So17GIDSignInDelegateP", "String"]
+- !private ["So17GIDSignInDelegateP", "UIApplication"]
+- !private ["So17GIDSignInDelegateP", "UIStoryboard"]
+- !private ["So17GIDSignInDelegateP", "User"]
+- ["So17GIDSignInDelegateP", ""]
+- !private ["So17GIDSignInDelegateP", "addTitle"]
+- !private ["So17GIDSignInDelegateP", "print"]
+- !private ["So17GIDSignInDelegateP", "replaceRootViewController"]
+- !private ["So17GIDSignInDelegateP", "showAlert"]
+- !private ["So17GIDSignInDelegateP", "showHomeScreen"]
+- ["So17GIDSignInDelegateP", "sign"]
+- ["So17GIDSignInDelegateP", "signIn"]
+- ["So17GIDSignInDelegateP", "signInWillDispatch"]
+- !private ["So19GIDSignInUIDelegateP", "Auth"]
+- !private ["So19GIDSignInUIDelegateP", "FacebookAuthProvider"]
+- !private ["So19GIDSignInUIDelegateP", "GIDSignIn"]
+- !private ["So19GIDSignInUIDelegateP", "GoogleAuthProvider"]
+- !private ["So19GIDSignInUIDelegateP", "GraphRequest"]
+- !private ["So19GIDSignInUIDelegateP", "HTTPMethod"]
+- !private ["So19GIDSignInUIDelegateP", "LoginManager"]
+- !private ["So19GIDSignInUIDelegateP", "String"]
+- !private ["So19GIDSignInUIDelegateP", "UIApplication"]
+- !private ["So19GIDSignInUIDelegateP", "UIStoryboard"]
+- !private ["So19GIDSignInUIDelegateP", "User"]
+- ["So19GIDSignInUIDelegateP", ""]
+- !private ["So19GIDSignInUIDelegateP", "addTitle"]
+- !private ["So19GIDSignInUIDelegateP", "print"]
+- !private ["So19GIDSignInUIDelegateP", "showAlert"]
+- !private ["So19GIDSignInUIDelegateP", "showHomeScreen"]
+- ["So19GIDSignInUIDelegateP", "sign"]
+- ["So19GIDSignInUIDelegateP", "signIn"]
+- ["So19GIDSignInUIDelegateP", "signInWillDispatch"]
+- !private ["So21FIRGoogleAuthProviderC", "credential"]
+- !private ["So17FBSDKGraphRequestC", "init"]
+- !private ["So17FBSDKGraphRequestC", "start"]
+- !private ["So15FBSDKHTTPMethoda", "init"]
+- !private ["SH", "Auth"]
+- !private ["SH", "FacebookAuthProvider"]
+- !private ["SH", "GIDSignIn"]
+- !private ["SH", "GoogleAuthProvider"]
+- !private ["SH", "GraphRequest"]
+- !private ["SH", "HTTPMethod"]
+- !private ["SH", "LoginManager"]
+- !private ["SH", "String"]
+- !private ["SH", "UIApplication"]
+- !private ["SH", "UIStoryboard"]
+- !private ["SH", "User"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "accessToken"]
+- !private ["SH", "addTitle"]
+- !private ["SH", "auth"]
+- !private ["SH", "authentication"]
+- !private ["SH", "credential"]
+- !private ["SH", "currentUser"]
+- !private ["SH", "delegate"]
+- !private ["SH", "email"]
+- !private ["SH", "idToken"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "instantiateViewController"]
+- !private ["SH", "logIn"]
+- !private ["SH", "name"]
+- !private ["SH", "print"]
+- !private ["SH", "profile"]
+- !private ["SH", "replaceRootViewController"]
+- !private ["SH", "shared"]
+- !private ["SH", "sharedInstance"]
+- !private ["SH", "showAlert"]
+- !private ["SH", "showHomeScreen"]
+- ["SH", "sign"]
+- ["SH", "signIn"]
+- !private ["SH", "signInAndRetrieveData"]
+- ["SH", "signInWillDispatch"]
+- !private ["SH", "signOut"]
+- !private ["SH", "start"]
+- !private ["SH", "subscript"]
+- !private ["SH", "token"]
+- !private ["SH", "tokenString"]
+- !private ["SH", "uiDelegate"]
+- !private ["SH", "uid"]
+- !private ["SH", "viewDidLoad"]
+- !private ["So17FBSDKLoginManagerC", "init"]
+- !private ["So17FBSDKLoginManagerC", "logIn"]
+- !private ["So28FBSDKLoginManagerLoginResultC", "token"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "FacebookAuthProvider"]
+- !private ["So8NSCodingP", "GIDSignIn"]
+- !private ["So8NSCodingP", "GoogleAuthProvider"]
+- !private ["So8NSCodingP", "GraphRequest"]
+- !private ["So8NSCodingP", "HTTPMethod"]
+- !private ["So8NSCodingP", "LoginManager"]
+- !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "UIApplication"]
+- !private ["So8NSCodingP", "UIStoryboard"]
+- !private ["So8NSCodingP", "User"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "accessToken"]
+- !private ["So8NSCodingP", "addTitle"]
+- !private ["So8NSCodingP", "authentication"]
+- !private ["So8NSCodingP", "email"]
+- !private ["So8NSCodingP", "idToken"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "name"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "profile"]
+- !private ["So8NSCodingP", "showAlert"]
+- !private ["So8NSCodingP", "showHomeScreen"]
+- ["So8NSCodingP", "sign"]
+- ["So8NSCodingP", "signIn"]
+- ["So8NSCodingP", "signInWillDispatch"]
+- !private ["So8NSCodingP", "tokenString"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So9NSCopyingP", "tokenString"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "FacebookAuthProvider"]
+- !private ["So26NSExtensionRequestHandlingP", "GIDSignIn"]
+- !private ["So26NSExtensionRequestHandlingP", "GoogleAuthProvider"]
+- !private ["So26NSExtensionRequestHandlingP", "GraphRequest"]
+- !private ["So26NSExtensionRequestHandlingP", "HTTPMethod"]
+- !private ["So26NSExtensionRequestHandlingP", "LoginManager"]
+- !private ["So26NSExtensionRequestHandlingP", "String"]
+- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
+- !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
+- !private ["So26NSExtensionRequestHandlingP", "User"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "addTitle"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "showAlert"]
+- !private ["So26NSExtensionRequestHandlingP", "showHomeScreen"]
+- ["So26NSExtensionRequestHandlingP", "sign"]
+- ["So26NSExtensionRequestHandlingP", "signIn"]
+- ["So26NSExtensionRequestHandlingP", "signInWillDispatch"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "AppDelegate"]
+- !private ["So8NSObjectC", "Auth"]
+- ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "FacebookAuthProvider"]
+- ["So8NSObjectC", "GIDGoogleUser"]
+- ["So8NSObjectC", "GIDSignIn"]
+- !private ["So8NSObjectC", "GoogleAuthProvider"]
+- !private ["So8NSObjectC", "GraphRequest"]
+- !private ["So8NSObjectC", "HTTPMethod"]
+- !private ["So8NSObjectC", "LoginManager"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIStoryboard"]
+- !private ["So8NSObjectC", "User"]
+- !private ["So8NSObjectC", "accessToken"]
+- !private ["So8NSObjectC", "addTitle"]
+- !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "authentication"]
+- !private ["So8NSObjectC", "credential"]
+- !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "email"]
+- ["So8NSObjectC", "facebookSignInButton"]
+- ["So8NSObjectC", "facebookSignInButtonPressed"]
+- ["So8NSObjectC", "googleSignInButton"]
+- ["So8NSObjectC", "googleSignInButtonPressed"]
+- !private ["So8NSObjectC", "idToken"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "logIn"]
+- !private ["So8NSObjectC", "name"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "profile"]
+- !private ["So8NSObjectC", "replaceRootViewController"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "sharedInstance"]
+- !private ["So8NSObjectC", "showAlert"]
+- ["So8NSObjectC", "showHomeScreen"]
+- ["So8NSObjectC", "sign"]
+- ["So8NSObjectC", "signIn"]
+- !private ["So8NSObjectC", "signInAndRetrieveData"]
+- ["So8NSObjectC", "signInWillDispatch"]
+- !private ["So8NSObjectC", "signOut"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "token"]
+- !private ["So8NSObjectC", "tokenString"]
+- !private ["So8NSObjectC", "uiDelegate"]
+- !private ["So8NSObjectC", "uid"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "Auth"]
+- !private ["So8NSObjectP", "FacebookAuthProvider"]
+- !private ["So8NSObjectP", "GIDSignIn"]
+- !private ["So8NSObjectP", "GoogleAuthProvider"]
+- !private ["So8NSObjectP", "GraphRequest"]
+- !private ["So8NSObjectP", "HTTPMethod"]
+- !private ["So8NSObjectP", "LoginManager"]
+- !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "UIApplication"]
+- !private ["So8NSObjectP", "UIStoryboard"]
+- !private ["So8NSObjectP", "User"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "accessToken"]
+- !private ["So8NSObjectP", "addTitle"]
+- !private ["So8NSObjectP", "auth"]
+- !private ["So8NSObjectP", "authentication"]
+- !private ["So8NSObjectP", "credential"]
+- !private ["So8NSObjectP", "currentUser"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "email"]
+- !private ["So8NSObjectP", "idToken"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "logIn"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "profile"]
+- !private ["So8NSObjectP", "replaceRootViewController"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "showAlert"]
+- !private ["So8NSObjectP", "showHomeScreen"]
+- ["So8NSObjectP", "sign"]
+- ["So8NSObjectP", "signIn"]
+- !private ["So8NSObjectP", "signInAndRetrieveData"]
+- ["So8NSObjectP", "signInWillDispatch"]
+- !private ["So8NSObjectP", "signOut"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "token"]
+- !private ["So8NSObjectP", "tokenString"]
+- !private ["So8NSObjectP", "uiDelegate"]
+- !private ["So8NSObjectP", "uid"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So14NSSecureCodingP", "tokenString"]
+- !private ["Sq", "accessToken"]
+- !private ["Sq", "authentication"]
+- !private ["Sq", "email"]
+- !private ["Sq", "idToken"]
+- !private ["Sq", "name"]
+- !private ["Sq", "profile"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "FacebookAuthProvider"]
+- !private ["So21UIAppearanceContainerP", "GIDSignIn"]
+- !private ["So21UIAppearanceContainerP", "GoogleAuthProvider"]
+- !private ["So21UIAppearanceContainerP", "GraphRequest"]
+- !private ["So21UIAppearanceContainerP", "HTTPMethod"]
+- !private ["So21UIAppearanceContainerP", "LoginManager"]
+- !private ["So21UIAppearanceContainerP", "String"]
+- !private ["So21UIAppearanceContainerP", "UIApplication"]
+- !private ["So21UIAppearanceContainerP", "UIStoryboard"]
+- !private ["So21UIAppearanceContainerP", "User"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addTitle"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "showAlert"]
+- !private ["So21UIAppearanceContainerP", "showHomeScreen"]
+- ["So21UIAppearanceContainerP", "sign"]
+- ["So21UIAppearanceContainerP", "signIn"]
+- ["So21UIAppearanceContainerP", "signInWillDispatch"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So13UIApplicationC", "delegate"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "replaceRootViewController"]
+- !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "FacebookAuthProvider"]
+- !private ["So18UIContentContainerP", "GIDSignIn"]
+- !private ["So18UIContentContainerP", "GoogleAuthProvider"]
+- !private ["So18UIContentContainerP", "GraphRequest"]
+- !private ["So18UIContentContainerP", "HTTPMethod"]
+- !private ["So18UIContentContainerP", "LoginManager"]
+- !private ["So18UIContentContainerP", "String"]
+- !private ["So18UIContentContainerP", "UIApplication"]
+- !private ["So18UIContentContainerP", "UIStoryboard"]
+- !private ["So18UIContentContainerP", "User"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "addTitle"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "showAlert"]
+- !private ["So18UIContentContainerP", "showHomeScreen"]
+- ["So18UIContentContainerP", "sign"]
+- ["So18UIContentContainerP", "signIn"]
+- ["So18UIContentContainerP", "signInWillDispatch"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "FacebookAuthProvider"]
+- !private ["So18UIFocusEnvironmentP", "GIDSignIn"]
+- !private ["So18UIFocusEnvironmentP", "GoogleAuthProvider"]
+- !private ["So18UIFocusEnvironmentP", "GraphRequest"]
+- !private ["So18UIFocusEnvironmentP", "HTTPMethod"]
+- !private ["So18UIFocusEnvironmentP", "LoginManager"]
+- !private ["So18UIFocusEnvironmentP", "String"]
+- !private ["So18UIFocusEnvironmentP", "UIApplication"]
+- !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
+- !private ["So18UIFocusEnvironmentP", "User"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addTitle"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "showAlert"]
+- !private ["So18UIFocusEnvironmentP", "showHomeScreen"]
+- ["So18UIFocusEnvironmentP", "sign"]
+- ["So18UIFocusEnvironmentP", "signIn"]
+- ["So18UIFocusEnvironmentP", "signInWillDispatch"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "FacebookAuthProvider"]
+- !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
+- !private ["So30UIPasteConfigurationSupportingP", "GoogleAuthProvider"]
+- !private ["So30UIPasteConfigurationSupportingP", "GraphRequest"]
+- !private ["So30UIPasteConfigurationSupportingP", "HTTPMethod"]
+- !private ["So30UIPasteConfigurationSupportingP", "LoginManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "User"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addTitle"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "replaceRootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "showAlert"]
+- !private ["So30UIPasteConfigurationSupportingP", "showHomeScreen"]
+- ["So30UIPasteConfigurationSupportingP", "sign"]
+- ["So30UIPasteConfigurationSupportingP", "signIn"]
+- ["So30UIPasteConfigurationSupportingP", "signInWillDispatch"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "AppDelegate"]
+- !private ["So11UIResponderC", "Auth"]
+- ["So11UIResponderC", "Error"]
+- !private ["So11UIResponderC", "FacebookAuthProvider"]
+- ["So11UIResponderC", "GIDGoogleUser"]
+- ["So11UIResponderC", "GIDSignIn"]
+- !private ["So11UIResponderC", "GoogleAuthProvider"]
+- !private ["So11UIResponderC", "GraphRequest"]
+- !private ["So11UIResponderC", "HTTPMethod"]
+- !private ["So11UIResponderC", "LoginManager"]
+- !private ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIStoryboard"]
+- !private ["So11UIResponderC", "User"]
+- !private ["So11UIResponderC", "addTitle"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "facebookSignInButton"]
+- ["So11UIResponderC", "facebookSignInButtonPressed"]
+- ["So11UIResponderC", "googleSignInButton"]
+- ["So11UIResponderC", "googleSignInButtonPressed"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "replaceRootViewController"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "showAlert"]
+- ["So11UIResponderC", "showHomeScreen"]
+- ["So11UIResponderC", "sign"]
+- ["So11UIResponderC", "signIn"]
+- ["So11UIResponderC", "signInWillDispatch"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "FacebookAuthProvider"]
+- !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
+- !private ["So30UIResponderStandardEditActionsP", "GoogleAuthProvider"]
+- !private ["So30UIResponderStandardEditActionsP", "GraphRequest"]
+- !private ["So30UIResponderStandardEditActionsP", "HTTPMethod"]
+- !private ["So30UIResponderStandardEditActionsP", "LoginManager"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- !private ["So30UIResponderStandardEditActionsP", "User"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "replaceRootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "showAlert"]
+- !private ["So30UIResponderStandardEditActionsP", "showHomeScreen"]
+- ["So30UIResponderStandardEditActionsP", "sign"]
+- ["So30UIResponderStandardEditActionsP", "signIn"]
+- ["So30UIResponderStandardEditActionsP", "signInWillDispatch"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "FacebookAuthProvider"]
+- !private ["So16UIStateRestoringP", "GIDSignIn"]
+- !private ["So16UIStateRestoringP", "GoogleAuthProvider"]
+- !private ["So16UIStateRestoringP", "GraphRequest"]
+- !private ["So16UIStateRestoringP", "HTTPMethod"]
+- !private ["So16UIStateRestoringP", "LoginManager"]
+- !private ["So16UIStateRestoringP", "String"]
+- !private ["So16UIStateRestoringP", "UIApplication"]
+- !private ["So16UIStateRestoringP", "UIStoryboard"]
+- !private ["So16UIStateRestoringP", "User"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "addTitle"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "showAlert"]
+- !private ["So16UIStateRestoringP", "showHomeScreen"]
+- ["So16UIStateRestoringP", "sign"]
+- ["So16UIStateRestoringP", "signIn"]
+- ["So16UIStateRestoringP", "signInWillDispatch"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "FacebookAuthProvider"]
+- !private ["So18UITraitEnvironmentP", "GIDSignIn"]
+- !private ["So18UITraitEnvironmentP", "GoogleAuthProvider"]
+- !private ["So18UITraitEnvironmentP", "GraphRequest"]
+- !private ["So18UITraitEnvironmentP", "HTTPMethod"]
+- !private ["So18UITraitEnvironmentP", "LoginManager"]
+- !private ["So18UITraitEnvironmentP", "String"]
+- !private ["So18UITraitEnvironmentP", "UIApplication"]
+- !private ["So18UITraitEnvironmentP", "UIStoryboard"]
+- !private ["So18UITraitEnvironmentP", "User"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addTitle"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "showAlert"]
+- !private ["So18UITraitEnvironmentP", "showHomeScreen"]
+- ["So18UITraitEnvironmentP", "sign"]
+- ["So18UITraitEnvironmentP", "signIn"]
+- ["So18UITraitEnvironmentP", "signInWillDispatch"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Auth"]
+- !private ["So23UIUserActivityRestoringP", "FacebookAuthProvider"]
+- !private ["So23UIUserActivityRestoringP", "GIDSignIn"]
+- !private ["So23UIUserActivityRestoringP", "GoogleAuthProvider"]
+- !private ["So23UIUserActivityRestoringP", "GraphRequest"]
+- !private ["So23UIUserActivityRestoringP", "HTTPMethod"]
+- !private ["So23UIUserActivityRestoringP", "LoginManager"]
+- !private ["So23UIUserActivityRestoringP", "String"]
+- !private ["So23UIUserActivityRestoringP", "UIApplication"]
+- !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
+- !private ["So23UIUserActivityRestoringP", "User"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addTitle"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "replaceRootViewController"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "showAlert"]
+- !private ["So23UIUserActivityRestoringP", "showHomeScreen"]
+- ["So23UIUserActivityRestoringP", "sign"]
+- ["So23UIUserActivityRestoringP", "signIn"]
+- ["So23UIUserActivityRestoringP", "signInWillDispatch"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So16UIViewControllerC", "AppDelegate"]
+- !private ["So16UIViewControllerC", "Auth"]
+- ["So16UIViewControllerC", "Error"]
+- !private ["So16UIViewControllerC", "FacebookAuthProvider"]
+- ["So16UIViewControllerC", "GIDGoogleUser"]
+- ["So16UIViewControllerC", "GIDSignIn"]
+- !private ["So16UIViewControllerC", "GoogleAuthProvider"]
+- !private ["So16UIViewControllerC", "GraphRequest"]
+- !private ["So16UIViewControllerC", "HTTPMethod"]
+- !private ["So16UIViewControllerC", "LoginManager"]
+- !private ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIApplication"]
+- ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIStoryboard"]
+- !private ["So16UIViewControllerC", "User"]
+- ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "addTitle"]
+- ["So16UIViewControllerC", "facebookSignInButton"]
+- ["So16UIViewControllerC", "facebookSignInButtonPressed"]
+- ["So16UIViewControllerC", "googleSignInButton"]
+- ["So16UIViewControllerC", "googleSignInButtonPressed"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "showAlert"]
+- ["So16UIViewControllerC", "showHomeScreen"]
+- ["So16UIViewControllerC", "sign"]
+- ["So16UIViewControllerC", "signIn"]
+- ["So16UIViewControllerC", "signInWillDispatch"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["9APT_Saver4UserC", "currentUser"]
+- !private ["9APT_Saver4UserC", "saveUserInformation"]
+- !private ["So7FIRUserC", "uid"]
+- !private ["So11FIRUserInfoP", "uid"]
+- !private ["9APT_Saver14ViewControllerC", "AppDelegate"]
+- !private ["9APT_Saver14ViewControllerC", "Auth"]
+- ["9APT_Saver14ViewControllerC", "Error"]
+- !private ["9APT_Saver14ViewControllerC", "FacebookAuthProvider"]
+- ["9APT_Saver14ViewControllerC", "GIDGoogleUser"]
+- ["9APT_Saver14ViewControllerC", "GIDSignIn"]
+- !private ["9APT_Saver14ViewControllerC", "GoogleAuthProvider"]
+- !private ["9APT_Saver14ViewControllerC", "GraphRequest"]
+- !private ["9APT_Saver14ViewControllerC", "HTTPMethod"]
+- !private ["9APT_Saver14ViewControllerC", "LoginManager"]
+- !private ["9APT_Saver14ViewControllerC", "String"]
+- !private ["9APT_Saver14ViewControllerC", "UIApplication"]
+- ["9APT_Saver14ViewControllerC", "UIButton"]
+- !private ["9APT_Saver14ViewControllerC", "UIStoryboard"]
+- !private ["9APT_Saver14ViewControllerC", "User"]
+- !private ["9APT_Saver14ViewControllerC", "addTitle"]
+- ["9APT_Saver14ViewControllerC", "deinit"]
+- ["9APT_Saver14ViewControllerC", "facebookSignInButton"]
+- ["9APT_Saver14ViewControllerC", "facebookSignInButtonPressed"]
+- ["9APT_Saver14ViewControllerC", "googleSignInButton"]
+- ["9APT_Saver14ViewControllerC", "googleSignInButtonPressed"]
+- ["9APT_Saver14ViewControllerC", "init"]
+- !private ["9APT_Saver14ViewControllerC", "print"]
+- !private ["9APT_Saver14ViewControllerC", "showAlert"]
+- ["9APT_Saver14ViewControllerC", "showHomeScreen"]
+- ["9APT_Saver14ViewControllerC", "sign"]
+- ["9APT_Saver14ViewControllerC", "signIn"]
+- ["9APT_Saver14ViewControllerC", "signInWillDispatch"]
+- ["9APT_Saver14ViewControllerC", "viewDidLoad"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FacebookAuthProvider"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GoogleAuthProvider"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GraphRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HTTPMethod"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "User"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "accessToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "authentication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "credential"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "idToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "logIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "profile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "replaceRootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showAlert"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showHomeScreen"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sign"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signInAndRetrieveData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "signInWillDispatch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signOut"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "token"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tokenString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uiDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "accessToken"]
+- !private ["s21_ObjectiveCBridgeableP", "authentication"]
+- !private ["s21_ObjectiveCBridgeableP", "email"]
+- !private ["s21_ObjectiveCBridgeableP", "idToken"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "name"]
+- !private ["s21_ObjectiveCBridgeableP", "profile"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s20_SwiftNewtypeWrapperP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "So16FBSDKAccessTokenC"
+- !private "9APT_Saver11AppDelegateC"
+- !private "So7FIRAuthC"
+- !private "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "So12FBSDKCopyingP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So23FIRFacebookAuthProviderC"
+- !private "So17GIDAuthenticationC"
+- !private "So13GIDGoogleUserC"
+- !private "So14GIDProfileDataC"
+- !private "So9GIDSignInC"
+- "So17GIDSignInDelegateP"
+- "So19GIDSignInUIDelegateP"
+- !private "So21FIRGoogleAuthProviderC"
+- !private "So17FBSDKGraphRequestC"
+- !private "So15FBSDKHTTPMethoda"
+- "SH"
+- !private "So17FBSDKLoginManagerC"
+- !private "So28FBSDKLoginManagerLoginResultC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- !private "So21UIApplicationDelegateP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "9APT_Saver4UserC"
+- !private "So7FIRUserC"
+- !private "So11FIRUserInfoP"
+- "9APT_Saver14ViewControllerC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules/SwiftSoup.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCR.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCRiOS-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8TesseractDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8RecognizedBlock.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8HierarchicalRecognizedBlock.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8RecognitionOperation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8TesseractParameters.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/UIImage+G8Filters.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8Constants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8Tesseract.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKBasicUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "087129c4ca30c54bdb5979ed93ec4ac9"

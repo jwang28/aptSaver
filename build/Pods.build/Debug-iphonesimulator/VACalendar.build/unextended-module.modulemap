@@ -1,0 +1,10 @@
+framework module VACalendar {
+  umbrella header "VACalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module VACalendar.__Swift {
+    exclude header "VACalendar-Swift.h"
+}

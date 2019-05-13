@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "a913662487fa259edc388f9ce80d2ac3"
+build_time: [1557763158, 291345000]
+inputs:
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FacebookLogin/Sources/Login/FBLoginButton.swift": [1557112002, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FacebookLogin/Sources/Login/LoginManager.swift": [1557112002, 0]

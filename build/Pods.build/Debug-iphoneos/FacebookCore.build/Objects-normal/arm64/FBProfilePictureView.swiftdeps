@@ -1,0 +1,260 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So23FBSDKProfilePictureViewC", ""]
+- ["So23FBSDKProfilePictureViewC", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- "CGRect"
+- "FBProfilePictureView"
+- "Profile"
+depends-member:
+- !private ["So18UIViewAutoresizingV", "flexibleHeight"]
+- !private ["So18UIViewAutoresizingV", "flexibleWidth"]
+- !private ["So15CALayerDelegateP", "autoresizingMask"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "profileID"]
+- !private ["So15CALayerDelegateP", "setNeedsImageUpdate"]
+- !private ["So6CGRectV", "zero"]
+- !private ["s7CVarArgP", "autoresizingMask"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "profileID"]
+- !private ["s7CVarArgP", "setNeedsImageUpdate"]
+- !private ["s7CVarArgP", "userID"]
+- !private ["s28CustomDebugStringConvertibleP", "autoresizingMask"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "profileID"]
+- !private ["s28CustomDebugStringConvertibleP", "setNeedsImageUpdate"]
+- !private ["s28CustomDebugStringConvertibleP", "userID"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "autoresizingMask"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "profileID"]
+- !private ["s23CustomStringConvertibleP", "setNeedsImageUpdate"]
+- !private ["s23CustomStringConvertibleP", "userID"]
+- !private ["Se", "zero"]
+- !private ["SE", "zero"]
+- !private ["SQ", "autoresizingMask"]
+- !private ["SQ", "flexibleHeight"]
+- !private ["SQ", "flexibleWidth"]
+- !private ["SQ", "init"]
+- !private ["SQ", "profileID"]
+- !private ["SQ", "setNeedsImageUpdate"]
+- !private ["SQ", "userID"]
+- !private ["SQ", "zero"]
+- !private ["s25ExpressibleByArrayLiteralP", "flexibleHeight"]
+- !private ["s25ExpressibleByArrayLiteralP", "flexibleWidth"]
+- ["So23FBSDKProfilePictureViewC", "CGRect"]
+- ["So23FBSDKProfilePictureViewC", "Profile"]
+- !private ["So23FBSDKProfilePictureViewC", "autoresizingMask"]
+- ["So23FBSDKProfilePictureViewC", "init"]
+- !private ["So23FBSDKProfilePictureViewC", "profileID"]
+- !private ["So23FBSDKProfilePictureViewC", "setNeedsImageUpdate"]
+- !private ["SH", "autoresizingMask"]
+- !private ["SH", "init"]
+- !private ["SH", "profileID"]
+- !private ["SH", "setNeedsImageUpdate"]
+- !private ["SH", "userID"]
+- !private ["So8NSCodingP", "autoresizingMask"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "profileID"]
+- !private ["So8NSCodingP", "setNeedsImageUpdate"]
+- !private ["So8NSCodingP", "userID"]
+- !private ["So9NSCopyingP", "userID"]
+- ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "Profile"]
+- !private ["So8NSObjectC", "autoresizingMask"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "profileID"]
+- !private ["So8NSObjectC", "setNeedsImageUpdate"]
+- !private ["So8NSObjectC", "userID"]
+- !private ["So8NSObjectP", "autoresizingMask"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "profileID"]
+- !private ["So8NSObjectP", "setNeedsImageUpdate"]
+- !private ["So8NSObjectP", "userID"]
+- !private ["So14NSSecureCodingP", "userID"]
+- !private ["s9OptionSetP", "flexibleHeight"]
+- !private ["s9OptionSetP", "flexibleWidth"]
+- !private ["So12FBSDKProfileC", "userID"]
+- !private ["SY", "flexibleHeight"]
+- !private ["SY", "flexibleWidth"]
+- !private ["s10SetAlgebraP", "flexibleHeight"]
+- !private ["s10SetAlgebraP", "flexibleWidth"]
+- !private ["So29UIAccessibilityIdentificationP", "autoresizingMask"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "profileID"]
+- !private ["So29UIAccessibilityIdentificationP", "setNeedsImageUpdate"]
+- !private ["So12UIAppearanceP", "autoresizingMask"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "profileID"]
+- !private ["So12UIAppearanceP", "setNeedsImageUpdate"]
+- !private ["So21UIAppearanceContainerP", "autoresizingMask"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "profileID"]
+- !private ["So21UIAppearanceContainerP", "setNeedsImageUpdate"]
+- !private ["So17UICoordinateSpaceP", "autoresizingMask"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "profileID"]
+- !private ["So17UICoordinateSpaceP", "setNeedsImageUpdate"]
+- !private ["So13UIDynamicItemP", "autoresizingMask"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "profileID"]
+- !private ["So13UIDynamicItemP", "setNeedsImageUpdate"]
+- !private ["So18UIFocusEnvironmentP", "autoresizingMask"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "profileID"]
+- !private ["So18UIFocusEnvironmentP", "setNeedsImageUpdate"]
+- !private ["So11UIFocusItemP", "autoresizingMask"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "profileID"]
+- !private ["So11UIFocusItemP", "setNeedsImageUpdate"]
+- !private ["So20UIFocusItemContainerP", "autoresizingMask"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "profileID"]
+- !private ["So20UIFocusItemContainerP", "setNeedsImageUpdate"]
+- !private ["So30UIPasteConfigurationSupportingP", "autoresizingMask"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "profileID"]
+- !private ["So30UIPasteConfigurationSupportingP", "setNeedsImageUpdate"]
+- ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "Profile"]
+- !private ["So11UIResponderC", "autoresizingMask"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "profileID"]
+- !private ["So11UIResponderC", "setNeedsImageUpdate"]
+- !private ["So30UIResponderStandardEditActionsP", "autoresizingMask"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "profileID"]
+- !private ["So30UIResponderStandardEditActionsP", "setNeedsImageUpdate"]
+- !private ["So18UITraitEnvironmentP", "autoresizingMask"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "profileID"]
+- !private ["So18UITraitEnvironmentP", "setNeedsImageUpdate"]
+- !private ["So23UIUserActivityRestoringP", "autoresizingMask"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "profileID"]
+- !private ["So23UIUserActivityRestoringP", "setNeedsImageUpdate"]
+- ["So6UIViewC", "CGRect"]
+- ["So6UIViewC", "Profile"]
+- !private ["So6UIViewC", "autoresizingMask"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "profileID"]
+- !private ["So6UIViewC", "setNeedsImageUpdate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "autoresizingMask"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "profileID"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setNeedsImageUpdate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "autoresizingMask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "profileID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNeedsImageUpdate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userID"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+depends-nominal:
+- !private "So18UIViewAutoresizingV"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "So23FBSDKProfilePictureViewC"
+- !private "SH"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "So12FBSDKProfileC"
+- !private "SY"
+- !private "s10SetAlgebraP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKURL.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkResolving.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkNavigation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKBasicUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookCore.build/unextended-module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKCoreKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "61b688406b571ec9a463f15184b1cfcd"

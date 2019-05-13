@@ -1,0 +1,1901 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FBSDKAccessToken.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppEvents.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLink.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkNavigation.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkNavigation.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkResolver.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkResolver.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkResolving.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkResolving.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkReturnToRefererController.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererController.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkReturnToRefererView.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkTarget.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppLinkUtility.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkUtility.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKApplicationDelegate.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKBasicUtility.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKBasicUtility.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKConstants.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKCopying.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKCoreKit-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKCoreKit-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKCoreKit.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKGraphErrorRecoveryProcessor.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKGraphRequest.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKGraphRequestConnection.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKGraphRequestDataAttachment.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKMeasurementEvent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKMutableCopying.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKProfile.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKProfilePictureView.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSettings.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKTestUsersManager.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKURL.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKURL.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKUtility.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKWebViewAppLinkResolver.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKCoreKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FBSDKDeviceLoginCodeInfo.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKDeviceLoginManager.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKDeviceLoginManagerResult.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManagerResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginConstants.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginKit-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginKit-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKLoginKit/FBSDKLoginKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginKit.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginManager.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginManagerLoginResult.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManagerLoginResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLoginTooltipView.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKTooltipView.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKTooltipView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKLoginKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FBSDKPlacesKit-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKPlacesKit-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKPlacesKit/FBSDKPlacesKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKPlacesKit.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKPlacesKit/FBSDKPlacesKit/FBSDKPlacesKit/FBSDKPlacesKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKPlacesKitConstants.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKPlacesKit/FBSDKPlacesKit/FBSDKPlacesKit/FBSDKPlacesKitConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKPlacesManager.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKPlacesKit/FBSDKPlacesKit/FBSDKPlacesKit/FBSDKPlacesManager.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKPlacesKit/FBSDKPlacesKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKPlacesKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FBSDKAppGroupContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKAppInviteContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKCameraEffectArguments.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKCameraEffectTextures.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectTextures.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKGameRequestContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKGameRequestDialog.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKHashtag.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLikeObjectType.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKLiking.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLiking.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKMessageDialog.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSendButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareAPI.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareAPI.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareCameraEffectContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareConstants.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareDialog.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareDialogMode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareKit-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework/Headers/FBSDKShareKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareKit-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FBSDKShareKit/FBSDKShareKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareKit.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareLinkContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMediaContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMessengerActionButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerActionButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMessengerGenericTemplateContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMessengerGenericTemplateElement.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMessengerMediaTemplateContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerMediaTemplateContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMessengerOpenGraphMusicTemplateContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerOpenGraphMusicTemplateContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareMessengerURLActionButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerURLActionButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareOpenGraphAction.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphAction.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareOpenGraphContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareOpenGraphObject.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareOpenGraphValueContainer.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharePhoto.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharePhotoContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareVideo.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKShareVideoContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharing.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharingButton.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharingContent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharingScheme.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingScheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKSharingValidation.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingValidation.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKShareKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FacebookCore-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FacebookCore-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookCore.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FacebookLogin-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FacebookLogin-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FacebookLogin/FacebookLogin-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookLogin.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookShare/FacebookShare.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FacebookShare-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookShare/FacebookShare.framework/Headers/FacebookShare-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FacebookShare-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FacebookShare/FacebookShare-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookShare/FacebookShare.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookShare.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRActionCodeSettings.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRActionCodeSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAdditionalUserInfo.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAdditionalUserInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuth.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthAPNSTokenType.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthCredential.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthDataResult.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthDataResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthErrors.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthSettings.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthTokenResult.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthTokenResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthUIDelegate.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthUIDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIREmailAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRFacebookAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRFederatedAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFederatedAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGameCenterAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGameCenterAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGitHubAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGoogleAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGoogleAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROAuthCredential.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneAuthCredential.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTwitterAuthProvider.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRTwitterAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUser.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUser.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUserInfo.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUserMetadata.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserMetadata.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FirebaseAuth/FirebaseAuth-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuth.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuthVersion.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseAuth.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRAnalyticsConfiguration.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Public/FIRAnalyticsConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRApp.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRConfiguration.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLoggerLevel.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROptions.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FirebaseCore/FirebaseCore-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRAnalyticsConfiguration+Internal.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRAnalyticsConfiguration+Internal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAppAssociationRegistration.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRAppAssociationRegistration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAppInternal.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRBundleUtil.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRBundleUtil.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponent.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponentContainer.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponentContainerInternal.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainerInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponentType.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDependency.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRDependency.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRErrorCode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRErrors.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLibrary.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLogger.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROptionsInternal.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRVersion.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseCore/Firebase/Core/Private/FIRVersion.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRDataEventType.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDataSnapshot.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabase.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseQuery.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseReference.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMutableData.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRServerValue.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTransactionResult.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FirebaseDatabase/FirebaseDatabase-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseDatabase/Firebase/Database/Public/FirebaseDatabase.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseDatabase.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRInstanceID.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseInstanceID/Firebase/InstanceID/Public/FIRInstanceID.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseInstanceID-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseInstanceID-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/FirebaseInstanceID/FirebaseInstanceID-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseInstanceID.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseInstanceID/Firebase/InstanceID/Public/FirebaseInstanceID.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseInstanceID.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherLogging.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherService.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionUploadFetcher.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/GTMSessionFetcher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDebugSelectorValidation.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugSelectorValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDebugThreadValidation.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugThreadValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMMethodCheck.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleToolboxForMac/DebugUtils/GTMMethodCheck.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSDictionary+URLArguments.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleToolboxForMac/Foundation/GTMNSDictionary+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSString+URLArguments.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleToolboxForMac/Foundation/GTMNSString+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GULLoggerCodes.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Common/GULLoggerCodes.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULLoggerLevel.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GULLoggerLevel.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNSData+zlib.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/GULNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleUtilities-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/Headers/GoogleUtilities-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleUtilities-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/GoogleUtilities.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GULAppDelegateSwizzler.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Private/GULAppDelegateSwizzler.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULAppEnvironmentUtil.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULLogger.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Logger/Private/GULLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULMutableDictionary.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULMutableDictionary.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetwork.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetwork.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkConstants.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkLoggerProtocol.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkLoggerProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkMessageCode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkMessageCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkURLSession.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkURLSession.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULOriginalIMPConvenienceMacros.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULOriginalIMPConvenienceMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULReachabilityChecker.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Reachability/Private/GULReachabilityChecker.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULReachabilityMessageCode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/Reachability/Private/GULReachabilityMessageCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULSwizzler.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULUserDefaults.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Private/GULUserDefaults.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/Pods_APT_Saver.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-APT Saver-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/Pods-APT Saver/Pods-APT Saver-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_APT_Saver-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/Pods_APT_Saver.framework/Headers/Pods_APT_Saver-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/Pods_APT_Saver.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/Pods-APT Saver.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RxAtomic-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RxAtomic-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/RxAtomic/RxAtomic-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "RxAtomic.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/RxAtomic/RxAtomic/include/RxAtomic.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/RxAtomic.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftSoup-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftSoup-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/SwiftSoup/SwiftSoup-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/SwiftSoup.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "G8Constants.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8Constants.h"
+        },
+        {
+          'type': 'file',
+          'name': "G8HierarchicalRecognizedBlock.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8HierarchicalRecognizedBlock.h"
+        },
+        {
+          'type': 'file',
+          'name': "G8RecognitionOperation.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8RecognitionOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "G8RecognizedBlock.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8RecognizedBlock.h"
+        },
+        {
+          'type': 'file',
+          'name': "G8Tesseract.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8Tesseract.h"
+        },
+        {
+          'type': 'file',
+          'name': "G8TesseractDelegate.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8TesseractDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "G8TesseractParameters.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/G8TesseractParameters.h"
+        },
+        {
+          'type': 'file',
+          'name': "TesseractOCR-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCR-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TesseractOCR.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/TesseractOCR.h"
+        },
+        {
+          'type': 'file',
+          'name': "TesseractOCRiOS-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/TesseractOCRiOS/TesseractOCRiOS-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+G8Filters.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/UIImage+G8Filters.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/TesseractOCRiOS.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "allheaders.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/allheaders.h"
+        },
+        {
+          'type': 'file',
+          'name': "alltypes.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/alltypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "apitypes.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/apitypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "array.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/array.h"
+        },
+        {
+          'type': 'file',
+          'name': "arrayaccess.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/arrayaccess.h"
+        },
+        {
+          'type': 'file',
+          'name': "baseapi.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/baseapi.h"
+        },
+        {
+          'type': 'file',
+          'name': "basedir.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/basedir.h"
+        },
+        {
+          'type': 'file',
+          'name': "bbuffer.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/bbuffer.h"
+        },
+        {
+          'type': 'file',
+          'name': "bilateral.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/bilateral.h"
+        },
+        {
+          'type': 'file',
+          'name': "bmf.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/bmf.h"
+        },
+        {
+          'type': 'file',
+          'name': "bmfdata.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/bmfdata.h"
+        },
+        {
+          'type': 'file',
+          'name': "bmp.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/bmp.h"
+        },
+        {
+          'type': 'file',
+          'name': "capi.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/capi.h"
+        },
+        {
+          'type': 'file',
+          'name': "ccbord.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/ccbord.h"
+        },
+        {
+          'type': 'file',
+          'name': "dewarp.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/dewarp.h"
+        },
+        {
+          'type': 'file',
+          'name': "endianness.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/endianness.h"
+        },
+        {
+          'type': 'file',
+          'name': "environ.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/environ.h"
+        },
+        {
+          'type': 'file',
+          'name': "errcode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/errcode.h"
+        },
+        {
+          'type': 'file',
+          'name': "fileerr.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/fileerr.h"
+        },
+        {
+          'type': 'file',
+          'name': "genericvector.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/genericvector.h"
+        },
+        {
+          'type': 'file',
+          'name': "gplot.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/gplot.h"
+        },
+        {
+          'type': 'file',
+          'name': "heap.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/heap.h"
+        },
+        {
+          'type': 'file',
+          'name': "helpers.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/helpers.h"
+        },
+        {
+          'type': 'file',
+          'name': "host.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/host.h"
+        },
+        {
+          'type': 'file',
+          'name': "imageio.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/imageio.h"
+        },
+        {
+          'type': 'file',
+          'name': "jbclass.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/jbclass.h"
+        },
+        {
+          'type': 'file',
+          'name': "jconfig.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/jconfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "jerror.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/jerror.h"
+        },
+        {
+          'type': 'file',
+          'name': "jmorecfg.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/jmorecfg.h"
+        },
+        {
+          'type': 'file',
+          'name': "jpeglib.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/jpeglib.h"
+        },
+        {
+          'type': 'file',
+          'name': "leptwin.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/leptwin.h"
+        },
+        {
+          'type': 'file',
+          'name': "list.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/list.h"
+        },
+        {
+          'type': 'file',
+          'name': "ltrresultiterator.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/ltrresultiterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "memry.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/memry.h"
+        },
+        {
+          'type': 'file',
+          'name': "morph.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/morph.h"
+        },
+        {
+          'type': 'file',
+          'name': "ndminx.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/ndminx.h"
+        },
+        {
+          'type': 'file',
+          'name': "ocrclass.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/ocrclass.h"
+        },
+        {
+          'type': 'file',
+          'name': "osdetect.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/osdetect.h"
+        },
+        {
+          'type': 'file',
+          'name': "pageiterator.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/pageiterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "params.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/params.h"
+        },
+        {
+          'type': 'file',
+          'name': "pix.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/pix.h"
+        },
+        {
+          'type': 'file',
+          'name': "platform.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/platform.h"
+        },
+        {
+          'type': 'file',
+          'name': "png.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/png.h"
+        },
+        {
+          'type': 'file',
+          'name': "pngconf.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/pngconf.h"
+        },
+        {
+          'type': 'file',
+          'name': "pnglibconf.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/pnglibconf.h"
+        },
+        {
+          'type': 'file',
+          'name': "ptra.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/ptra.h"
+        },
+        {
+          'type': 'file',
+          'name': "publictypes.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/publictypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "queue.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/queue.h"
+        },
+        {
+          'type': 'file',
+          'name': "readbarcode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/readbarcode.h"
+        },
+        {
+          'type': 'file',
+          'name': "recog.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/recog.h"
+        },
+        {
+          'type': 'file',
+          'name': "regutils.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/regutils.h"
+        },
+        {
+          'type': 'file',
+          'name': "renderer.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/renderer.h"
+        },
+        {
+          'type': 'file',
+          'name': "resultiterator.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/resultiterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "serialis.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/serialis.h"
+        },
+        {
+          'type': 'file',
+          'name': "stack.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/stack.h"
+        },
+        {
+          'type': 'file',
+          'name': "stringcode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/stringcode.h"
+        },
+        {
+          'type': 'file',
+          'name': "strngs.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/strngs.h"
+        },
+        {
+          'type': 'file',
+          'name': "sudoku.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/sudoku.h"
+        },
+        {
+          'type': 'file',
+          'name': "tesscallback.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/tesscallback.h"
+        },
+        {
+          'type': 'file',
+          'name': "thresholder.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/thresholder.h"
+        },
+        {
+          'type': 'file',
+          'name': "tiff.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tiff.h"
+        },
+        {
+          'type': 'file',
+          'name': "tiffconf.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tiffconf.h"
+        },
+        {
+          'type': 'file',
+          'name': "tiffio.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tiffio.h"
+        },
+        {
+          'type': 'file',
+          'name': "tiffvers.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tiffvers.h"
+        },
+        {
+          'type': 'file',
+          'name': "unichar.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/unichar.h"
+        },
+        {
+          'type': 'file',
+          'name': "unicharmap.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/unicharmap.h"
+        },
+        {
+          'type': 'file',
+          'name': "unicharset.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/tesseract/unicharset.h"
+        },
+        {
+          'type': 'file',
+          'name': "watershed.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/TesseractOCRiOS/TesseractOCR/include/leptonica/watershed.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/VACalendar/VACalendar.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "VACalendar-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/VACalendar/VACalendar.framework/Headers/VACalendar-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "VACalendar-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/VACalendar/VACalendar-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/VACalendar/VACalendar.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/VACalendar.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/leveldb-library/leveldb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "c.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/c.h"
+        },
+        {
+          'type': 'file',
+          'name': "cache.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/cache.h"
+        },
+        {
+          'type': 'file',
+          'name': "comparator.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/comparator.h"
+        },
+        {
+          'type': 'file',
+          'name': "db.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/db.h"
+        },
+        {
+          'type': 'file',
+          'name': "dumpfile.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/dumpfile.h"
+        },
+        {
+          'type': 'file',
+          'name': "env.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/env.h"
+        },
+        {
+          'type': 'file',
+          'name': "filter_policy.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/filter_policy.h"
+        },
+        {
+          'type': 'file',
+          'name': "iterator.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/iterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-library-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/leveldb-library/leveldb-library-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "options.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/options.h"
+        },
+        {
+          'type': 'file',
+          'name': "slice.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/slice.h"
+        },
+        {
+          'type': 'file',
+          'name': "status.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/status.h"
+        },
+        {
+          'type': 'file',
+          'name': "table.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/table.h"
+        },
+        {
+          'type': 'file',
+          'name': "table_builder.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/table_builder.h"
+        },
+        {
+          'type': 'file',
+          'name': "write_batch.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/leveldb-library/include/leveldb/write_batch.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/leveldb-library/leveldb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/leveldb-library.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/nanopb/nanopb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "nanopb-Swift.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "nanopb-umbrella.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Target Support Files/nanopb/nanopb-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/nanopb/pb.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_common.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/nanopb/pb_common.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_decode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/nanopb/pb_decode.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_encode.h",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/nanopb/pb_encode.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/nanopb/nanopb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

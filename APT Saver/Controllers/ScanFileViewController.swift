@@ -8,21 +8,20 @@
 
 import UIKit
 import TesseractOCR
-
 class ScanFileViewController: UIViewController, G8TesseractDelegate {
 
     @IBOutlet weak var textView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if let tesseract = G8Tesseract(language: "eng") {
             tesseract.delegate = self
-            tesseract.image = UIImage(named: "testImage.png") ?? UIImage(named: "testImage.png")!
+            tesseract.image = UIImage(named: "test18") ?? UIImage(named: "testImage.png")!
             tesseract.recognize()
             textView.text = tesseract.recognizedText
-            
-            
-            
+
+
+
         }
 
         // Do any additional setup after loading the view.
@@ -30,6 +29,6 @@ class ScanFileViewController: UIViewController, G8TesseractDelegate {
     func progressImageRecognition(for tesseract: G8Tesseract) {
         print("Recognition Progress \(tesseract.progress) %")
     }
-    
+
 
 }

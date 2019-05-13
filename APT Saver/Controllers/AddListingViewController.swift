@@ -14,13 +14,37 @@ protocol AddListingViewControllerDelegate {
     func didFinishLoadingData(listings: [Listing])
 }
 
-class AddListingViewController: UIViewController, WKNavigationDelegate {
+class AddListingViewController: UIViewController, WKNavigationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //interface builder
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var url: UITextField!
     @IBOutlet weak var linkTextFieldContainerView: UIView!
     
+    @IBAction func chooseImage(_ sender: UIButton) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in imagePickerController.sourceType = .camera
+            self.present(imagePickerController, animated: true, completion: nil)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController, animated: true, completion: nil)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
+        //imageView.image =
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
     //properties
     var delegate: AddListingViewControllerDelegate?
     var imageUrl = ""
