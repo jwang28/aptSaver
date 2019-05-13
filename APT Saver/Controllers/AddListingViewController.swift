@@ -9,12 +9,13 @@
 import UIKit
 import SwiftSoup
 import WebKit
+import TesseractOCR
 
 protocol AddListingViewControllerDelegate {
     func didFinishLoadingData(listings: [Listing])
 }
 
-class AddListingViewController: UIViewController, WKNavigationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddListingViewController: UIViewController, WKNavigationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, G8TesseractDelegate {
     
     //interface builder
     @IBOutlet weak var webView: WKWebView!
@@ -39,11 +40,22 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
         //imageView.image =
+        if let tesseract = G8Tesseract(language: "eng") {
+            tesseract.delegate = self
+            tesseract.image = UIImage(named: "test20") ?? UIImage(named: "testImage.png")!
+            //tesseract.image = image
+            tesseract.recognize()
+            print(tesseract.recognizedText)
+            self.url.text = tesseract.recognizedText
+        }
         picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+    func progressImageRecognition(for tesseract: G8Tesseract) {
+        print("Recognition Progress \(tesseract.progress) %")
     }
     //properties
     var delegate: AddListingViewControllerDelegate?

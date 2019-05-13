@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -84,7 +84,7 @@
         {
           'type': 'file',
           'name': "FBSDKCoreKit-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-Swift.h"
         },
         {
           'type': 'file',
@@ -165,18 +165,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKCoreKit.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -206,7 +206,7 @@
         {
           'type': 'file',
           'name': "FBSDKLoginKit-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-Swift.h"
         },
         {
           'type': 'file',
@@ -242,23 +242,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKLoginKit.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FBSDKLoginKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FBSDKPlacesKit-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKit-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKPlacesKit/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKit-Swift.h"
         },
         {
           'type': 'file',
@@ -284,18 +284,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKPlacesKit/FBSDKPlacesKit.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKPlacesKit/FBSDKPlacesKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKPlacesKit.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FBSDKPlacesKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKShareKit/FBSDKShareKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -385,7 +385,7 @@
         {
           'type': 'file',
           'name': "FBSDKShareKit-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework/Headers/FBSDKShareKit-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKShareKit/FBSDKShareKit.framework/Headers/FBSDKShareKit-Swift.h"
         },
         {
           'type': 'file',
@@ -506,23 +506,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKShareKit/FBSDKShareKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FBSDKShareKit.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FacebookCore-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
         },
         {
           'type': 'file',
@@ -533,23 +533,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookCore.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FacebookCore.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FacebookLogin-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
         },
         {
           'type': 'file',
@@ -560,23 +560,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookLogin.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FacebookLogin.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookShare/FacebookShare.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookShare/FacebookShare.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FacebookShare-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookShare/FacebookShare.framework/Headers/FacebookShare-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookShare/FacebookShare.framework/Headers/FacebookShare-Swift.h"
         },
         {
           'type': 'file',
@@ -587,18 +587,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FacebookShare/FacebookShare.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookShare/FacebookShare.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FacebookShare.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FacebookShare.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -723,7 +723,7 @@
         {
           'type': 'file',
           'name': "FirebaseAuth-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-Swift.h"
         },
         {
           'type': 'file',
@@ -744,18 +744,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseAuth.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FirebaseAuth.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -785,7 +785,7 @@
         {
           'type': 'file',
           'name': "FirebaseCore-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-Swift.h"
         },
         {
           'type': 'file',
@@ -801,18 +801,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/PrivateHeaders",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -893,7 +893,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -938,7 +938,7 @@
         {
           'type': 'file',
           'name': "FirebaseDatabase-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-Swift.h"
         },
         {
           'type': 'file',
@@ -954,18 +954,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseDatabase.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -975,7 +975,7 @@
         {
           'type': 'file',
           'name': "FirebaseInstanceID-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-Swift.h"
         },
         {
           'type': 'file',
@@ -991,23 +991,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/FirebaseInstanceID.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/FirebaseInstanceID.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "GTMSessionFetcher-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
         },
         {
           'type': 'file',
@@ -1038,18 +1038,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/GTMSessionFetcher.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1084,7 +1084,7 @@
         {
           'type': 'file',
           'name': "GoogleToolboxForMac-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
         },
         {
           'type': 'file',
@@ -1095,18 +1095,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1126,7 +1126,7 @@
         {
           'type': 'file',
           'name': "GoogleUtilities-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/Headers/GoogleUtilities-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/Headers/GoogleUtilities-Swift.h"
         },
         {
           'type': 'file',
@@ -1137,18 +1137,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/GoogleUtilities.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/GoogleUtilities.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/GoogleUtilities/GoogleUtilities.framework/PrivateHeaders",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -1224,7 +1224,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/Pods_APT_Saver.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/Pods_APT_Saver.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1234,29 +1234,29 @@
         {
           'type': 'file',
           'name': "Pods_APT_Saver-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/Pods_APT_Saver.framework/Headers/Pods_APT_Saver-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/Pods_APT_Saver.framework/Headers/Pods_APT_Saver-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/Pods_APT_Saver.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/Pods_APT_Saver.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/Pods-APT Saver.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/Pods-APT Saver.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "RxAtomic-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic-Swift.h"
         },
         {
           'type': 'file',
@@ -1272,23 +1272,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/RxAtomic.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/RxAtomic.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftSoup-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-Swift.h"
         },
         {
           'type': 'file',
@@ -1299,18 +1299,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/SwiftSoup/SwiftSoup.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/SwiftSoup.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/SwiftSoup.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1350,7 +1350,7 @@
         {
           'type': 'file',
           'name': "TesseractOCR-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCR-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCR-Swift.h"
         },
         {
           'type': 'file',
@@ -1371,18 +1371,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/TesseractOCRiOS.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/TesseractOCRiOS.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/TesseractOCRiOS/TesseractOCR.framework/PrivateHeaders",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -1728,12 +1728,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/VACalendar/VACalendar.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/VACalendar/VACalendar.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "VACalendar-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/VACalendar/VACalendar.framework/Headers/VACalendar-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/VACalendar/VACalendar.framework/Headers/VACalendar-Swift.h"
         },
         {
           'type': 'file',
@@ -1744,18 +1744,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/VACalendar/VACalendar.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/VACalendar/VACalendar.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/VACalendar.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/VACalendar.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/leveldb-library/leveldb.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1800,7 +1800,7 @@
         {
           'type': 'file',
           'name': "leveldb-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
         },
         {
           'type': 'file',
@@ -1841,23 +1841,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/leveldb-library/leveldb.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/leveldb-library/leveldb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/leveldb-library.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/leveldb-library.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/nanopb/nanopb.framework/Headers",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "nanopb-Swift.h",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
         },
         {
           'type': 'file',
@@ -1888,12 +1888,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphoneos/nanopb/nanopb.framework/Modules",
+      'name': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap"
+          'external-contents': "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
         }
       ]
     }

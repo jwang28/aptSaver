@@ -1,5 +1,5 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "ef7ca6add6034198cc8a92d544d86d04"
-build_time: [1557762905, 548104000]
+build_time: [1557763807, 313257000]
 inputs:
   "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FacebookShare/Sources/Share/Enums+Extensions.swift": [1557112002, 0]

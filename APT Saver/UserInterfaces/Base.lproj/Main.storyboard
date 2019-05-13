@@ -151,6 +151,7 @@
                         <outlet property="linkTextFieldContainerView" destination="Sd9-kb-cEq" id="yOA-tm-28f"/>
                         <outlet property="url" destination="3hg-oc-cUH" id="wWf-q3-24U"/>
                         <outlet property="webView" destination="Zn3-Md-pfI" id="Tyf-Y5-g7a"/>
+                        <segue destination="BqO-Pg-okJ" kind="show" identifier="scanSegue" id="MBm-ol-8Kv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Js-c3-Akd" userLabel="First Responder" sceneMemberID="firstResponder"/>
