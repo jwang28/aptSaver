@@ -105,6 +105,10 @@
                                                     <action selector="chooseImage:" destination="qTb-jO-V5F" eventType="touchUpInside" id="yj3-Zy-uSw"/>
                                                 </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-9F-TSs">
+                                                <rect key="frame" x="20" y="470" width="335" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.36947333812713623" green="0.46668905019760132" blue="0.99064606428146362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -148,6 +152,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
+                        <outlet property="croppedImage" destination="wgc-9F-TSs" id="tWD-43-tLf"/>
                         <outlet property="linkTextFieldContainerView" destination="Sd9-kb-cEq" id="yOA-tm-28f"/>
                         <outlet property="url" destination="3hg-oc-cUH" id="wWf-q3-24U"/>
                         <outlet property="webView" destination="Zn3-Md-pfI" id="Tyf-Y5-g7a"/>

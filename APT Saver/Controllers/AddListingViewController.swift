@@ -22,6 +22,7 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     @IBOutlet weak var url: UITextField!
     @IBOutlet weak var linkTextFieldContainerView: UIView!
     
+    @IBOutlet weak var croppedImage: UIImageView!
     @IBAction func chooseImage(_ sender: UIButton) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
@@ -37,18 +38,47 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        
+//        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        let image = UIImage(named: "test21")!
         //imageView.image =
         if let tesseract = G8Tesseract(language: "eng") {
             tesseract.delegate = self
-            tesseract.image = UIImage(named: "test20") ?? UIImage(named: "testImage.png")!
-            //tesseract.image = image
+            tesseract.image = image
+            
+            
+            let width = image.size.width
+            let height = image.size.height / 16
+            let cropRect = CGRect(origin: CGPoint(x: 0, y:0), size: CGSize(width: width, height: height))
+            UIGraphicsBeginImageContextWithOptions(cropRect.size, false, 0)
+            image.draw(at: CGPoint(x:-cropRect.origin.x, y:-cropRect.origin.y))
+            let cropped = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            //outputImage(name: "cropped", image: image)
+            cropped?.save("croppedimg")
+            croppedImage.image = cropped!
+            
+            //tesseract.image = cropped!
             tesseract.recognize()
             print(tesseract.recognizedText)
             self.url.text = tesseract.recognizedText
         }
         picker.dismiss(animated: true, completion: nil)
+    }
+    func outputImage(name:String,image:UIImage){
+       // let fileManager = FileManager.default
+//        let data = image.pngData()
+//        data?.write(to: "/Users/jenniferwang/Documents/Transportation/", options: .atomic)
+//        fileManager.createFile(atPath: "/Users/jenniferwang/Documents/Transportation/", contents: data, attributes: nil)
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        if let filePath = paths.first?.appendingPathComponent("croppedImage.png") {
+            // Save image.
+            do {
+                try image.pngData()?.write(to: filePath, options: .atomic)
+            }
+            catch {
+                // Handle the error
+            }
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -170,4 +200,15 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
         })
     }
     
+}
+extension UIImage {
+    /// Save PNG in the Documents directory
+    func save(_ name: String) {
+        //let path: String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let path: String = "/Users/jenniferwang/Documents/Transportation"
+        print("path is: ", path)
+        let url = URL(fileURLWithPath: path).appendingPathComponent(name)
+        try! self.pngData()?.write(to: url)
+        print("saved image at \(url)")
+    }
 }

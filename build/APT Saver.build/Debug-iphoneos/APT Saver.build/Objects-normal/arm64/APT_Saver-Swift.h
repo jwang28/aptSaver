@@ -189,20 +189,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class WKWebView;
 @class UITextField;
 @class UIView;
+@class UIImageView;
 @class UIButton;
 @class UIImagePickerController;
+@class G8Tesseract;
 @class WKNavigation;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9APT_Saver24AddListingViewController")
-@interface AddListingViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, WKNavigationDelegate>
+@interface AddListingViewController : UIViewController <G8TesseractDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, WKNavigationDelegate>
 @property (nonatomic, weak) IBOutlet WKWebView * _Null_unspecified webView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified url;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified linkTextFieldContainerView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified croppedImage;
 - (IBAction)chooseImage:(UIButton * _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)progressImageRecognitionForTesseract:(G8Tesseract * _Nonnull)tesseract;
 - (void)viewDidLoad;
 - (IBAction)BackButton:(id _Nonnull)sender;
 - (IBAction)SubmitButton:(id _Nonnull)sender;
@@ -262,7 +266,6 @@ SWIFT_CLASS("_TtC9APT_Saver30FavouriteListingViewController")
 @end
 
 @class UILabel;
-@class UIImageView;
 @class MKMapView;
 @class UITextView;
 @class UIDatePicker;
@@ -343,7 +346,6 @@ SWIFT_CLASS("_TtC9APT_Saver21ProfileViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class G8Tesseract;
 
 SWIFT_CLASS("_TtC9APT_Saver22ScanFileViewController")
 @interface ScanFileViewController : UIViewController <G8TesseractDelegate>

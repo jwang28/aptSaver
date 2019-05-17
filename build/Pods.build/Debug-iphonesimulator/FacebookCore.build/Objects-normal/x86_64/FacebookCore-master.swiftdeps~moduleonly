@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "6d927d17a078fc249ced0087455a0cf4"
-build_time: [1557763792, 588380000]
+build_time: [1558055788, 454499000]
 inputs:
   "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FacebookCore/Sources/Core/AccessToken.swift": [1557112002, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FacebookCore/Sources/Core/AppEvents.Name.swift": [1557112002, 0]

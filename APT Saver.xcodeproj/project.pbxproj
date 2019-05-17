@@ -21,6 +21,7 @@
 		196E5CDD2277C96B00F43DB5 /* ListingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E5CDC2277C96B00F43DB5 /* ListingType.swift */; };
 		196E5CDF2277E7CB00F43DB5 /* ListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E5CDE2277E7CB00F43DB5 /* ListingTableViewController.swift */; };
 		199E4829227CB1A300897649 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E4828227CB1A300897649 /* AddListingViewController.swift */; };
+		19A145FB228E3C0400222C58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19A145FA228E3C0400222C58 /* GoogleService-Info.plist */; };
 		19E0525A227A18D2005B02F0 /* ListingDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E05259227A18D2005B02F0 /* ListingDetailTableViewController.swift */; };
 		1B1EC2422285E6CF0088685C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1EC23C2285E6CF0088685C /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		1B1EC2432285E6CF0088685C /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1EC23D2285E6CF0088685C /* TPKeyboardAvoidingTableView.m */; };
@@ -32,7 +33,6 @@
 		A248505C227CFF290063362B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248505B227CFF290063362B /* LoginViewController.swift */; };
 		A26C062B2284929C0099E47F /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C062A2284929C0099E47F /* NetworkServices.swift */; };
 		A26C062D228495150099E47F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C062C228495150099E47F /* User.swift */; };
-		A2B24951228104FA00FB88D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B24950228104FA00FB88D1 /* GoogleService-Info.plist */; };
 		A2B53ABA227F5C5C00CA8A78 /* TransportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B53AB9227F5C5C00CA8A78 /* TransportCollectionViewCell.swift */; };
 		A2B831AE2283EDB8002D6853 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B831AD2283EDB8002D6853 /* BaseTabBarViewController.swift */; };
 		A2B831B02283F31A002D6853 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B831AF2283F31A002D6853 /* ProfileViewController.swift */; };
@@ -77,6 +77,7 @@
 		196E5CDC2277C96B00F43DB5 /* ListingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingType.swift; sourceTree = "<group>"; };
 		196E5CDE2277E7CB00F43DB5 /* ListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewController.swift; sourceTree = "<group>"; };
 		199E4828227CB1A300897649 /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
+		19A145FA228E3C0400222C58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19E05259227A18D2005B02F0 /* ListingDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailTableViewController.swift; sourceTree = "<group>"; };
 		1B1EC23A2285E6CF0088685C /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		1B1EC23B2285E6CF0088685C /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		A248505B227CFF290063362B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A26C062A2284929C0099E47F /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		A26C062C228495150099E47F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A2B24950228104FA00FB88D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2B53AB9227F5C5C00CA8A78 /* TransportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2B831AD2283EDB8002D6853 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		A2B831AF2283F31A002D6853 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -292,8 +292,8 @@
 		A2B831A92283EC0A002D6853 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				19A145FA228E3C0400222C58 /* GoogleService-Info.plist */,
 				196E5CA92277BB4400F43DB5 /* AppDelegate.swift */,
-				A2B24950228104FA00FB88D1 /* GoogleService-Info.plist */,
 				196E5CB52277BB4600F43DB5 /* Info.plist */,
 			);
 			path = Application;
@@ -443,8 +443,8 @@
 			files = (
 				196E5CB42277BB4600F43DB5 /* LaunchScreen.storyboard in Resources */,
 				196E5CB12277BB4600F43DB5 /* Assets.xcassets in Resources */,
+				19A145FB228E3C0400222C58 /* GoogleService-Info.plist in Resources */,
 				195E46042288E18E0076DE97 /* tessdata in Resources */,
-				A2B24951228104FA00FB88D1 /* GoogleService-Info.plist in Resources */,
 				196E5CAF2277BB4400F43DB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
