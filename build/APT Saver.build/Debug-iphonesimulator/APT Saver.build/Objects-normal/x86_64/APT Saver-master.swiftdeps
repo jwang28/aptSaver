@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "79c995cedf34ed160f1750f173247043"
-build_time: [1558056225, 796042000]
+build_time: [1558059964, 62326000]
 inputs:
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Model/ListingType.swift": [1557112002, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Network/NetworkServices.swift": [1557700514, 0]
@@ -15,7 +15,7 @@ inputs:
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/ProfileViewController.swift": [1557700514, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/ListingTableViewController.swift": [1557700514, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/BaseTabBarViewController.swift": [1557700514, 0]
-  "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/AddListingViewController.swift": [1558056223, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/AddListingViewController.swift": [1558059872, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/FavouriteListingViewController.swift": [1557700514, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Controllers/TransportCollectionViewCell.swift": [1557112002, 0]
   "/Users/jenniferwang/Documents/Transportation/aptSaver/APT Saver/Application/AppDelegate.swift": [1558055833, 0]

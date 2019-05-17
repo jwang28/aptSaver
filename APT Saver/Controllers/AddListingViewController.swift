@@ -40,10 +40,12 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 //        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         let image = UIImage(named: "test21")!
+        //let image = UIImage(data: "cropdata")!
+
         //imageView.image =
         if let tesseract = G8Tesseract(language: "eng") {
             tesseract.delegate = self
-            tesseract.image = image
+            //tesseract.image = image
             
             
             let width = image.size.width
@@ -51,34 +53,21 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
             let cropRect = CGRect(origin: CGPoint(x: 0, y:0), size: CGSize(width: width, height: height))
             UIGraphicsBeginImageContextWithOptions(cropRect.size, false, 0)
             image.draw(at: CGPoint(x:-cropRect.origin.x, y:-cropRect.origin.y))
-            let cropped = UIGraphicsGetImageFromCurrentImageContext()
+            let crop = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            //outputImage(name: "cropped", image: image)
-            cropped?.save("croppedimg")
+            
+            crop?.save("croppedimg")
+
+            let cropped = UIImage(data: crop!.pngData()!)
+            
             croppedImage.image = cropped!
             
-            //tesseract.image = cropped!
+            tesseract.image = cropped!
             tesseract.recognize()
             print(tesseract.recognizedText)
             self.url.text = tesseract.recognizedText
         }
         picker.dismiss(animated: true, completion: nil)
-    }
-    func outputImage(name:String,image:UIImage){
-       // let fileManager = FileManager.default
-//        let data = image.pngData()
-//        data?.write(to: "/Users/jenniferwang/Documents/Transportation/", options: .atomic)
-//        fileManager.createFile(atPath: "/Users/jenniferwang/Documents/Transportation/", contents: data, attributes: nil)
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        if let filePath = paths.first?.appendingPathComponent("croppedImage.png") {
-            // Save image.
-            do {
-                try image.pngData()?.write(to: filePath, options: .atomic)
-            }
-            catch {
-                // Handle the error
-            }
-        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
