@@ -93,6 +93,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
+  - GPUImage (0.1.7)
   - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
@@ -118,6 +119,7 @@ DEPENDENCIES:
   - Firebase/Database
   - FirebaseAuth
   - GoogleSignIn
+  - GPUImage
   - RxAtomic (~> 4.0)
   - SwiftSoup
   - TesseractOCRiOS
@@ -143,6 +145,7 @@ SPEC REPOS:
     - GoogleSignIn
     - GoogleToolboxForMac
     - GoogleUtilities
+    - GPUImage
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
@@ -170,6 +173,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
@@ -178,6 +182,6 @@ SPEC CHECKSUMS:
   TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
   VACalendar: 3e5a001cbf437ebed2bcfc747f3187e555d65175
 
-PODFILE CHECKSUM: a976173eb5c5d29e4e633bab9f961d5870cd5da2
+PODFILE CHECKSUM: 571c884ff23739a72b9afb461773009bcc656bba
 
 COCOAPODS: 1.6.1

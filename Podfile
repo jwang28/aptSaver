@@ -18,6 +18,7 @@ target 'APT Saver' do
   pod 'FacebookCore'
   pod 'FacebookShare'
   pod 'RxAtomic', '~> 4.0', :modular_headers => true
+  pod 'GPUImage'
   
   pod 'VACalendar'	
   # Pods for APT Saver

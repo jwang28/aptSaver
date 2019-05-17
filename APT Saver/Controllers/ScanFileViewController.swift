@@ -20,8 +20,6 @@ class ScanFileViewController: UIViewController, G8TesseractDelegate {
             tesseract.recognize()
             textView.text = tesseract.recognizedText
 
-
-
         }
 
         // Do any additional setup after loading the view.

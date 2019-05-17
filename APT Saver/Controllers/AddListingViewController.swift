@@ -10,6 +10,8 @@ import UIKit
 import SwiftSoup
 import WebKit
 import TesseractOCR
+import GPUImage
+import AVFoundation
 
 protocol AddListingViewControllerDelegate {
     func didFinishLoadingData(listings: [Listing])
@@ -24,10 +26,20 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     
     @IBOutlet weak var croppedImage: UIImageView!
     @IBAction func chooseImage(_ sender: UIButton) {
+        let scannerHeight = 20
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in imagePickerController.sourceType = .camera
+            
+            imagePickerController.cameraOverlayView = UIImageView(image: UIImage(named: "boxwithborder")!)
+            let width = self.view.frame.size.width
+            let height = width * (4/3)
+            
+            print("navigation bar height: ", imagePickerController.navigationBar.frame.height, "width: ", width, " photo height: ", height)
+     
+            imagePickerController.cameraOverlayView?.frame = (CGRect(x: 0+10, y: 44+height/2-CGFloat(scannerHeight/2) , width: width-20, height: CGFloat(scannerHeight)))
+           
             self.present(imagePickerController, animated: true, completion: nil)
         }))
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in imagePickerController.sourceType = .photoLibrary
@@ -38,34 +50,44 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        let image = UIImage(named: "test21")!
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        //let image = UIImage(named: "test21")!
         //let image = UIImage(data: "cropdata")!
-
-        //imageView.image =
+        let scannerHeight = CGFloat(20)
         if let tesseract = G8Tesseract(language: "eng") {
             tesseract.delegate = self
-            //tesseract.image = image
-            
             
             let width = image.size.width
-            let height = image.size.height / 16
-            let cropRect = CGRect(origin: CGPoint(x: 0, y:0), size: CGSize(width: width, height: height))
+            let height = image.size.height
+            let scale = image.size.width/picker.view.frame.size.width
+            print("width is: ", width, "height is: ", height)
+            print("new navigation bar height: ", picker.navigationBar.frame.height, " picker width is: ", picker.view.frame.size.width)
+            
+            let cropRect = CGRect(origin: CGPoint(x: 10*scale, y: height/2 - (scannerHeight/2*scale)), size: CGSize(width: width-20, height: (scannerHeight-2)*scale))
+
             UIGraphicsBeginImageContextWithOptions(cropRect.size, false, 0)
             image.draw(at: CGPoint(x:-cropRect.origin.x, y:-cropRect.origin.y))
             let crop = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
-            crop?.save("croppedimg")
-
+            //crop?.save("croppedimg")
+            let myGroup = DispatchGroup()
+            myGroup.enter()
+            //let cropped = UIImage(data: crop!.pngData()!)?.binarize()
             let cropped = UIImage(data: crop!.pngData()!)
-            
-            croppedImage.image = cropped!
-            
-            tesseract.image = cropped!
-            tesseract.recognize()
-            print(tesseract.recognizedText)
-            self.url.text = tesseract.recognizedText
+            myGroup.leave()
+            myGroup.notify(queue: DispatchQueue.main){
+                self.croppedImage.image = cropped!
+                
+                tesseract.image = cropped!
+                tesseract.recognize()
+                print(tesseract.recognizedText)
+                var imageText = tesseract.recognizedText
+                imageText = imageText!.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range: nil)
+                imageText = imageText!.replacingOccurrences(of: "\n", with: "", options: NSString.CompareOptions.literal, range: nil)
+                
+                self.url.text = imageText
+            }
         }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -111,14 +133,11 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
             self.addressTest = try doc.getElementsByClass("building-title").text()
             self.price = try doc.getElementsByClass("price").text()
             self.descriptionText = try doc.getElementsByClass("Description-block jsDescriptionExpanded").text()
-            
-            
-            
+
             guard let details: [Element] = try (doc.getElementsByClass("details_info").first()?.children().array()) else {
                 showAlert(titleString: "Error!", messageString: "Something went wrong with the link. Please try again!")
                 return
             }
-            
             for index in 0...details.count - 1 {
                 
                 let temp = try details[index].text()
@@ -200,4 +219,34 @@ extension UIImage {
         try! self.pngData()?.write(to: url)
         print("saved image at \(url)")
     }
+    func binarize() -> UIImage? {
+        
+        let grayScaledImg = self.grayImage()
+        let imageSource = GPUImagePicture(image: grayScaledImg)
+        let stillImageFilter = GPUImageAdaptiveThresholdFilter()
+        stillImageFilter.blurRadiusInPixels = 8.0
+        
+        imageSource!.addTarget(stillImageFilter)
+        stillImageFilter.useNextFrameForImageCapture()
+        imageSource!.processImage()
+        guard let retImage: UIImage = stillImageFilter.imageFromCurrentFramebuffer(with: UIImage.Orientation.up) else {
+            print("unable to obtain UIImage from filter")
+            return nil
+        }
+        
+        return retImage
+    }
+    
+    func grayImage() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 1.0)
+        let imageRect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
+        
+        self.draw(in: imageRect, blendMode: .luminosity, alpha:  1.0)
+        
+        let outputImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return outputImage
+    }
+
 }
