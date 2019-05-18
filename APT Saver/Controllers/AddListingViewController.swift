@@ -124,7 +124,14 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     func configureUI() {
         self.linkTextFieldContainerView.layer.cornerRadius = self.linkTextFieldContainerView.bounds.height / 2
     }
-    
+    func process(htmlContent: String){
+        if (self.url.text?.contains("streeteasy"))!{
+            processStreetEasy(htmlContent: htmlContent)
+        }
+        else{
+            processZillow(htmlContent: htmlContent)
+        }
+    }
     func processStreetEasy(htmlContent: String) {
         do {
             print("htmlContent: \(htmlContent)")
@@ -245,8 +252,13 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
     @IBAction func SubmitButton(_ sender: Any) {
         if self.url.text != "" {
             if let url_new = URL(string: self.url.text!){
-                webView.load(URLRequest(url: url_new))
-                print("URL: \(url_new)")
+                if ((self.url.text?.contains("streeteasy"))! || (self.url.text?.contains("zillow"))!){
+                    webView.load(URLRequest(url: url_new))
+                    print("URL: \(url_new)")
+                }
+                else{
+                    self.showAlert(titleString: "Error!", messageString: "Only StreetEasy and Zillow are supported at this time.")
+                }
             } else {
                 self.showAlert(titleString: "Error!", messageString: "Invalid URL. Please enter valid url!")
             }
@@ -260,18 +272,7 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
         print("WEbview finish loading.")
         webView.evaluateJavaScript("document.documentElement.outerHTML.toString()", completionHandler: { (html, error) in
             let htmlString = html as! String
-            self.processZillow(htmlContent: htmlString)
-//            if htmlString.contains("streeteasy")
-//            {
-//                self.processStreetEasy(htmlContent: htmlString)
-//                print("streeteasy")
-//            }
-//            else if (htmlString.contains("zillow")){
-//                self.processZillow(htmlContent: htmlString)
-//            }
-//            else{
-//                self.showAlert(titleString: "Error!", messageString: "This service is not currently supported. Please check back later!")
-//            }
+            self.process(htmlContent: htmlString)
         })
     }
     
