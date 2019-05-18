@@ -359,6 +359,10 @@ SWIFT_CLASS("_TtC9APT_Saver27TransportCollectionViewCell")
 
 
 
+
+
+
+
 SWIFT_CLASS("_TtC9APT_Saver14ViewController")
 @interface ViewController : UIViewController <GIDSignInDelegate, GIDSignInUIDelegate>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified googleSignInButton;

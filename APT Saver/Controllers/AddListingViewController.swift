@@ -2,7 +2,7 @@
 //  AddListingViewController.swift
 //  APT Saver
 //
-//  Created by Jennifer Wang on 5/3/19.
+//  Created by Jennifer Wang on 4/15/19.
 //  Copyright © 2019 nyu.edu. All rights reserved.
 //
 
@@ -209,7 +209,6 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
                     self.bed = temp
                 }
             }
-            print(self.bed)
             
             let amenitiesHi: [Element] = try doc.getElementsByClass("ds-home-fact-list-item").array()
             for index in 0...amenitiesHi.count - 1  {
@@ -221,11 +220,8 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
                 }
                 print(self.amenities)
             }
-            
             let jpgs: Elements? = try doc.getElementsByClass("media-stream").select("img[src$=.jpg]")
             self.imageUrl = (try jpgs?.get(0).attr("src"))!
-            //let transportation: Element = try doc.getElementsByClass("Nearby-transportationList").get(0)
-            //self.transportation = try transportation.text()
             
             self.listing = Listing(address: self.addressTest, price: self.price ,description: self.descriptionText , bed: self.bed, bath: "", size: "", ppsqft: "", amenities: self.amenities, transportation: self.transportation, imageUrl: self.imageUrl, favorited: false, notes: "", appointmentDate: "", addedDate: convertDateToString(date: Date()))
             
@@ -255,6 +251,14 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
                 if ((self.url.text?.contains("streeteasy"))! || (self.url.text?.contains("zillow"))!){
                     webView.load(URLRequest(url: url_new))
                     print("URL: \(url_new)")
+                    self.view.endEditing(true)
+                    let imageView = UIImageView(frame: self.view.frame)
+                    //imageView.image = UIImage(named: "addlink_button_blue") // use your image
+                    
+                    imageView.loadGif(name: "loadgif")
+                    imageView.contentMode = .scaleAspectFit
+                    imageView.backgroundColor =  UIColor(red: 114/255, green: 102/255, blue: 226/255, alpha: 1)
+                    self.view.addSubview(imageView)
                 }
                 else{
                     self.showAlert(titleString: "Error!", messageString: "Only StreetEasy and Zillow are supported at this time.")
@@ -273,6 +277,7 @@ class AddListingViewController: UIViewController, WKNavigationDelegate, UIImageP
         webView.evaluateJavaScript("document.documentElement.outerHTML.toString()", completionHandler: { (html, error) in
             let htmlString = html as! String
             self.process(htmlContent: htmlString)
+            print("finished evaluating javascript")
         })
     }
     

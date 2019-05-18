@@ -6,10 +6,6 @@ provides-nominal:
 provides-member:
 - ["9APT_Saver20ListingTableViewCellC", ""]
 provides-dynamic-lookup:
-- "heartButton"
-- "listingImageView"
-- "listingPriceLabel"
-- "listingTitleLabel"
 depends-top-level:
 - !private "!="
 - "AssignmentPrecedence"

@@ -27,8 +27,6 @@ class ProfileViewController: UIViewController {
         if let email =  User.currentUser.email {
             self.emailLabel.text = email
         }
-        
-        
     }
     
     //custom methods
