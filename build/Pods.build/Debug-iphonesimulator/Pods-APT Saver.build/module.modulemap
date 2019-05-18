@@ -1,0 +1,6 @@
+framework module Pods_APT_Saver {
+  umbrella header "Pods-APT Saver-umbrella.h"
+
+  export *
+  module * { export * }
+}

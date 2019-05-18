@@ -1,0 +1,1025 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "showAlert"]
+- ["So16UIViewControllerC", "showAlert"]
+- ["So16UIViewControllerC", "addTitle"]
+- ["So16UIViewControllerC", "addTitleListing"]
+- ["So16UIViewControllerC", "addPlusButton"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CGRect"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "Selector"
+- "String"
+- "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- !private "UIBarButtonItem"
+- !private "UIButton"
+- !private "UIImage"
+- !private "UILabel"
+- "UIViewController"
+- "Void"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["So12UIButtonTypeV", "custom"]
+- !private ["So15CALayerDelegateP", "addTarget"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "setImage"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "textAlignment"]
+- !private ["So15CALayerDelegateP", "textColor"]
+- !private ["So6CGRectV", "init"]
+- !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "UIBarButtonItem"]
+- !private ["s7CVarArgP", "UIButton"]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UILabel"]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "addTarget"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationItem"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "rightBarButtonItem"]
+- !private ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "textAlignment"]
+- !private ["s7CVarArgP", "textColor"]
+- !private ["s7CVarArgP", "titleView"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "UIButton"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UILabel"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "addTarget"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "textAlignment"]
+- !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- !private ["s28CustomDebugStringConvertibleP", "titleView"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "black"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "UIButton"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UILabel"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "addTarget"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "rightBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "textAlignment"]
+- !private ["s23CustomStringConvertibleP", "textColor"]
+- !private ["s23CustomStringConvertibleP", "titleView"]
+- !private ["Se", "black"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "black"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "UIAlertAction"]
+- !private ["SQ", "UIAlertController"]
+- !private ["SQ", "UIBarButtonItem"]
+- !private ["SQ", "UIButton"]
+- !private ["SQ", "UIImage"]
+- !private ["SQ", "UILabel"]
+- !private ["SQ", "addAction"]
+- !private ["SQ", "addTarget"]
+- !private ["SQ", "alert"]
+- !private ["SQ", "black"]
+- !private ["SQ", "cancel"]
+- !private ["SQ", "center"]
+- !private ["SQ", "custom"]
+- !private ["SQ", "default"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "navigationItem"]
+- !private ["SQ", "normal"]
+- !private ["SQ", "present"]
+- !private ["SQ", "rightBarButtonItem"]
+- !private ["SQ", "setImage"]
+- !private ["SQ", "text"]
+- !private ["SQ", "textAlignment"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "titleView"]
+- !private ["SQ", "touchUpInside"]
+- !private ["So15UIControlEventsV", "touchUpInside"]
+- !private ["s25ExpressibleByArrayLiteralP", "normal"]
+- !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "black"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "UIAlertAction"]
+- !private ["SH", "UIAlertController"]
+- !private ["SH", "UIBarButtonItem"]
+- !private ["SH", "UIButton"]
+- !private ["SH", "UIImage"]
+- !private ["SH", "UILabel"]
+- !private ["SH", "addAction"]
+- !private ["SH", "addTarget"]
+- !private ["SH", "alert"]
+- !private ["SH", "black"]
+- !private ["SH", "cancel"]
+- !private ["SH", "center"]
+- !private ["SH", "custom"]
+- !private ["SH", "default"]
+- !private ["SH", "frame"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "navigationItem"]
+- !private ["SH", "present"]
+- !private ["SH", "rightBarButtonItem"]
+- !private ["SH", "setImage"]
+- !private ["SH", "text"]
+- !private ["SH", "textAlignment"]
+- !private ["SH", "textColor"]
+- !private ["SH", "titleView"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "UIBarButtonItem"]
+- !private ["So8NSCodingP", "UIButton"]
+- !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UILabel"]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "addTarget"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "navigationItem"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "rightBarButtonItem"]
+- !private ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "textAlignment"]
+- !private ["So8NSCodingP", "textColor"]
+- !private ["So8NSCodingP", "titleView"]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
+- !private ["So26NSExtensionRequestHandlingP", "UIButton"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- !private ["So26NSExtensionRequestHandlingP", "UILabel"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "Selector"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
+- !private ["So8NSObjectC", "UIBarButtonItem"]
+- !private ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIImage"]
+- !private ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "addAction"]
+- ["So8NSObjectC", "addPlusButton"]
+- !private ["So8NSObjectC", "addTarget"]
+- ["So8NSObjectC", "addTitle"]
+- ["So8NSObjectC", "addTitleListing"]
+- !private ["So8NSObjectC", "black"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "navigationItem"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "rightBarButtonItem"]
+- !private ["So8NSObjectC", "setImage"]
+- ["So8NSObjectC", "showAlert"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "textAlignment"]
+- !private ["So8NSObjectC", "textColor"]
+- !private ["So8NSObjectC", "titleView"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "UIAlertAction"]
+- !private ["So8NSObjectP", "UIAlertController"]
+- !private ["So8NSObjectP", "UIBarButtonItem"]
+- !private ["So8NSObjectP", "UIButton"]
+- !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UILabel"]
+- !private ["So8NSObjectP", "addAction"]
+- !private ["So8NSObjectP", "addTarget"]
+- !private ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "navigationItem"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "rightBarButtonItem"]
+- !private ["So8NSObjectP", "setImage"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textAlignment"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "titleView"]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So15NSTextAlignmentV", "center"]
+- !private ["s9OptionSetP", "normal"]
+- !private ["s9OptionSetP", "touchUpInside"]
+- !private ["Sq", "black"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "alert"]
+- !private ["SY", "cancel"]
+- !private ["SY", "center"]
+- !private ["SY", "custom"]
+- !private ["SY", "default"]
+- !private ["SY", "normal"]
+- !private ["SY", "touchUpInside"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["s10SetAlgebraP", "normal"]
+- !private ["s10SetAlgebraP", "touchUpInside"]
+- !private ["So14UIControlStateV", "normal"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["So22UIAlertControllerStyleV", "alert"]
+- !private ["So18UIAlertActionStyleV", "cancel"]
+- !private ["So18UIAlertActionStyleV", "default"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "addTarget"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
+- !private ["So29UIAccessibilityIdentificationP", "textColor"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["So12UIAppearanceP", "addTarget"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "setImage"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "textAlignment"]
+- !private ["So12UIAppearanceP", "textColor"]
+- !private ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
+- !private ["So21UIAppearanceContainerP", "UIButton"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UILabel"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "addTarget"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "textAlignment"]
+- !private ["So21UIAppearanceContainerP", "textColor"]
+- !private ["So15UIBarButtonItemC", "init"]
+- !private ["So9UIBarItemC", "init"]
+- !private ["So8UIButtonC", "addTarget"]
+- !private ["So8UIButtonC", "frame"]
+- !private ["So8UIButtonC", "init"]
+- !private ["So8UIButtonC", "setImage"]
+- !private ["So7UIColorC", "black"]
+- !private ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "UIBarButtonItem"]
+- !private ["So18UIContentContainerP", "UIButton"]
+- !private ["So18UIContentContainerP", "UIImage"]
+- !private ["So18UIContentContainerP", "UILabel"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationItem"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "init"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textAlignment"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
+- !private ["So9UIControlC", "addTarget"]
+- !private ["So9UIControlC", "frame"]
+- !private ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "setImage"]
+- !private ["So17UICoordinateSpaceP", "addTarget"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "setImage"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "textAlignment"]
+- !private ["So17UICoordinateSpaceP", "textColor"]
+- !private ["So13UIDynamicItemP", "addTarget"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "setImage"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "textAlignment"]
+- !private ["So13UIDynamicItemP", "textColor"]
+- !private ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
+- !private ["So18UIFocusEnvironmentP", "UIButton"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UILabel"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "addTarget"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "textAlignment"]
+- !private ["So18UIFocusEnvironmentP", "textColor"]
+- !private ["So11UIFocusItemP", "addTarget"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "setImage"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "textAlignment"]
+- !private ["So11UIFocusItemP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "addTarget"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "setImage"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textAlignment"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So7UILabelC", "init"]
+- !private ["So7UILabelC", "text"]
+- !private ["So7UILabelC", "textAlignment"]
+- !private ["So7UILabelC", "textColor"]
+- !private ["So16UINavigationItemC", "rightBarButtonItem"]
+- !private ["So16UINavigationItemC", "titleView"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UILabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "textAlignment"]
+- !private ["So30UIPasteConfigurationSupportingP", "textColor"]
+- !private ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "Selector"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
+- !private ["So11UIResponderC", "UIBarButtonItem"]
+- !private ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIImage"]
+- !private ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "Void"]
+- !private ["So11UIResponderC", "addAction"]
+- ["So11UIResponderC", "addPlusButton"]
+- !private ["So11UIResponderC", "addTarget"]
+- ["So11UIResponderC", "addTitle"]
+- ["So11UIResponderC", "addTitleListing"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "navigationItem"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "setImage"]
+- ["So11UIResponderC", "showAlert"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "textAlignment"]
+- !private ["So11UIResponderC", "textColor"]
+- !private ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
+- !private ["So30UIResponderStandardEditActionsP", "UIButton"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UILabel"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "addTarget"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "textAlignment"]
+- !private ["So30UIResponderStandardEditActionsP", "textColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- !private ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
+- !private ["So16UIStateRestoringP", "UIButton"]
+- !private ["So16UIStateRestoringP", "UIImage"]
+- !private ["So16UIStateRestoringP", "UILabel"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
+- !private ["So18UITraitEnvironmentP", "UIButton"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UILabel"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "addTarget"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "textAlignment"]
+- !private ["So18UITraitEnvironmentP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "CGRect"]
+- !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
+- !private ["So23UIUserActivityRestoringP", "UIAlertController"]
+- !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
+- !private ["So23UIUserActivityRestoringP", "UIButton"]
+- !private ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "UILabel"]
+- !private ["So23UIUserActivityRestoringP", "addAction"]
+- !private ["So23UIUserActivityRestoringP", "addTarget"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "navigationItem"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "setImage"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textAlignment"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So6UIViewC", "addTarget"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "setImage"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "textAlignment"]
+- !private ["So6UIViewC", "textColor"]
+- !private ["So16UIViewControllerC", "CGRect"]
+- ["So16UIViewControllerC", "Selector"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
+- !private ["So16UIViewControllerC", "UIBarButtonItem"]
+- !private ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIImage"]
+- !private ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "Void"]
+- !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "addPlusButton"]
+- ["So16UIViewControllerC", "addTitle"]
+- ["So16UIViewControllerC", "addTitleListing"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationItem"]
+- !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "showAlert"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textAlignment"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textAlignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleView"]
+- !private ["s21_ObjectiveCBridgeableP", "black"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "SK"
+- !private "So12UIButtonTypeV"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "So15UIControlEventsV"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So15NSTextAlignmentV"
+- !private "s9OptionSetP"
+- !private "Sq"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "So14UIControlStateV"
+- !private "SS"
+- !private "Sy"
+- !private "So22UIAlertControllerStyleV"
+- !private "So18UIAlertActionStyleV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "So17UIAlertControllerC"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
+- !private "So8UIButtonC"
+- !private "So7UIColorC"
+- !private "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So7UILabelC"
+- !private "So16UINavigationItemC"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules/SwiftSoup.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCR.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/TesseractOCRiOS-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImage-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageStillCamera.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageVideoCamera.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImage.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePicture+TextureSubimage.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFramebufferCache.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMovie.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFilterPipeline.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePicture.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8TesseractDelegate.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8RecognizedBlock.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8HierarchicalRecognizedBlock.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFramework.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GLProgram.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8RecognitionOperation.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMovieComposition.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFilterGroup.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageBuffer.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFramebuffer.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMovieWriter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageKuwaharaRadius3Filter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRGBFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHSBFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSepiaFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageAmatorkaFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageGammaFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageKuwaharaFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMosaicFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLuminanceThresholdFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageAverageLuminanceThresholdFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageAdaptiveThresholdFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageAlphaBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageAddBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDifferenceBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDivideBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageColorDodgeBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHueBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDissolveBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageNormalBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageScreenBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDarkenBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLightenBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageExclusionBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSaturationBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePoissonBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLinearBurnBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageColorBurnBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSourceOverBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageColorBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSubtractBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHardLightBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSoftLightBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageOverlayBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageChromaKeyBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMultiplyBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLuminosityBlendFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageCGAColorspaceFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSoftEleganceFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageWhiteBalanceFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLuminanceRangeFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageGrayscaleFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMonochromeFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHalftoneFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageGlassSphereFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageExposureFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePerlinNoiseFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMissEtikateFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePixellateFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePolarPixellateFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageVignetteFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHueFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageXYDerivativeFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageToneCurveFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHazeFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePosterizeFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageColorPackingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImage3x3TextureSamplingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTwoPassTextureSamplingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTwoInputCrossTextureSamplingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLanczosResamplingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRGBOpeningFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageOpeningFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRGBClosingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageClosingFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageCrosshatchFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageThresholdSketchFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSketchFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageJFAVoronoiFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMaskFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageUnsharpMaskFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageBilateralFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSwirlFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHistogramFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTransformFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageParallelCoordinateLineTransformFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLaplacianFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMedianFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSharpenFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRGBErosionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageErosionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageThresholdedNonMaximumSuppressionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageNonMaximumSuppressionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDirectionalNonMaximumSuppressionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageWeakPixelInclusionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRGBDilationFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDilationFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSaturationFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHistogramEqualizationFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSphereRefractionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageThresholdEdgeDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSobelEdgeDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageDirectionalSobelEdgeDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePrewittEdgeDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageCannyEdgeDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageShiTomasiFeatureDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFASTCornerDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageNobleCornerDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHarrisCornerDetectionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePixellatePositionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageGaussianBlurPositionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageBulgeDistortionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePinchDistortionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageStretchDistortionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImage3x3ConvolutionFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageToonFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSmoothToonFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLocalBinaryPatternFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageCropFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLookupFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageVoronoiConsumerFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageFalseColorFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageiOSBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageGaussianSelectiveBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageZoomBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageGaussianBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSingleComponentGaussianBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMotionBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageBoxBlurFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLevelsFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHighPassFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTwoPassFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLowPassFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageBrightnessFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageEmbossFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTiltShiftFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImagePolkaDotFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageColorInvertFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageContrastFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageThreeInputFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTwoInputFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHighlightShadowFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageColorMatrixFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageChromaKeyFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageOpacityFilter.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageAverageColor.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLineGenerator.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHistogramGenerator.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageCrosshairGenerator.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageSolidColorGenerator.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageHoughTransformLineDetector.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageMotionDetector.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8TesseractParameters.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/UIImage+G8Filters.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8Constants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Headers/G8Tesseract.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Headers/SwiftSoup-Swift.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageUIElement.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRawDataInput.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTextureInput.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageRawDataOutput.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageOutput.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageTextureOutput.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageContext.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKBasicUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Headers/GPUImageLuminosity.h"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/TesseractOCRiOS/TesseractOCR.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/GPUImage/GPUImage.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "dc2f09dc571ecb66b4a9b546db36aa12"

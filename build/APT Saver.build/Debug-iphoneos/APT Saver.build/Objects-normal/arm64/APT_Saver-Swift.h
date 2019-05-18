@@ -347,16 +347,6 @@ SWIFT_CLASS("_TtC9APT_Saver21ProfileViewController")
 @end
 
 
-SWIFT_CLASS("_TtC9APT_Saver22ScanFileViewController")
-@interface ScanFileViewController : UIViewController <G8TesseractDelegate>
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified textView;
-- (void)viewDidLoad;
-- (void)progressImageRecognitionForTesseract:(G8Tesseract * _Nonnull)tesseract;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC9APT_Saver27TransportCollectionViewCell")
 @interface TransportCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified transportLetter;

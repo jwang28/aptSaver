@@ -1,0 +1,17 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "f3170b32b549e1bb5e22d56087466495"
+build_time: [1558139978, 169472000]
+inputs:
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VACalendar.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VACalendarMonthDelegate.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VACalendarView.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VADay.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VADayView.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VADotView.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAFormatters.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAMonth.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAMonthHeaderView.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAMonthView.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAWeek.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAWeekDaysView.swift": [1557700515, 0]
+  "/Users/jenniferwang/Documents/Transportation/aptSaver/Pods/VACalendar/VACalendar/VAWeekView.swift": [1557700515, 0]

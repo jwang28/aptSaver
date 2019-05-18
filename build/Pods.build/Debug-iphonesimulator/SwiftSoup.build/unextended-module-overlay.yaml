@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/jenniferwang/Documents/Transportation/aptSaver/build/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/jenniferwang/Documents/Transportation/aptSaver/build/Pods.build/Debug-iphonesimulator/SwiftSoup.build/unextended-module.modulemap',
+    }]
+  }]
+}
